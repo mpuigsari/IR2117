@@ -1,0 +1,2 @@
+Invoking command in '/home/max/Documents/GitHub/IR2117/ros2_ws/build/examples_sum': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/ros2_ws/build/examples_sum -- -j20 -l20
+Invoked command in '/home/max/Documents/GitHub/IR2117/ros2_ws/build/examples_sum' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/ros2_ws/build/examples_sum -- -j20 -l20
