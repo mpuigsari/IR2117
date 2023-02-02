@@ -2,9 +2,10 @@
 #include <string>
 
 int main(){
-    int a,b,sum = 0;
+    int a = 0, b, sum = 0;
+    while(a<1){
     std::cout << "Enter a number: ";
-    std::cin >> a;
+    std::cin >> a;}
     std::cout << "Enter b number: ";
     std::cin >> b;
     for(int n = a; n <= b; n++ ){
