@@ -6,7 +6,7 @@ int main(){
     while(a<1){
     std::cout << "Enter a number: ";
     std::cin >> a;}
-    while(b<1){
+    while(b<1 | b<a){
     std::cout << "Enter b number: ";
     std::cin >> b;}
     for(int n = a; n <= b; n++ ){
