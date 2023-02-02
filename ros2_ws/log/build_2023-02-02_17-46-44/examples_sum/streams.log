@@ -1,0 +1,26 @@
+[0.012s] Invoking command in '/home/max/Documents/GitHub/IR2117/ros2_ws/build/examples_sum': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/ros2_ws/build/examples_sum -- -j20 -l20
+[0.034s] [35m[1mScanning dependencies of target sum[0m
+[0.046s] [ 50%] [32mBuilding CXX object CMakeFiles/sum.dir/sum.cpp.o[0m
+[2.270s] [100%] [32m[1mLinking CXX executable sum[0m
+[2.381s] [100%] Built target sum
+[2.386s] Invoked command in '/home/max/Documents/GitHub/IR2117/ros2_ws/build/examples_sum' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/ros2_ws/build/examples_sum -- -j20 -l20
+[2.404s] Invoking command in '/home/max/Documents/GitHub/IR2117/ros2_ws/build/examples_sum': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/max/Documents/GitHub/IR2117/ros2_ws/build/examples_sum
+[2.412s] -- Install configuration: ""
+[2.412s] -- Installing: /home/max/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/lib/examples_sum/sum
+[2.413s] -- Set runtime path of "/home/max/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/lib/examples_sum/sum" to ""
+[2.413s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/ament_index/resource_index/package_run_dependencies/examples_sum
+[2.413s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/ament_index/resource_index/parent_prefix_path/examples_sum
+[2.413s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/examples_sum/environment/ament_prefix_path.sh
+[2.413s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/examples_sum/environment/ament_prefix_path.dsv
+[2.413s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/examples_sum/environment/path.sh
+[2.413s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/examples_sum/environment/path.dsv
+[2.413s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/examples_sum/local_setup.bash
+[2.413s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/examples_sum/local_setup.sh
+[2.413s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/examples_sum/local_setup.zsh
+[2.413s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/examples_sum/local_setup.dsv
+[2.413s] -- Installing: /home/max/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/examples_sum/package.dsv
+[2.414s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/ament_index/resource_index/packages/examples_sum
+[2.414s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/examples_sum/cmake/examples_sumConfig.cmake
+[2.414s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/examples_sum/cmake/examples_sumConfig-version.cmake
+[2.414s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/ros2_ws/install/examples_sum/share/examples_sum/package.xml
+[2.416s] Invoked command in '/home/max/Documents/GitHub/IR2117/ros2_ws/build/examples_sum' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/max/Documents/GitHub/IR2117/ros2_ws/build/examples_sum
