@@ -1,0 +1,11 @@
+/home/max/Documents/GitHub/IR2117/ros2_ws/build/examples_topics/CMakeFiles/install/local.dir
+/home/max/Documents/GitHub/IR2117/ros2_ws/build/examples_topics/CMakeFiles/install.dir
+/home/max/Documents/GitHub/IR2117/ros2_ws/build/examples_topics/CMakeFiles/list_install_components.dir
+/home/max/Documents/GitHub/IR2117/ros2_ws/build/examples_topics/CMakeFiles/rebuild_cache.dir
+/home/max/Documents/GitHub/IR2117/ros2_ws/build/examples_topics/CMakeFiles/edit_cache.dir
+/home/max/Documents/GitHub/IR2117/ros2_ws/build/examples_topics/CMakeFiles/test.dir
+/home/max/Documents/GitHub/IR2117/ros2_ws/build/examples_topics/CMakeFiles/subscriber.dir
+/home/max/Documents/GitHub/IR2117/ros2_ws/build/examples_topics/CMakeFiles/install/strip.dir
+/home/max/Documents/GitHub/IR2117/ros2_ws/build/examples_topics/CMakeFiles/publisher.dir
+/home/max/Documents/GitHub/IR2117/ros2_ws/build/examples_topics/CMakeFiles/examples_topics_uninstall.dir
+/home/max/Documents/GitHub/IR2117/ros2_ws/build/examples_topics/CMakeFiles/uninstall.dir
