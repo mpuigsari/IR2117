@@ -10,6 +10,11 @@ int main(int argc, char** argv){
         n+=1;
         std::cin >>element;
     }
+    int count[n], max= 0;
+    for(int i=0; i<n; i++){
+        count[i]=0;
+        if(elements[i] == elements[0])
+            count[0]++;}
     std::cout << "Mode: " << m << std::endl;
 
     return 0;
