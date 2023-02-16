@@ -15,7 +15,10 @@ int main(int argc, char** argv){
         count[i]=0;
         for(int j = 0; j<n; j++){
             if(elements[i] == elements[j])
-                count[i]++;}}
+                count[i]++;
+            if(count[i]>count[max])
+                max=i;}}
+    m = elements[max];
     std::cout << "Mode: " << m << std::endl;
 
     return 0;
