@@ -1,0 +1,16 @@
+/home/max/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/lib/robot_trajectory/publisher
+/home/max/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/ament_index/resource_index/package_run_dependencies/robot_trajectory
+/home/max/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/ament_index/resource_index/parent_prefix_path/robot_trajectory
+/home/max/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/environment/ament_prefix_path.sh
+/home/max/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/environment/ament_prefix_path.dsv
+/home/max/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/environment/path.sh
+/home/max/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/environment/path.dsv
+/home/max/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/local_setup.bash
+/home/max/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/local_setup.sh
+/home/max/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/local_setup.zsh
+/home/max/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/local_setup.dsv
+/home/max/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/package.dsv
+/home/max/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/ament_index/resource_index/packages/robot_trajectory
+/home/max/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/cmake/robot_trajectoryConfig.cmake
+/home/max/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/cmake/robot_trajectoryConfig-version.cmake
+/home/max/Documents/GitHub/IR2117/tb3_ws/src/install/robot_trajectory/share/robot_trajectory/package.xml
