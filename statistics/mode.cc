@@ -13,8 +13,9 @@ int main(int argc, char** argv){
     int count[n], max= 0;
     for(int i=0; i<n; i++){
         count[i]=0;
-        if(elements[i] == elements[0])
-            count[0]++;}
+        for(int j = 0; j<n; j++){
+            if(elements[i] == elements[j])
+                count[i]++;}}
     std::cout << "Mode: " << m << std::endl;
 
     return 0;
