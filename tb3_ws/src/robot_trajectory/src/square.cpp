@@ -14,11 +14,20 @@ int main(int argc, char * argv[])
 
   while (rclcpp::ok()) {
     message.linear.x = 1.0;
-    message.angular.z = 1.0;
+    message.angular.z = 0.0;
     publisher->publish(message);
     rclcpp::spin_some(node);
     loop_rate.sleep();
   }
+  
+  int i=0,n=100;
+  while(rclcpp::ok() && (i<n)){
+    i++;
+    rclcpp::WallRate loop_rate(10ms);
+      
+      
+}
+  
   rclcpp::shutdown();
   return 0;
 }
