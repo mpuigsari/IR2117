@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/publisher.dir/src/publisher.cpp.o"
+  "CMakeFiles/publisher.dir/src/square.cpp.o"
   "publisher"
   "publisher.pdb"
 )

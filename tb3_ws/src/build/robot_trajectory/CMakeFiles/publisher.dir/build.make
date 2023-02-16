@@ -57,40 +57,39 @@ include CMakeFiles/publisher.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/publisher.dir/flags.make
 
-CMakeFiles/publisher.dir/src/publisher.cpp.o: CMakeFiles/publisher.dir/flags.make
-CMakeFiles/publisher.dir/src/publisher.cpp.o: /home/max/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/publisher.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/Documents/GitHub/IR2117/tb3_ws/src/build/robot_trajectory/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/publisher.dir/src/publisher.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/publisher.dir/src/publisher.cpp.o -c /home/max/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/publisher.cpp
+CMakeFiles/publisher.dir/src/square.cpp.o: CMakeFiles/publisher.dir/flags.make
+CMakeFiles/publisher.dir/src/square.cpp.o: /home/max/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/Documents/GitHub/IR2117/tb3_ws/src/build/robot_trajectory/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/publisher.dir/src/square.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/publisher.dir/src/square.cpp.o -c /home/max/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square.cpp
 
-CMakeFiles/publisher.dir/src/publisher.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/publisher.dir/src/publisher.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/max/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/publisher.cpp > CMakeFiles/publisher.dir/src/publisher.cpp.i
+CMakeFiles/publisher.dir/src/square.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/publisher.dir/src/square.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/max/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square.cpp > CMakeFiles/publisher.dir/src/square.cpp.i
 
-CMakeFiles/publisher.dir/src/publisher.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/publisher.dir/src/publisher.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/max/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/publisher.cpp -o CMakeFiles/publisher.dir/src/publisher.cpp.s
+CMakeFiles/publisher.dir/src/square.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/publisher.dir/src/square.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/max/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square.cpp -o CMakeFiles/publisher.dir/src/square.cpp.s
 
 # Object files for target publisher
 publisher_OBJECTS = \
-"CMakeFiles/publisher.dir/src/publisher.cpp.o"
+"CMakeFiles/publisher.dir/src/square.cpp.o"
 
 # External object files for target publisher
 publisher_EXTERNAL_OBJECTS =
 
-publisher: CMakeFiles/publisher.dir/src/publisher.cpp.o
+publisher: CMakeFiles/publisher.dir/src/square.cpp.o
 publisher: CMakeFiles/publisher.dir/build.make
 publisher: /opt/ros/foxy/lib/librclcpp.so
+publisher: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+publisher: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so
+publisher: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
+publisher: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 publisher: /opt/ros/foxy/lib/liblibstatistics_collector.so
 publisher: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_introspection_c.so
 publisher: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_generator_c.so
 publisher: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_c.so
 publisher: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_introspection_cpp.so
 publisher: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_cpp.so
-publisher: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
-publisher: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
-publisher: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so
-publisher: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
-publisher: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_cpp.so
 publisher: /opt/ros/foxy/lib/librcl.so
 publisher: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
 publisher: /opt/ros/foxy/lib/librcl_interfaces__rosidl_generator_c.so
@@ -113,6 +112,13 @@ publisher: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_generator_c.so
 publisher: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_c.so
 publisher: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so
 publisher: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_cpp.so
+publisher: /opt/ros/foxy/lib/libtracetools.so
+publisher: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
+publisher: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
+publisher: /opt/ros/foxy/lib/libstd_msgs__rosidl_generator_c.so
+publisher: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_c.so
+publisher: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
+publisher: /opt/ros/foxy/lib/libstd_msgs__rosidl_typesupport_cpp.so
 publisher: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
 publisher: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_generator_c.so
 publisher: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
@@ -125,7 +131,6 @@ publisher: /opt/ros/foxy/lib/librosidl_typesupport_c.so
 publisher: /opt/ros/foxy/lib/librcpputils.so
 publisher: /opt/ros/foxy/lib/librosidl_runtime_c.so
 publisher: /opt/ros/foxy/lib/librcutils.so
-publisher: /opt/ros/foxy/lib/libtracetools.so
 publisher: CMakeFiles/publisher.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/max/Documents/GitHub/IR2117/tb3_ws/src/build/robot_trajectory/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable publisher"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/publisher.dir/link.txt --verbose=$(VERBOSE)

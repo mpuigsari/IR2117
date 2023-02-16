@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/max/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/publisher.cpp" "/home/max/Documents/GitHub/IR2117/tb3_ws/src/build/robot_trajectory/CMakeFiles/publisher.dir/src/publisher.cpp.o"
+  "/home/max/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square.cpp" "/home/max/Documents/GitHub/IR2117/tb3_ws/src/build/robot_trajectory/CMakeFiles/publisher.dir/src/square.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

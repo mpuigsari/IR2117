@@ -206,32 +206,32 @@ uninstall/fast:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
-src/publisher.o: src/publisher.cpp.o
+src/square.o: src/square.cpp.o
 
-.PHONY : src/publisher.o
+.PHONY : src/square.o
 
 # target to build an object file
-src/publisher.cpp.o:
-	$(MAKE) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/src/publisher.cpp.o
-.PHONY : src/publisher.cpp.o
+src/square.cpp.o:
+	$(MAKE) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/src/square.cpp.o
+.PHONY : src/square.cpp.o
 
-src/publisher.i: src/publisher.cpp.i
+src/square.i: src/square.cpp.i
 
-.PHONY : src/publisher.i
+.PHONY : src/square.i
 
 # target to preprocess a source file
-src/publisher.cpp.i:
-	$(MAKE) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/src/publisher.cpp.i
-.PHONY : src/publisher.cpp.i
+src/square.cpp.i:
+	$(MAKE) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/src/square.cpp.i
+.PHONY : src/square.cpp.i
 
-src/publisher.s: src/publisher.cpp.s
+src/square.s: src/square.cpp.s
 
-.PHONY : src/publisher.s
+.PHONY : src/square.s
 
 # target to generate assembly for a file
-src/publisher.cpp.s:
-	$(MAKE) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/src/publisher.cpp.s
-.PHONY : src/publisher.cpp.s
+src/square.cpp.s:
+	$(MAKE) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/src/square.cpp.s
+.PHONY : src/square.cpp.s
 
 # Help Target
 help:
@@ -249,9 +249,9 @@ help:
 	@echo "... publisher"
 	@echo "... robot_trajectory_uninstall"
 	@echo "... uninstall"
-	@echo "... src/publisher.o"
-	@echo "... src/publisher.i"
-	@echo "... src/publisher.s"
+	@echo "... src/square.o"
+	@echo "... src/square.i"
+	@echo "... src/square.s"
 .PHONY : help
 
 
