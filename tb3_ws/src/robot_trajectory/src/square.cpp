@@ -27,6 +27,8 @@ int main(int argc, char * argv[])
       
       
 }
+    message.linear.x = 0.0;
+    publisher->publish(message);
   
   rclcpp::shutdown();
   return 0;
