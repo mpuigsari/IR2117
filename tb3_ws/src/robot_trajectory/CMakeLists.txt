@@ -22,10 +22,10 @@ find_package(geometry_msgs REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
-add_executable(publisher src/square.cpp)
-ament_target_dependencies(publisher rclcpp geometry_msgs)
+add_executable(square src/square.cpp)
+ament_target_dependencies(square rclcpp geometry_msgs)
 install(TARGETS
-    publisher
+    square
     DESTINATION lib/${PROJECT_NAME}
 )
 
