@@ -16,7 +16,7 @@ int main(int argc, char** argv){
     if(n%2!=0)
         m= elements[(n/2)];
     else
-        m=0;
+        m= double(elements[(n/2)-1] + elements[n/2])/2;
     std::cout << "Median: " << m << std::endl;
 
     return 0;
