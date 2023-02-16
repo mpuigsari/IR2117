@@ -1,16 +1,12 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include "utils.hpp"
 
 int main(int argc, char** argv){
-    double m = 0, s = 0;
-    int n, element;
-    std::vector<int> elements;
-    std::cin >> element;
-    while(not std::cin.eof()){
-        elements.push_back(element);
-        std::cin >>element;
-    }
+    std::vector<int> elements = ReadElements();
+    double m;
+    int n;
     std::sort(elements.begin(), elements.end());
     n = elements.size();
     if(n%2!=0)
