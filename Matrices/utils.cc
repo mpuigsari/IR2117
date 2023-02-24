@@ -1,11 +1,11 @@
 #include "utils.hpp"
 
-std::vector<int> ReadElements(){
+Eigen::VectorXi ReadElements(){
     int element;
-    std::vector<int> elements;
+    Eigen::VectorXi elements;
     std::cin >> element;
     while(not std::cin.eof()){
-        elements.push_back(element);
+        elements<<element;
         std::cin>>element;
     }
     return elements;

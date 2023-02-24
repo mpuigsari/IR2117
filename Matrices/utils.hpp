@@ -1,4 +1,4 @@
 #include <iostream>
-#include <vector>
+#include <eigen3/Eigen/Dense>
 
-std::vector<int> ReadElements();
+Eigen::VectorXi ReadElements();
