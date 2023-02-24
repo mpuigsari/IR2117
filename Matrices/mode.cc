@@ -1,8 +1,8 @@
 #include <iostream>
-#include <vector>
+#include <eigen3/Eigen/Dense>
 #include "utils.hpp"
 int main(int argc, char** argv){
-    std::vector<int> elements = ReadElements();
+    Eigen::VectorXi elements = ReadElements();
     double m = 0;
     int n = elements.size();
     int count[n], max= 0;
