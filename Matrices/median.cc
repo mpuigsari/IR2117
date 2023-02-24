@@ -1,13 +1,13 @@
 #include <iostream>
-#include <vector>
+#include <eigen3/Eigen/Dense>
 #include <algorithm>
 #include "utils.hpp"
 
 int main(int argc, char** argv){
-    std::vector<int> elements = ReadElements();
+    Eigen::VectorXi elements = ReadElements();
     double m;
     int n;
-    std::sort(elements.begin(), elements.end());
+    std::sort(elements.data(), elements.data()+elements.size());
     n = elements.size();
     if(n%2!=0)
         m= elements[(n/2)];
