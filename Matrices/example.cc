@@ -1,13 +1,14 @@
 #include <iostream>
 #include <eigen3/Eigen/Dense>
 
-using Eigen::MatrixXd;
+using Eigen::Matrix3d;
+using Eigen::Vector3d;
 
 int main(){
-    MatrixXd m(2,2);
-    m(0,0) = 3;
-    m(1,0) = 2.5;
-    m(0,1) = -1;
-    m(1,1) = m(1,0) + m(0,1);
-    std::cout << m << std::endl;
+    Matrix3d m = Matrix3d::Random();
+    m = (m + Matrix3d::Constant(1.2))*50;
+    std::cout << "m =" << std::endl << m << std::endl;
+    Vector3d v(1,2,3);
+
+    std::cout << "m * v =" << std::endl << m*v << std::endl;
 }
