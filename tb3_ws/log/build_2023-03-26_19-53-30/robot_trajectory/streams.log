@@ -1,0 +1,16 @@
+[0.009s] Invoking command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j20 -l20
+[0.037s] [35m[1mScanning dependencies of target odom[0m
+[0.053s] [ 50%] [32mBuilding CXX object CMakeFiles/odom.dir/src/square_odom.cpp.o[0m
+[0.613s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[0.613s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:19:22:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[0.613s]    19 |     odom->publish[34m[K([m[K(x)[01;31m[K;[m[K
+[0.613s]       |                  [34m[K~[m[K   [01;31m[K^[m[K
+[0.613s]       |                      [32m[K)[m[K
+[0.613s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/square_odom.cpp:20:22:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[0.614s]    20 |     odom->publish[34m[K([m[K(y)[01;31m[K;[m[K
+[0.614s]       |                  [34m[K~[m[K   [01;31m[K^[m[K
+[0.614s]       |                      [32m[K)[m[K
+[0.989s] make[2]: *** [CMakeFiles/odom.dir/build.make:63: CMakeFiles/odom.dir/src/square_odom.cpp.o] Error 1
+[0.989s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/odom.dir/all] Error 2
+[0.989s] make: *** [Makefile:141: all] Error 2
+[0.991s] Invoked command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j20 -l20
