@@ -1,0 +1,11 @@
+[0.008s] Invoking command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j20 -l20
+[0.036s] [35m[1mScanning dependencies of target wandering[0m
+[0.052s] [ 50%] [32mBuilding CXX object CMakeFiles/wandering.dir/src/wandering.cpp.o[0m
+[0.623s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:[m[K In function ‘[01m[Kvoid topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[0.623s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:12:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<sensor_msgs::msg::LaserScan_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kranges[m[K’
+[0.624s]    12 |     auto nums = msg.[01;31m[Kranges[m[K;
+[0.624s]       |                     [01;31m[K^~~~~~[m[K
+[1.341s] make[2]: *** [CMakeFiles/wandering.dir/build.make:63: CMakeFiles/wandering.dir/src/wandering.cpp.o] Error 1
+[1.341s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/wandering.dir/all] Error 2
+[1.341s] make: *** [Makefile:141: all] Error 2
+[1.344s] Invoked command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j20 -l20
