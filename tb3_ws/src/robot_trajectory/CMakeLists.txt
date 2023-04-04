@@ -20,6 +20,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
+link_directories(/usr/local/include)
 
 # uncomment the following section in order to fill in
 # further dependencies manually.

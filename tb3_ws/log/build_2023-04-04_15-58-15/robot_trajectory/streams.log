@@ -1,0 +1,32 @@
+[0.015s] Invoking command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j20 -l20
+[0.037s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.055s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.192s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.222s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.224s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.323s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.365s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.366s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.495s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.608s] CMake Error at CMakeLists.txt:23 (find_package):
+[0.608s]   By not providing "FindEigen.cmake" in CMAKE_MODULE_PATH this project has
+[0.608s]   asked CMake to find a package configuration file provided by "Eigen", but
+[0.608s]   CMake did not find one.
+[0.608s] 
+[0.608s]   Could not find a package configuration file provided by "Eigen" with any of
+[0.608s]   the following names:
+[0.608s] 
+[0.609s]     EigenConfig.cmake
+[0.609s]     eigen-config.cmake
+[0.609s] 
+[0.609s]   Add the installation prefix of "Eigen" to CMAKE_PREFIX_PATH or set
+[0.609s]   "Eigen_DIR" to a directory containing one of the above files.  If "Eigen"
+[0.609s]   provides a separate development package or SDK, be sure it has been
+[0.609s]   installed.
+[0.609s] 
+[0.609s] 
+[0.609s] -- Configuring incomplete, errors occurred!
+[0.609s] See also "/home/max/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory/CMakeFiles/CMakeOutput.log".
+[0.609s] See also "/home/max/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory/CMakeFiles/CMakeError.log".
+[0.614s] make: *** [Makefile:266: cmake_check_build_system] Error 1
+[0.616s] Invoked command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/build/robot_trajectory -- -j20 -l20

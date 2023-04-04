@@ -1,5 +1,4 @@
 #include <chrono>
-#include <iostream>
 #include "rclcpp/rclcpp.hpp"
 #include "geometry_msgs/msg/twist.hpp"
 #include "sensor_msgs/msg/laser_scan.hpp"
@@ -31,7 +30,7 @@ int main(int argc, char * argv[])
   while(rclcpp::ok()){
     if( not turn_left and not turn_right ){
         message.linear.x = 0.1;
-        message.linear.z = 0.0;
+        message.angular.z = 0.0;
         if(min_izq < 1 or min_der < 1){
             message.linear.x = 0.0;
             if(min_izq > min_der)
@@ -41,21 +40,21 @@ int main(int argc, char * argv[])
         }
     }
     if(turn_left){
-        message.linear.z = 0.157;
+        message.angular.z = 0.157;
         if(min_izq > 1){
             turn_left =false;
             message.linear.x = 0.1;
-            message.linear.z = 0.0;
+            message.angular.z = 0.0;
 
 
         }
     }
     if(turn_right){
-        message.linear.z = -0.157;
+        message.angular.z = -0.157;
         if(min_der > 1){
             turn_right =false;
             message.linear.x = 0.1;
-            message.linear.z = 0.0;
+            message.angular.z = 0.0;
       
         }
     }
