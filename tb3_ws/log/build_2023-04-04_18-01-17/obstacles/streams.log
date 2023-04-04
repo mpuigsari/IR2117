@@ -1,0 +1,57 @@
+[0.012s] Invoking command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles -- -j20 -l20
+[0.035s] [35m[1mScanning dependencies of target detector[0m
+[0.047s] [ 50%] [32mBuilding CXX object CMakeFiles/detector.dir/src/detector.cpp.o[0m
+[0.611s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/detector.cpp:7:19:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+[0.611s]     7 | auto obs_angle_min[01;31m[K:[m[K radians (default: -pi/8);
+[0.611s]       |                   [01;31m[K^[m[K
+[0.611s]       |                   [32m[K::[m[K
+[0.611s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/detector.cpp:7:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kobs_angle_min[m[K’ has not been declared
+[0.612s]     7 | auto [01;31m[Kobs_angle_min[m[K: radians (default: -pi/8);
+[0.612s]       |      [01;31m[K^~~~~~~~~~~~~[m[K
+[0.612s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/detector.cpp:7:30:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdefault[m[K’
+[0.612s]     7 | auto obs_angle_min: radians ([01;31m[Kdefault[m[K: -pi/8);
+[0.612s]       |                              [01;31m[K^~~~~~~[m[K
+[0.612s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/detector.cpp:8:19:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+[0.612s]     8 | auto obs_angle_max[01;31m[K:[m[K radians (default: pi/8);
+[0.612s]       |                   [01;31m[K^[m[K
+[0.612s]       |                   [32m[K::[m[K
+[0.612s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/detector.cpp:8:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kobs_angle_max[m[K’ has not been declared
+[0.612s]     8 | auto [01;31m[Kobs_angle_max[m[K: radians (default: pi/8);
+[0.612s]       |      [01;31m[K^~~~~~~~~~~~~[m[K
+[0.612s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/detector.cpp:8:30:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdefault[m[K’
+[0.612s]     8 | auto obs_angle_max: radians ([01;31m[Kdefault[m[K: pi/8);
+[0.612s]       |                              [01;31m[K^~~~~~~[m[K
+[0.612s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/detector.cpp:9:19:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+[0.612s]     9 | auto obs_threshold[01;31m[K:[m[K meters (default: 1);
+[0.612s]       |                   [01;31m[K^[m[K
+[0.612s]       |                   [32m[K::[m[K
+[0.612s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/detector.cpp:9:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kobs_threshold[m[K’ has not been declared
+[0.612s]     9 | auto [01;31m[Kobs_threshold[m[K: meters (default: 1);
+[0.612s]       |      [01;31m[K^~~~~~~~~~~~~[m[K
+[0.612s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/detector.cpp:9:29:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdefault[m[K’
+[0.612s]     9 | auto obs_threshold: meters ([01;31m[Kdefault[m[K: 1);
+[0.612s]       |                             [01;31m[K^~~~~~~[m[K
+[0.614s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/detector.cpp:[m[K In function ‘[01m[Kvoid topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[0.614s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/detector.cpp:18:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kobs_angle_min[m[K’ was not declared in this scope
+[0.614s]    18 |         if((angle >=[01;31m[Kobs_angle_min[m[K) and (angle <= obs_angle_max)){
+[0.614s]       |                     [01;31m[K^~~~~~~~~~~~~[m[K
+[0.615s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/detector.cpp:18:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kobs_angle_max[m[K’ was not declared in this scope
+[0.615s]    18 |         if((angle >=obs_angle_min) and (angle <= [01;31m[Kobs_angle_max[m[K)){
+[0.615s]       |                                                  [01;31m[K^~~~~~~~~~~~~[m[K
+[0.616s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/detector.cpp:19:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kobs_threshold[m[K’ was not declared in this scope
+[0.616s]    19 |             if(range<= [01;31m[Kobs_threshold[m[K){
+[0.616s]       |                        [01;31m[K^~~~~~~~~~~~~[m[K
+[0.629s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/detector.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[0.629s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/detector.cpp:37:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kobs_angle_min[m[K’ was not declared in this scope
+[0.629s]    37 |     [01;31m[Kobs_angle_min[m[K = node->get_parameter("obs_angle_min").get_parameter_value().get<double>();
+[0.629s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[0.630s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/detector.cpp:38:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kobs_angle_max[m[K’ was not declared in this scope
+[0.630s]    38 |     [01;31m[Kobs_angle_max[m[K = node->get_parameter("obs_angle_max").get_parameter_value().get<double>();
+[0.630s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[0.631s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/detector.cpp:39:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kobs_threshold[m[K’ was not declared in this scope
+[0.631s]    39 |     [01;31m[Kobs_threshold[m[K = node->get_parameter("obs_threshold").get_parameter_value().get<double>();
+[0.631s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[1.338s] make[2]: *** [CMakeFiles/detector.dir/build.make:63: CMakeFiles/detector.dir/src/detector.cpp.o] Error 1
+[1.338s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/detector.dir/all] Error 2
+[1.338s] make: *** [Makefile:141: all] Error 2
+[1.341s] Invoked command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles -- -j20 -l20
