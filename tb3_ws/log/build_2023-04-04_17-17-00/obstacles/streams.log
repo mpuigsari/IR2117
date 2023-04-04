@@ -1,0 +1,35 @@
+[0.011s] Invoking command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/max/Documents/GitHub/IR2117/tb3_ws/obstacles -DCMAKE_INSTALL_PREFIX=/home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles
+[0.072s] -- The C compiler identification is GNU 9.4.0
+[0.105s] -- The CXX compiler identification is GNU 9.4.0
+[0.107s] -- Check for working C compiler: /usr/bin/cc
+[0.153s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.155s] -- Detecting C compiler ABI info
+[0.207s] -- Detecting C compiler ABI info - done
+[0.221s] -- Detecting C compile features
+[0.221s] -- Detecting C compile features - done
+[0.224s] -- Check for working CXX compiler: /usr/bin/c++
+[0.303s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.303s] -- Detecting CXX compiler ABI info
+[0.367s] -- Detecting CXX compiler ABI info - done
+[0.380s] -- Detecting CXX compile features
+[0.380s] -- Detecting CXX compile features - done
+[0.382s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.400s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.400s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.487s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.501s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.504s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.545s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.560s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.600s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.687s] -- Found example_interfaces: 0.9.1 (/opt/ros/foxy/share/example_interfaces/cmake)
+[0.751s] CMake Error at /opt/ros/foxy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+[0.751s]   ament_target_dependencies() the passed package name 'rclcpp' was not found
+[0.751s]   before
+[0.751s] Call Stack (most recent call first):
+[0.751s]   CMakeLists.txt:26 (ament_target_dependencies)
+[0.751s] 
+[0.751s] 
+[0.752s] -- Configuring incomplete, errors occurred!
+[0.752s] See also "/home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles/CMakeFiles/CMakeOutput.log".
+[0.757s] Invoked command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/max/Documents/GitHub/IR2117/tb3_ws/obstacles -DCMAKE_INSTALL_PREFIX=/home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles
