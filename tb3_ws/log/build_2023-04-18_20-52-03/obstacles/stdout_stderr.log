@@ -1,0 +1,40 @@
+[35m[1mScanning dependencies of target avoidance[0m
+[ 50%] Built target detector
+[ 75%] [32mBuilding CXX object CMakeFiles/avoidance.dir/src/avoidance.cpp.o[0m
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kvoid callback_front(example_interfaces::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:8:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+    8 | void callback_front([01;35m[Kconst example_interfaces::msg::Bool::SharedPtr msg[m[K){}
+      |                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kvoid callback_left(example_interfaces::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:10:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   10 | void callback_left([01;35m[Kconst example_interfaces::msg::Bool::SharedPtr msg[m[K){}
+      |                    [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kvoid callback_right(example_interfaces::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:12:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   12 | void callback_right([01;35m[Kconst example_interfaces::msg::Bool::SharedPtr msg[m[K){}
+      |                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[100%] [32m[1mLinking CXX executable avoidance[0m
+[100%] Built target avoidance
+-- Install configuration: ""
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/lib/obstacles/detector
+-- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/lib/obstacles/avoidance
+-- Set runtime path of "/home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/lib/obstacles/avoidance" to ""
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/triple_detector_weebots.launch.py
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/triple_detector.launch.py
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/detector_test.launch.py
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/ament_index/resource_index/package_run_dependencies/obstacles
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/ament_index/resource_index/parent_prefix_path/obstacles
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/environment/ament_prefix_path.sh
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/environment/path.sh
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/environment/path.dsv
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/local_setup.bash
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/local_setup.sh
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/local_setup.zsh
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/local_setup.dsv
+-- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/package.dsv
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/ament_index/resource_index/packages/obstacles
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/cmake/obstaclesConfig.cmake
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/cmake/obstaclesConfig-version.cmake
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/package.xml

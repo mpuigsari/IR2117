@@ -1,0 +1,45 @@
+[0.012s] Invoking command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles -- -j20 -l20
+[0.035s] [35m[1mScanning dependencies of target avoidance[0m
+[0.045s] [ 50%] Built target detector
+[0.046s] [ 75%] [32mBuilding CXX object CMakeFiles/avoidance.dir/src/avoidance.cpp.o[0m
+[0.616s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[0.616s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:45:17:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+[0.616s]    45 |                 [01;35m[Kturn_left[m[K, turn_right,rd = false,false,false;
+[0.616s]       |                 [01;35m[K^~~~~~~~~[m[K
+[0.616s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:45:44:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+[0.616s]    45 |                 turn_left, turn_right,rd = [01;35m[Kfalse[m[K,false,false;
+[0.616s]       |                                            [01;35m[K^~~~~[m[K
+[0.616s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:45:56:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+[0.616s]    45 |                 turn_left, turn_right,rd = false,false,[01;35m[Kfalse[m[K;
+[0.616s]       |                                                        [01;35m[K^~~~~[m[K
+[0.616s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:45:61:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+[0.616s]    45 |                 turn_left, turn_right,rd = false,false,false[01;35m[K;[m[K
+[0.616s]       |                                                             [01;35m[K^[m[K
+[2.482s] [100%] [32m[1mLinking CXX executable avoidance[0m
+[2.607s] [100%] Built target avoidance
+[2.614s] Invoked command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles -- -j20 -l20
+[2.626s] Invoking command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles
+[2.631s] -- Install configuration: ""
+[2.632s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/lib/obstacles/detector
+[2.632s] -- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/lib/obstacles/avoidance
+[2.633s] -- Set runtime path of "/home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/lib/obstacles/avoidance" to ""
+[2.633s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch
+[2.633s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/triple_detector_weebots.launch.py
+[2.633s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/triple_detector.launch.py
+[2.634s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/launch/detector_test.launch.py
+[2.634s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/ament_index/resource_index/package_run_dependencies/obstacles
+[2.634s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/ament_index/resource_index/parent_prefix_path/obstacles
+[2.634s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/environment/ament_prefix_path.sh
+[2.634s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/environment/ament_prefix_path.dsv
+[2.634s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/environment/path.sh
+[2.634s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/environment/path.dsv
+[2.634s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/local_setup.bash
+[2.634s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/local_setup.sh
+[2.634s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/local_setup.zsh
+[2.634s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/local_setup.dsv
+[2.634s] -- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/package.dsv
+[2.634s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/ament_index/resource_index/packages/obstacles
+[2.634s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/cmake/obstaclesConfig.cmake
+[2.634s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/cmake/obstaclesConfig-version.cmake
+[2.634s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/obstacles/share/obstacles/package.xml
+[2.640s] Invoked command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles

@@ -10,6 +10,10 @@ CMakeFiles/avoidance.dir/src/avoidance.cpp.o: /opt/ros/foxy/include/builtin_inte
 CMakeFiles/avoidance.dir/src/avoidance.cpp.o: /opt/ros/foxy/include/builtin_interfaces/msg/detail/time__traits.hpp
 CMakeFiles/avoidance.dir/src/avoidance.cpp.o: /opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp
 CMakeFiles/avoidance.dir/src/avoidance.cpp.o: /opt/ros/foxy/include/builtin_interfaces/msg/time.hpp
+CMakeFiles/avoidance.dir/src/avoidance.cpp.o: /opt/ros/foxy/include/example_interfaces/msg/bool.hpp
+CMakeFiles/avoidance.dir/src/avoidance.cpp.o: /opt/ros/foxy/include/example_interfaces/msg/detail/bool__builder.hpp
+CMakeFiles/avoidance.dir/src/avoidance.cpp.o: /opt/ros/foxy/include/example_interfaces/msg/detail/bool__struct.hpp
+CMakeFiles/avoidance.dir/src/avoidance.cpp.o: /opt/ros/foxy/include/example_interfaces/msg/detail/bool__traits.hpp
 CMakeFiles/avoidance.dir/src/avoidance.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/twist__builder.hpp
 CMakeFiles/avoidance.dir/src/avoidance.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/twist__struct.hpp
 CMakeFiles/avoidance.dir/src/avoidance.cpp.o: /opt/ros/foxy/include/geometry_msgs/msg/detail/twist__traits.hpp

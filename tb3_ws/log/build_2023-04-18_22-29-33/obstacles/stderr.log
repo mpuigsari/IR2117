@@ -1,0 +1,13 @@
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:45:17:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+   45 |                 [01;35m[Kturn_left[m[K, turn_right,rd = false,false,false;
+      |                 [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:45:44:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+   45 |                 turn_left, turn_right,rd = [01;35m[Kfalse[m[K,false,false;
+      |                                            [01;35m[K^~~~~[m[K
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:45:56:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+   45 |                 turn_left, turn_right,rd = false,false,[01;35m[Kfalse[m[K;
+      |                                                        [01;35m[K^~~~~[m[K
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:45:61:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+   45 |                 turn_left, turn_right,rd = false,false,false[01;35m[K;[m[K
+      |                                                             [01;35m[K^[m[K
