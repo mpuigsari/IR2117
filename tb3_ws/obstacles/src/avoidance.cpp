@@ -7,7 +7,7 @@ int main(int argc, char *argv[]){
     rclcpp::init(argc,argv);
     auto node = rclcpp::Node::make_shared("avoidance");
     auto publisher = node->create_publisher<geometry_msgs::msg::Twist>("cmd_vel",10);
-    geometry_msgs:msg::Twist message;
+    geometry_msgs::msg::Twist message;
     rclcpp::WallRate loop_rate(50ms);
     
     while(rclcpp::ok()){

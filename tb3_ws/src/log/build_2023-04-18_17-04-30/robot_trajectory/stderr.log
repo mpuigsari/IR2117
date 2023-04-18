@@ -1,0 +1,20 @@
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:[m[K In function ‘[01m[Kvoid topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:12:86:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kfor[m[K’
+   12 |     min_izq = nums[171], min_der = nums[181]; """i=0/171 j=350/181 gazeebo/weebots"""
+      |                                                                                      [01;31m[K^[m[K
+      |                                                                                      [32m[K;[m[K
+   13 |     [32m[Kfor[m[K(int i=171,j=181;i<180;i++,j++){
+      |     [32m[K~~~[m[K                                                                               
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:12:47:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+   12 |     min_izq = nums[171], min_der = nums[181]; [01;35m[K"""i=0/171 j=350/181 gazeebo/weebots"""[m[K
+      |                                               [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:13:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+   13 |     for(int i=171,j=181;[01;31m[Ki[m[K<180;i++,j++){
+      |                         [01;31m[K^[m[K
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:13:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kj[m[K’ was not declared in this scope; did you mean ‘[01m[Kjn[m[K’?
+   13 |     for(int i=171,j=181;i<180;i++,[01;31m[Kj[m[K++){
+      |                                   [01;31m[K^[m[K
+      |                                   [32m[Kjn[m[K
+make[2]: *** [CMakeFiles/wandering.dir/build.make:63: CMakeFiles/wandering.dir/src/wandering.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/wandering.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

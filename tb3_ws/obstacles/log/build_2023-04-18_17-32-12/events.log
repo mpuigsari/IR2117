@@ -1,0 +1,121 @@
+[0.000000] (-) TimerEvent: {}
+[0.000107] (obstacles) JobQueued: {'identifier': 'obstacles', 'dependencies': OrderedDict()}
+[0.000125] (obstacles) JobStarted: {'identifier': 'obstacles'}
+[0.007112] (obstacles) JobProgress: {'identifier': 'obstacles', 'progress': 'cmake'}
+[0.007207] (obstacles) Command: {'cmd': ['/usr/bin/cmake', '/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles', '-DCMAKE_INSTALL_PREFIX=/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/install/obstacles'], 'cwd': '/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/build/obstacles', 'env': OrderedDict([('PROFILEHOME', ''), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('KDE_FULL_SESSION', 'true'), ('LANGUAGE', ''), ('USER', 'max'), ('LC_TIME', 'de_BE.UTF-8'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1458'), ('XDG_SESSION_TYPE', 'x11'), ('KONSOLE_VERSION', '191203'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/max'), ('OLDPWD', '/home/max/Documents/GitHub/IR2117/tb3_ws'), ('DESKTOP_SESSION', 'plasma'), ('ROS_PYTHON_VERSION', '3'), ('SHELL_SESSION_ID', 'e191626cb79446dd8b8fd510d64c1c6f'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('KDE_SESSION_VERSION', '5'), ('LC_MONETARY', 'de_BE.UTF-8'), ('KONSOLE_DBUS_SESSION', '/Sessions/1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('KONSOLE_DBUS_WINDOW', '/Windows/1'), ('MANDATORY_PATH', '/usr/share/gconf/plasma.mandatory.path'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'max'), ('WINDOWID', '65011719'), ('QT_AUTO_SCREEN_SCALE_FACTOR', '0'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/plasma.default.path'), ('COLORFGBG', '0;15'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/max-Raider-GE66-12UHS:@/tmp/.ICE-unix/1550,unix/max-Raider-GE66-12UHS:/tmp/.ICE-unix/1550'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('LC_ADDRESS', 'de_BE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XCURSOR_THEME', 'Nordic-cursors'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'KDE'), ('LC_TELEPHONE', 'de_BE.UTF-8'), ('XDG_SESSION_DESKTOP', 'KDE'), ('XAUTHORITY', '/home/max/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/tmp/ssh-SP5u4qwu2wmV/agent.1398'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_BE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('WEBOTS_HOME', '/home/max/webots-R2022b'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('KONSOLE_DBUS_SERVICE', ':1.54'), ('LC_MEASUREMENT', 'de_BE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_BE.UTF-8'), ('XDG_VTNR', '1'), ('PWD', '/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/build/obstacles'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-plasma:/etc/xdg:/usr/share/kubuntu-default-settings/kf5-settings'), ('XDG_DATA_DIRS', '/usr/share/plasma:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'de_BE.UTF-8'), ('LC_PAPER', 'de_BE.UTF-8'), ('KDE_SESSION_UID', '1000'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.090099] (obstacles) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.099308] (-) TimerEvent: {}
+[0.157573] (obstacles) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.161258] (obstacles) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.199377] (-) TimerEvent: {}
+[0.215400] (obstacles) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.217642] (obstacles) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.296730] (obstacles) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.299533] (-) TimerEvent: {}
+[0.303259] (obstacles) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.303479] (obstacles) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.305089] (obstacles) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.347872] (obstacles) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.348519] (obstacles) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.399713] (-) TimerEvent: {}
+[0.404180] (obstacles) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.410348] (obstacles) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.410619] (obstacles) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.412744] (obstacles) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.425938] (obstacles) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.426029] (obstacles) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.499870] (-) TimerEvent: {}
+[0.515917] (obstacles) StdoutLine: {'line': b'-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.539167] (obstacles) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.542556] (obstacles) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.582299] (obstacles) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.597538] (obstacles) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.600034] (-) TimerEvent: {}
+[0.638446] (obstacles) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.668479] (obstacles) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.669412] (obstacles) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.670978] (obstacles) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.700188] (-) TimerEvent: {}
+[0.719856] (obstacles) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.720015] (obstacles) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.800331] (-) TimerEvent: {}
+[0.801899] (obstacles) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[0.802501] (obstacles) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[0.883714] (obstacles) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[0.883955] (obstacles) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[0.900477] (-) TimerEvent: {}
+[0.953885] (obstacles) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[0.954792] (obstacles) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.000552] (-) TimerEvent: {}
+[1.043563] (obstacles) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[1.100616] (-) TimerEvent: {}
+[1.110506] (obstacles) StdoutLine: {'line': b'-- Found example_interfaces: 0.9.1 (/opt/ros/foxy/share/example_interfaces/cmake)\n'}
+[1.178276] (obstacles) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[1.200721] (-) TimerEvent: {}
+[1.214569] (obstacles) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.216167] (obstacles) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.216247] (obstacles) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.216282] (obstacles) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.217814] (obstacles) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.217884] (obstacles) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.218216] (obstacles) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.218872] (obstacles) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.219071] (obstacles) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[1.220917] (obstacles) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.221032] (obstacles) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.221295] (obstacles) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.222961] (obstacles) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.229741] (obstacles) StdoutLine: {'line': b'-- Generating done\n'}
+[1.230628] (obstacles) StdoutLine: {'line': b'-- Build files have been written to: /home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/build/obstacles\n'}
+[1.235726] (obstacles) CommandEnded: {'returncode': 0}
+[1.237422] (obstacles) JobProgress: {'identifier': 'obstacles', 'progress': 'build'}
+[1.237448] (obstacles) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/build/obstacles', '--', '-j20', '-l20'], 'cwd': '/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/build/obstacles', 'env': OrderedDict([('PROFILEHOME', ''), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('KDE_FULL_SESSION', 'true'), ('LANGUAGE', ''), ('USER', 'max'), ('LC_TIME', 'de_BE.UTF-8'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1458'), ('XDG_SESSION_TYPE', 'x11'), ('KONSOLE_VERSION', '191203'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/max'), ('OLDPWD', '/home/max/Documents/GitHub/IR2117/tb3_ws'), ('DESKTOP_SESSION', 'plasma'), ('ROS_PYTHON_VERSION', '3'), ('SHELL_SESSION_ID', 'e191626cb79446dd8b8fd510d64c1c6f'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('KDE_SESSION_VERSION', '5'), ('LC_MONETARY', 'de_BE.UTF-8'), ('KONSOLE_DBUS_SESSION', '/Sessions/1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('KONSOLE_DBUS_WINDOW', '/Windows/1'), ('MANDATORY_PATH', '/usr/share/gconf/plasma.mandatory.path'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'max'), ('WINDOWID', '65011719'), ('QT_AUTO_SCREEN_SCALE_FACTOR', '0'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/plasma.default.path'), ('COLORFGBG', '0;15'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/max-Raider-GE66-12UHS:@/tmp/.ICE-unix/1550,unix/max-Raider-GE66-12UHS:/tmp/.ICE-unix/1550'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('LC_ADDRESS', 'de_BE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('XCURSOR_THEME', 'Nordic-cursors'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'KDE'), ('LC_TELEPHONE', 'de_BE.UTF-8'), ('XDG_SESSION_DESKTOP', 'KDE'), ('XAUTHORITY', '/home/max/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/tmp/ssh-SP5u4qwu2wmV/agent.1398'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_BE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('WEBOTS_HOME', '/home/max/webots-R2022b'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('KONSOLE_DBUS_SERVICE', ':1.54'), ('LC_MEASUREMENT', 'de_BE.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'de_BE.UTF-8'), ('XDG_VTNR', '1'), ('PWD', '/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/build/obstacles'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-plasma:/etc/xdg:/usr/share/kubuntu-default-settings/kf5-settings'), ('XDG_DATA_DIRS', '/usr/share/plasma:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'de_BE.UTF-8'), ('LC_PAPER', 'de_BE.UTF-8'), ('KDE_SESSION_UID', '1000'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[1.257902] (obstacles) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target detector\x1b[0m\n'}
+[1.258018] (obstacles) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target avoidance\x1b[0m\n'}
+[1.274318] (obstacles) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/avoidance.dir/src/avoidance.cpp.o\x1b[0m\n'}
+[1.275084] (obstacles) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/detector.dir/src/detector.cpp.o\x1b[0m\n'}
+[1.300912] (-) TimerEvent: {}
+[1.401289] (-) TimerEvent: {}
+[1.501609] (-) TimerEvent: {}
+[1.601932] (-) TimerEvent: {}
+[1.702289] (-) TimerEvent: {}
+[1.802641] (-) TimerEvent: {}
+[1.840288] (obstacles) StderrLine: {'line': b'\x1b[01m\x1b[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.840444] (obstacles) StderrLine: {'line': b'\x1b[01m\x1b[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:10:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.840483] (obstacles) StderrLine: {'line': b'   10 |     geometry_msgs:\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::Twist message;\n'}
+[1.840513] (obstacles) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.843228] (obstacles) StderrLine: {'line': b'\x1b[01m\x1b[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:14:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmessage\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.843303] (obstacles) StderrLine: {'line': b'   14 |         publisher -> publish(\x1b[01;31m\x1b[Kmessage\x1b[m\x1b[K);\n'}
+[1.843336] (obstacles) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.843644] (obstacles) StderrLine: {'line': b'\x1b[01m\x1b[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:10:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Klabel \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs\x1b[m\x1b[K\xe2\x80\x99 defined but not used [\x1b[01;35m\x1b[K-Wunused-label\x1b[m\x1b[K]\n'}
+[1.843713] (obstacles) StderrLine: {'line': b'   10 |     \x1b[01;35m\x1b[Kgeometry_msgs\x1b[m\x1b[K:msg::Twist message;\n'}
+[1.843752] (obstacles) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.902835] (-) TimerEvent: {}
+[2.003195] (-) TimerEvent: {}
+[2.103545] (-) TimerEvent: {}
+[2.203896] (-) TimerEvent: {}
+[2.238350] (obstacles) StderrLine: {'line': b'make[2]: *** [CMakeFiles/avoidance.dir/build.make:63: CMakeFiles/avoidance.dir/src/avoidance.cpp.o] Error 1\n'}
+[2.238484] (obstacles) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/avoidance.dir/all] Error 2\n'}
+[2.238520] (obstacles) StderrLine: {'line': b'make[1]: *** Waiting for unfinished jobs....\n'}
+[2.304090] (-) TimerEvent: {}
+[2.404422] (-) TimerEvent: {}
+[2.504740] (-) TimerEvent: {}
+[2.605002] (-) TimerEvent: {}
+[2.705356] (-) TimerEvent: {}
+[2.805668] (-) TimerEvent: {}
+[2.905984] (-) TimerEvent: {}
+[3.006312] (-) TimerEvent: {}
+[3.106619] (-) TimerEvent: {}
+[3.206925] (-) TimerEvent: {}
+[3.307218] (-) TimerEvent: {}
+[3.407501] (-) TimerEvent: {}
+[3.507795] (-) TimerEvent: {}
+[3.608127] (-) TimerEvent: {}
+[3.708569] (-) TimerEvent: {}
+[3.734202] (obstacles) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable detector\x1b[0m\n'}
+[3.808755] (-) TimerEvent: {}
+[3.867029] (obstacles) StdoutLine: {'line': b'[ 75%] Built target detector\n'}
+[3.867658] (obstacles) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[3.869574] (obstacles) CommandEnded: {'returncode': 2}
+[3.889554] (obstacles) JobEnded: {'identifier': 'obstacles', 'rc': 2}
+[3.900414] (-) EventReactorShutdown: {}

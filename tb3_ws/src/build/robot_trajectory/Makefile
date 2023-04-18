@@ -56,6 +56,18 @@ CMAKE_BINARY_DIR = /home/max/Documents/GitHub/IR2117/tb3_ws/src/build/robot_traj
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -123,18 +135,6 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/max/Documents/GitHub/IR2117/tb3_ws/src/build/robot_trajectory/CMakeFiles /home/max/Documents/GitHub/IR2117/tb3_ws/src/build/robot_trajectory/CMakeFiles/progress.marks
@@ -168,17 +168,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named publisher
+# Target rules for targets named wandering
 
 # Build rule for target.
-publisher: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 publisher
-.PHONY : publisher
+wandering: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 wandering
+.PHONY : wandering
 
 # fast build rule for target.
-publisher/fast:
-	$(MAKE) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/build
-.PHONY : publisher/fast
+wandering/fast:
+	$(MAKE) -f CMakeFiles/wandering.dir/build.make CMakeFiles/wandering.dir/build
+.PHONY : wandering/fast
 
 #=============================================================================
 # Target rules for targets named robot_trajectory_uninstall
@@ -206,32 +206,32 @@ uninstall/fast:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
-src/square.o: src/square.cpp.o
+src/wandering.o: src/wandering.cpp.o
 
-.PHONY : src/square.o
+.PHONY : src/wandering.o
 
 # target to build an object file
-src/square.cpp.o:
-	$(MAKE) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/src/square.cpp.o
-.PHONY : src/square.cpp.o
+src/wandering.cpp.o:
+	$(MAKE) -f CMakeFiles/wandering.dir/build.make CMakeFiles/wandering.dir/src/wandering.cpp.o
+.PHONY : src/wandering.cpp.o
 
-src/square.i: src/square.cpp.i
+src/wandering.i: src/wandering.cpp.i
 
-.PHONY : src/square.i
+.PHONY : src/wandering.i
 
 # target to preprocess a source file
-src/square.cpp.i:
-	$(MAKE) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/src/square.cpp.i
-.PHONY : src/square.cpp.i
+src/wandering.cpp.i:
+	$(MAKE) -f CMakeFiles/wandering.dir/build.make CMakeFiles/wandering.dir/src/wandering.cpp.i
+.PHONY : src/wandering.cpp.i
 
-src/square.s: src/square.cpp.s
+src/wandering.s: src/wandering.cpp.s
 
-.PHONY : src/square.s
+.PHONY : src/wandering.s
 
 # target to generate assembly for a file
-src/square.cpp.s:
-	$(MAKE) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/src/square.cpp.s
-.PHONY : src/square.cpp.s
+src/wandering.cpp.s:
+	$(MAKE) -f CMakeFiles/wandering.dir/build.make CMakeFiles/wandering.dir/src/wandering.cpp.s
+.PHONY : src/wandering.cpp.s
 
 # Help Target
 help:
@@ -239,19 +239,19 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... install/strip"
-	@echo "... publisher"
+	@echo "... wandering"
 	@echo "... robot_trajectory_uninstall"
 	@echo "... uninstall"
-	@echo "... src/square.o"
-	@echo "... src/square.i"
-	@echo "... src/square.s"
+	@echo "... src/wandering.o"
+	@echo "... src/wandering.i"
+	@echo "... src/wandering.s"
 .PHONY : help
 
 

@@ -1,0 +1,28 @@
+[35m[1mScanning dependencies of target avoidance[0m
+[ 50%] Built target detector
+[ 75%] [32mBuilding CXX object CMakeFiles/avoidance.dir/src/avoidance.cpp.o[0m
+[100%] [32m[1mLinking CXX executable avoidance[0m
+[100%] Built target avoidance
+-- Install configuration: ""
+-- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/install/obstacles/lib/obstacles/detector
+-- Set runtime path of "/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/install/obstacles/lib/obstacles/detector" to ""
+-- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/install/obstacles/lib/obstacles/avoidance
+-- Set runtime path of "/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/install/obstacles/lib/obstacles/avoidance" to ""
+-- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/install/obstacles/share/obstacles/launch
+-- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/install/obstacles/share/obstacles/launch/triple_detector.py
+-- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/install/obstacles/share/obstacles/launch/detector_test.launch.py
+-- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/install/obstacles/share/ament_index/resource_index/package_run_dependencies/obstacles
+-- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/install/obstacles/share/ament_index/resource_index/parent_prefix_path/obstacles
+-- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/install/obstacles/share/obstacles/environment/ament_prefix_path.sh
+-- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/install/obstacles/share/obstacles/environment/ament_prefix_path.dsv
+-- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/install/obstacles/share/obstacles/environment/path.sh
+-- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/install/obstacles/share/obstacles/environment/path.dsv
+-- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/install/obstacles/share/obstacles/local_setup.bash
+-- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/install/obstacles/share/obstacles/local_setup.sh
+-- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/install/obstacles/share/obstacles/local_setup.zsh
+-- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/install/obstacles/share/obstacles/local_setup.dsv
+-- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/install/obstacles/share/obstacles/package.dsv
+-- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/install/obstacles/share/ament_index/resource_index/packages/obstacles
+-- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/install/obstacles/share/obstacles/cmake/obstaclesConfig.cmake
+-- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/install/obstacles/share/obstacles/cmake/obstaclesConfig-version.cmake
+-- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/install/obstacles/share/obstacles/package.xml

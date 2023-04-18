@@ -5,12 +5,12 @@
 
 using namespace std::chrono_literals;
 
-float min_izq, min_der;
+double min_izq, min_der;
 
 void topic_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg){
     auto nums = msg->ranges;
-    min_izq = nums[0], min_der = nums[350];
-    for(int i=0,j=350;i<10;i++,j++){
+    min_izq = nums[171], min_der = nums[181]; /*i=0/171 j=350/181 gazeebo/weebots*/
+    for(int i=171,j=181;i<180;i++,j++){
         if(nums[i]< min_izq)
             min_izq = nums[i];
         if(nums[j]< min_der)
@@ -31,7 +31,7 @@ int main(int argc, char * argv[])
     if( not turn_left and not turn_right ){
         message.linear.x = 0.1;
         message.angular.z = 0.0;
-        if(min_izq < 1 or min_der < 1){
+        if(min_izq < 0.4 or min_der < 0.4){
             message.linear.x = 0.0;
             if(min_izq > min_der)
                 turn_left=true;
@@ -41,7 +41,7 @@ int main(int argc, char * argv[])
     }
     if(turn_left){
         message.angular.z = 0.157;
-        if(min_izq > 1){
+        if(min_izq > 0.4){
             turn_left =false;
             message.linear.x = 0.1;
             message.angular.z = 0.0;
@@ -51,7 +51,7 @@ int main(int argc, char * argv[])
     }
     if(turn_right){
         message.angular.z = -0.157;
-        if(min_der > 1){
+        if(min_der > 0.4){
             turn_right =false;
             message.linear.x = 0.1;
             message.angular.z = 0.0;

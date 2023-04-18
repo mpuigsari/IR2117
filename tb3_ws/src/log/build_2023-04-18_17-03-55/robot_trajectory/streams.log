@@ -1,0 +1,18 @@
+[0.013s] Invoking command in '/home/max/Documents/GitHub/IR2117/tb3_ws/src/build/robot_trajectory': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/src/build/robot_trajectory -- -j20 -l20
+[0.043s] [35m[1mScanning dependencies of target wandering[0m
+[0.057s] [ 50%] [32mBuilding CXX object CMakeFiles/wandering.dir/src/wandering.cpp.o[0m
+[0.137s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:12:47:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K#[m[K’ in program
+[0.137s]    12 |     min_izq = nums[171], min_der = nums[181]; [01;31m[K#[m[Ki=0/171 j=350/181 gazeebo/weebots
+[0.137s]       |                                               [01;31m[K^[m[K
+[0.977s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:[m[K In function ‘[01m[Kvoid topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[0.978s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:12:48:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+[0.978s]    12 |     min_izq = nums[171], min_der = nums[181]; #[01;31m[Ki[m[K=0/171 j=350/181 gazeebo/weebots
+[0.978s]       |                                                [01;31m[K^[m[K
+[0.978s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/src/robot_trajectory/src/wandering.cpp:13:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kj[m[K’ was not declared in this scope; did you mean ‘[01m[Kjn[m[K’?
+[0.978s]    13 |     for(int i=171,j=181;i<180;i++,[01;31m[Kj[m[K++){
+[0.978s]       |                                   [01;31m[K^[m[K
+[0.978s]       |                                   [32m[Kjn[m[K
+[2.126s] make[2]: *** [CMakeFiles/wandering.dir/build.make:63: CMakeFiles/wandering.dir/src/wandering.cpp.o] Error 1
+[2.126s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/wandering.dir/all] Error 2
+[2.127s] make: *** [Makefile:141: all] Error 2
+[2.128s] Invoked command in '/home/max/Documents/GitHub/IR2117/tb3_ws/src/build/robot_trajectory' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/src/build/robot_trajectory -- -j20 -l20
