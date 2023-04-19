@@ -1,0 +1,20 @@
+[0.035s] Invoking command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles -- -j20 -l20
+[0.083s] [35m[1mScanning dependencies of target avoidance[0m
+[0.111s] [ 50%] Built target detector
+[0.112s] [ 75%] [32mBuilding CXX object CMakeFiles/avoidance.dir/src/avoidance.cpp.o[0m
+[1.389s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kvoid callback_front(example_interfaces::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.390s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kdata[m[K’
+[1.390s]    11 |      if(msg.[01;31m[Kdata[m[K)
+[1.390s]       |             [01;31m[K^~~~[m[K
+[1.390s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kvoid callback_left(example_interfaces::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.390s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kdata[m[K’
+[1.390s]    16 |     if(msg.[01;31m[Kdata[m[K)
+[1.390s]       |            [01;31m[K^~~~[m[K
+[1.390s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kvoid callback_right(example_interfaces::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.390s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kdata[m[K’
+[1.390s]    21 |     if(msg.[01;31m[Kdata[m[K)
+[1.390s]       |            [01;31m[K^~~~[m[K
+[2.941s] make[2]: *** [CMakeFiles/avoidance.dir/build.make:63: CMakeFiles/avoidance.dir/src/avoidance.cpp.o] Error 1
+[2.941s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/avoidance.dir/all] Error 2
+[2.942s] make: *** [Makefile:141: all] Error 2
+[2.944s] Invoked command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles -- -j20 -l20

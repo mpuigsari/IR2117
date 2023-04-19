@@ -1,0 +1,1433 @@
+[0.025s] Invoking command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles -- -j20 -l20
+[0.083s] [35m[1mScanning dependencies of target avoidance[0m
+[0.102s] [ 25%] [32mBuilding CXX object CMakeFiles/avoidance.dir/src/avoidance.cpp.o[0m
+[0.103s] [ 75%] Built target detector
+[1.361s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kvoid callback_front(example_interfaces::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.361s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:13:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator==[m[K’ (operand types are ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} and ‘[01m[Kint[m[K’)
+[1.361s]    11 |      if([32m[Kmsg[m[K [01;31m[K==[m[K [34m[K1[m[K)
+[1.361s]       |         [32m[K~~~[m[K [01;31m[K^~[m[K [34m[K~[m[K
+[1.361s]       |         [32m[K|[m[K      [34m[K|[m[K
+[1.361s]       |         [32m[K|[m[K      [34m[Kint[m[K
+[1.362s]       |         [32m[Kconst SharedPtr {aka const std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >}[m[K
+[1.362s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Koperator==(int, int)[m[K’ <built-in>
+[1.362s]    11 |      if([01;36m[Kmsg == 1[m[K)
+[1.362s]       |         [01;36m[K~~~~^~~~[m[K
+[1.362s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:13:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} to ‘[01m[Kint[m[K’
+[1.363s] In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:64[m[K,
+[1.363s]                  from [01m[K/usr/include/c++/9/memory:62[m[K,
+[1.363s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.363s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.363s] [01m[K/usr/include/c++/9/bits/stl_pair.h:448:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _T1, class _T2> constexpr bool std::operator==(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)[m[K’
+[1.363s]   448 |     [01;36m[Koperator[m[K==(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+[1.363s]       |     [01;36m[K^~~~~~~~[m[K
+[1.363s] [01m[K/usr/include/c++/9/bits/stl_pair.h:448:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.363s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::pair<_T1, _T2>[m[K’
+[1.363s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.363s]       |                [01;36m[K^[m[K
+[1.363s] In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+[1.363s]                  from [01m[K/usr/include/c++/9/memory:62[m[K,
+[1.364s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.364s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.364s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:325:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> bool std::operator==(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)[m[K’
+[1.364s]   325 |     [01;36m[Koperator[m[K==(const reverse_iterator<_Iterator>& __x,
+[1.364s]       |     [01;36m[K^~~~~~~~[m[K
+[1.364s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:325:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.364s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+[1.364s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.364s]       |                [01;36m[K^[m[K
+[1.364s] In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+[1.364s]                  from [01m[K/usr/include/c++/9/memory:62[m[K,
+[1.364s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.364s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.364s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:363:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> bool std::operator==(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)[m[K’
+[1.364s]   363 |     [01;36m[Koperator[m[K==(const reverse_iterator<_IteratorL>& __x,
+[1.364s]       |     [01;36m[K^~~~~~~~[m[K
+[1.364s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:363:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.364s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+[1.365s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.365s]       |                [01;36m[K^[m[K
+[1.365s] In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+[1.365s]                  from [01m[K/usr/include/c++/9/memory:62[m[K,
+[1.365s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.365s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.365s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:1136:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> bool std::operator==(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)[m[K’
+[1.365s]  1136 |     [01;36m[Koperator[m[K==(const move_iterator<_IteratorL>& __x,
+[1.365s]       |     [01;36m[K^~~~~~~~[m[K
+[1.365s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:1136:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.365s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+[1.365s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.365s]       |                [01;36m[K^[m[K
+[1.365s] In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+[1.365s]                  from [01m[K/usr/include/c++/9/memory:62[m[K,
+[1.365s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.365s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.365s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:1142:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> bool std::operator==(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)[m[K’
+[1.366s]  1142 |     [01;36m[Koperator[m[K==(const move_iterator<_Iterator>& __x,
+[1.366s]       |     [01;36m[K^~~~~~~~[m[K
+[1.366s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:1142:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.366s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+[1.366s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.366s]       |                [01;36m[K^[m[K
+[1.366s] In file included from [01m[K/usr/include/c++/9/memory:63[m[K,
+[1.366s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.366s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.366s] [01m[K/usr/include/c++/9/bits/allocator.h:167:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _T1, class _T2> bool std::operator==(const std::allocator<_Tp1>&, const std::allocator<_T2>&)[m[K’
+[1.366s]   167 |     [01;36m[Koperator[m[K==(const allocator<_T1>&, const allocator<_T2>&)
+[1.366s]       |     [01;36m[K^~~~~~~~[m[K
+[1.366s] [01m[K/usr/include/c++/9/bits/allocator.h:167:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.366s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::allocator<_Tp1>[m[K’
+[1.366s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.373s]       |                [01;36m[K^[m[K
+[1.374s] In file included from [01m[K/usr/include/c++/9/iosfwd:40[m[K,
+[1.375s]                  from [01m[K/usr/include/c++/9/memory:72[m[K,
+[1.375s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.375s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.375s] [01m[K/usr/include/c++/9/bits/postypes.h:222:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _StateT> bool std::operator==(const std::fpos<_StateT>&, const std::fpos<_StateT>&)[m[K’
+[1.376s]   222 |     [01;36m[Koperator[m[K==(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+[1.376s]       |     [01;36m[K^~~~~~~~[m[K
+[1.376s] [01m[K/usr/include/c++/9/bits/postypes.h:222:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.376s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::fpos<_StateT>[m[K’
+[1.376s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.377s]       |                [01;36m[K^[m[K
+[1.377s] In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+[1.377s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[1.377s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[1.377s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.377s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.378s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.378s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.378s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.378s] [01m[K/usr/include/c++/9/bits/basic_string.h:6144:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator==(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)[m[K’
+[1.378s]  6144 |     [01;36m[Koperator[m[K==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[1.378s]       |     [01;36m[K^~~~~~~~[m[K
+[1.378s] [01m[K/usr/include/c++/9/bits/basic_string.h:6144:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.379s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+[1.379s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.379s]       |                [01;36m[K^[m[K
+[1.379s] In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+[1.379s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[1.379s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[1.379s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.379s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.379s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.379s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.379s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.379s] [01m[K/usr/include/c++/9/bits/basic_string.h:6152:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT> typename __gnu_cxx::__enable_if<std::__is_char<_Tp>::__value, bool>::__type std::operator==(const std::__cxx11::basic_string<_CharT>&, const std::__cxx11::basic_string<_CharT>&)[m[K’
+[1.379s]  6152 |     [01;36m[Koperator[m[K==(const basic_string<_CharT>& __lhs,
+[1.379s]       |     [01;36m[K^~~~~~~~[m[K
+[1.379s] [01m[K/usr/include/c++/9/bits/basic_string.h:6152:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.380s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT>[m[K’
+[1.380s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.380s]       |                [01;36m[K^[m[K
+[1.380s] In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+[1.380s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[1.380s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[1.380s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.380s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.380s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.380s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.380s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.380s] [01m[K/usr/include/c++/9/bits/basic_string.h:6166:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator==(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)[m[K’
+[1.380s]  6166 |     [01;36m[Koperator[m[K==(const _CharT* __lhs,
+[1.380s]       |     [01;36m[K^~~~~~~~[m[K
+[1.380s] [01m[K/usr/include/c++/9/bits/basic_string.h:6166:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.380s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[Kstd::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’
+[1.380s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.380s]       |                [01;36m[K^[m[K
+[1.381s] In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+[1.381s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[1.381s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[1.381s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.381s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.381s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.381s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.381s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.381s] [01m[K/usr/include/c++/9/bits/basic_string.h:6178:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator==(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)[m[K’
+[1.381s]  6178 |     [01;36m[Koperator[m[K==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[1.381s]       |     [01;36m[K^~~~~~~~[m[K
+[1.381s] [01m[K/usr/include/c++/9/bits/basic_string.h:6178:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.381s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+[1.381s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.381s]       |                [01;36m[K^[m[K
+[1.381s] In file included from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.381s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.381s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.382s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.382s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.382s] [01m[K/usr/include/c++/9/array:252:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, long unsigned int _Nm> bool std::operator==(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)[m[K’
+[1.382s]   252 |     [01;36m[Koperator[m[K==(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+[1.382s]       |     [01;36m[K^~~~~~~~[m[K
+[1.382s] [01m[K/usr/include/c++/9/array:252:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.382s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::array<_Tp, _Nm>[m[K’
+[1.382s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.382s]       |                [01;36m[K^[m[K
+[1.382s] In file included from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.382s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.382s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.382s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.382s] [01m[K/usr/include/c++/9/tuple:1419:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ... _TElements, class ... _UElements> constexpr bool std::operator==(const std::tuple<_Tps ...>&, const std::tuple<_Elements ...>&)[m[K’
+[1.382s]  1419 |     [01;36m[Koperator[m[K==(const tuple<_TElements...>& __t,
+[1.383s]       |     [01;36m[K^~~~~~~~[m[K
+[1.383s] [01m[K/usr/include/c++/9/tuple:1419:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.384s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::tuple<_Tps ...>[m[K’
+[1.384s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.384s]       |                [01;36m[K^[m[K
+[1.384s] In file included from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.384s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.384s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.384s] [01m[K/usr/include/c++/9/bits/unique_ptr.h:715:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator==(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)[m[K’
+[1.384s]   715 |     [01;36m[Koperator[m[K==(const unique_ptr<_Tp, _Dp>& __x,
+[1.384s]       |     [01;36m[K^~~~~~~~[m[K
+[1.384s] [01m[K/usr/include/c++/9/bits/unique_ptr.h:715:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.385s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+[1.385s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.385s]       |                [01;36m[K^[m[K
+[1.385s] In file included from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.385s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.385s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.385s] [01m[K/usr/include/c++/9/bits/unique_ptr.h:721:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp> bool std::operator==(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)[m[K’
+[1.385s]   721 |     [01;36m[Koperator[m[K==(const unique_ptr<_Tp, _Dp>& __x, nullptr_t) noexcept
+[1.385s]       |     [01;36m[K^~~~~~~~[m[K
+[1.385s] [01m[K/usr/include/c++/9/bits/unique_ptr.h:721:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.385s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+[1.385s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.385s]       |                [01;36m[K^[m[K
+[1.385s] In file included from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.385s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.385s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.385s] [01m[K/usr/include/c++/9/bits/unique_ptr.h:726:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp> bool std::operator==(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)[m[K’
+[1.385s]   726 |     [01;36m[Koperator[m[K==(nullptr_t, const unique_ptr<_Tp, _Dp>& __x) noexcept
+[1.386s]       |     [01;36m[K^~~~~~~~[m[K
+[1.386s] [01m[K/usr/include/c++/9/bits/unique_ptr.h:726:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.386s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’ and ‘[01m[Kint[m[K’
+[1.386s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.386s]       |                [01;36m[K^[m[K
+[1.386s] In file included from [01m[K/usr/include/c++/9/bits/shared_ptr.h:52[m[K,
+[1.386s]                  from [01m[K/usr/include/c++/9/memory:81[m[K,
+[1.386s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.386s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.386s] [01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1412:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp1, class _Tp2, __gnu_cxx::_Lock_policy _Lp> bool std::operator==(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)[m[K’
+[1.386s]  1412 |     [01;36m[Koperator[m[K==(const __shared_ptr<_Tp1, _Lp>& __a,
+[1.386s]       |     [01;36m[K^~~~~~~~[m[K
+[1.386s] [01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1412:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.386s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::__shared_ptr<_Tp2, _Lp>[m[K’ and ‘[01m[Kint[m[K’
+[1.386s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.386s]       |                [01;36m[K^[m[K
+[1.386s] In file included from [01m[K/usr/include/c++/9/bits/shared_ptr.h:52[m[K,
+[1.386s]                  from [01m[K/usr/include/c++/9/memory:81[m[K,
+[1.387s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.387s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.387s] [01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1418:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator==(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)[m[K’
+[1.387s]  1418 |     [01;36m[Koperator[m[K==(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+[1.387s]       |     [01;36m[K^~~~~~~~[m[K
+[1.387s] [01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1418:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.387s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K1[m[K’ (type ‘[01m[Kint[m[K’) to type ‘[01m[Kstd::nullptr_t[m[K’
+[1.387s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.387s]       |                [01;36m[K^[m[K
+[1.387s] In file included from [01m[K/usr/include/c++/9/bits/shared_ptr.h:52[m[K,
+[1.387s]                  from [01m[K/usr/include/c++/9/memory:81[m[K,
+[1.387s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.387s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.387s] [01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1423:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator==(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)[m[K’
+[1.387s]  1423 |     [01;36m[Koperator[m[K==(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+[1.387s]       |     [01;36m[K^~~~~~~~[m[K
+[1.387s] [01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1423:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.388s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::__shared_ptr<_Tp, _Lp>[m[K’ and ‘[01m[Kint[m[K’
+[1.388s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.388s]       |                [01;36m[K^[m[K
+[1.388s] In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+[1.388s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.388s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.388s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:383:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> bool std::operator==(const std::shared_ptr<_Tp>&, const std::shared_ptr<_Tp>&)[m[K’
+[1.388s]   383 |     [01;36m[Koperator[m[K==(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept
+[1.388s]       |     [01;36m[K^~~~~~~~[m[K
+[1.388s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:383:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.388s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[1.388s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.388s]       |                [01;36m[K^[m[K
+[1.388s] In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+[1.388s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.388s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.388s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:388:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool std::operator==(const std::shared_ptr<_Tp>&, std::nullptr_t)[m[K’
+[1.389s]   388 |     [01;36m[Koperator[m[K==(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+[1.389s]       |     [01;36m[K^~~~~~~~[m[K
+[1.389s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:388:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.389s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K1[m[K’ (type ‘[01m[Kint[m[K’) to type ‘[01m[Kstd::nullptr_t[m[K’
+[1.389s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.389s]       |                [01;36m[K^[m[K
+[1.389s] In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+[1.389s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.389s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.389s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:393:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool std::operator==(std::nullptr_t, const std::shared_ptr<_Tp>&)[m[K’
+[1.389s]   393 |     [01;36m[Koperator[m[K==(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+[1.389s]       |     [01;36m[K^~~~~~~~[m[K
+[1.389s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:393:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.389s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[1.389s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.389s]       |                [01;36m[K^[m[K
+[1.389s] In file included from [01m[K/usr/include/c++/9/mutex:42[m[K,
+[1.389s]                  from [01m[K/usr/include/c++/9/future:38[m[K,
+[1.390s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:18[m[K,
+[1.390s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.390s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.390s] [01m[K/usr/include/c++/9/system_error:292:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator==(const std::error_code&, const std::error_code&)[m[K’
+[1.390s]   292 |   [01;36m[Koperator[m[K==(const error_code& __lhs, const error_code& __rhs) noexcept
+[1.390s]       |   [01;36m[K^~~~~~~~[m[K
+[1.390s] [01m[K/usr/include/c++/9/system_error:292:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} to ‘[01m[Kconst std::error_code&[m[K’
+[1.390s]   292 |   operator==([01;36m[Kconst error_code& __lhs[m[K, const error_code& __rhs) noexcept
+[1.390s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[1.390s] [01m[K/usr/include/c++/9/system_error:297:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator==(const std::error_code&, const std::error_condition&)[m[K’
+[1.390s]   297 |   [01;36m[Koperator[m[K==(const error_code& __lhs, const error_condition& __rhs) noexcept
+[1.390s]       |   [01;36m[K^~~~~~~~[m[K
+[1.390s] [01m[K/usr/include/c++/9/system_error:297:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} to ‘[01m[Kconst std::error_code&[m[K’
+[1.390s]   297 |   operator==([01;36m[Kconst error_code& __lhs[m[K, const error_condition& __rhs) noexcept
+[1.391s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[1.391s] [01m[K/usr/include/c++/9/system_error:304:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator==(const std::error_condition&, const std::error_code&)[m[K’
+[1.391s]   304 |   [01;36m[Koperator[m[K==(const error_condition& __lhs, const error_code& __rhs) noexcept
+[1.391s]       |   [01;36m[K^~~~~~~~[m[K
+[1.391s] [01m[K/usr/include/c++/9/system_error:304:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} to ‘[01m[Kconst std::error_condition&[m[K’
+[1.391s]   304 |   operator==([01;36m[Kconst error_condition& __lhs[m[K, const error_code& __rhs) noexcept
+[1.391s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[1.391s] [01m[K/usr/include/c++/9/system_error:311:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator==(const std::error_condition&, const std::error_condition&)[m[K’
+[1.391s]   311 |   [01;36m[Koperator[m[K==(const error_condition& __lhs,
+[1.391s]       |   [01;36m[K^~~~~~~~[m[K
+[1.391s] [01m[K/usr/include/c++/9/system_error:311:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} to ‘[01m[Kconst std::error_condition&[m[K’
+[1.391s]   311 |   operator==([01;36m[Kconst error_condition& __lhs[m[K,
+[1.392s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[1.392s] In file included from [01m[K/usr/include/c++/9/future:39[m[K,
+[1.392s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:18[m[K,
+[1.392s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.392s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.392s] [01m[K/usr/include/c++/9/thread:276:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator==(std::thread::id, std::thread::id)[m[K’
+[1.392s]   276 |   [01;36m[Koperator[m[K==(thread::id __x, thread::id __y) noexcept
+[1.392s]       |   [01;36m[K^~~~~~~~[m[K
+[1.392s] [01m[K/usr/include/c++/9/thread:276:25:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} to ‘[01m[Kstd::thread::id[m[K’
+[1.392s]   276 |   operator==([01;36m[Kthread::id __x[m[K, thread::id __y) noexcept
+[1.392s]       |              [01;36m[K~~~~~~~~~~~^~~[m[K
+[1.392s] In file included from [01m[K/usr/include/c++/9/future:48[m[K,
+[1.392s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:18[m[K,
+[1.392s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.392s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.392s] [01m[K/usr/include/c++/9/bits/std_function.h:746:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Res, class ... _Args> bool std::operator==(const std::function<_Res(_ArgTypes ...)>&, std::nullptr_t)[m[K’
+[1.392s]   746 |     [01;36m[Koperator[m[K==(const function<_Res(_Args...)>& __f, nullptr_t) noexcept
+[1.393s]       |     [01;36m[K^~~~~~~~[m[K
+[1.393s] [01m[K/usr/include/c++/9/bits/std_function.h:746:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.393s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::function<_Res(_ArgTypes ...)>[m[K’
+[1.393s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.393s]       |                [01;36m[K^[m[K
+[1.393s] In file included from [01m[K/usr/include/c++/9/future:48[m[K,
+[1.393s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:18[m[K,
+[1.393s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.393s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.393s] [01m[K/usr/include/c++/9/bits/std_function.h:752:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Res, class ... _Args> bool std::operator==(std::nullptr_t, const std::function<_Res(_ArgTypes ...)>&)[m[K’
+[1.393s]   752 |     [01;36m[Koperator[m[K==(nullptr_t, const function<_Res(_Args...)>& __f) noexcept
+[1.393s]       |     [01;36m[K^~~~~~~~[m[K
+[1.393s] [01m[K/usr/include/c++/9/bits/std_function.h:752:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.393s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::function<_Res(_ArgTypes ...)>[m[K’ and ‘[01m[Kint[m[K’
+[1.393s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.393s]       |                [01;36m[K^[m[K
+[1.393s] In file included from [01m[K/usr/include/c++/9/set:61[m[K,
+[1.393s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:21[m[K,
+[1.394s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.394s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.394s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.394s] [01m[K/usr/include/c++/9/bits/stl_set.h:979:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::operator==(const std::set<_Key, _Compare, _Alloc>&, const std::set<_Key, _Compare, _Alloc>&)[m[K’
+[1.394s]   979 |     [01;36m[Koperator[m[K==(const set<_Key, _Compare, _Alloc>& __x,
+[1.394s]       |     [01;36m[K^~~~~~~~[m[K
+[1.394s] [01m[K/usr/include/c++/9/bits/stl_set.h:979:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.394s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::set<_Key, _Compare, _Alloc>[m[K’
+[1.394s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.394s]       |                [01;36m[K^[m[K
+[1.394s] In file included from [01m[K/usr/include/c++/9/set:62[m[K,
+[1.394s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:21[m[K,
+[1.394s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.394s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.394s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.394s] [01m[K/usr/include/c++/9/bits/stl_multiset.h:964:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::operator==(const std::multiset<_Key, _Compare, _Alloc>&, const std::multiset<_Key, _Compare, _Alloc>&)[m[K’
+[1.394s]   964 |     [01;36m[Koperator[m[K==(const multiset<_Key, _Compare, _Alloc>& __x,
+[1.395s]       |     [01;36m[K^~~~~~~~[m[K
+[1.395s] [01m[K/usr/include/c++/9/bits/stl_multiset.h:964:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.395s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::multiset<_Key, _Compare, _Alloc>[m[K’
+[1.395s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.395s]       |                [01;36m[K^[m[K
+[1.395s] In file included from [01m[K/usr/include/c++/9/unordered_map:47[m[K,
+[1.395s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:23[m[K,
+[1.395s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.395s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.395s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.395s] [01m[K/usr/include/c++/9/bits/unordered_map.h:2093:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Hash, class _Pred, class _Alloc> bool std::operator==(const std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>&, const std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>&)[m[K’
+[1.395s]  2093 |     [01;36m[Koperator[m[K==(const unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,
+[1.395s]       |     [01;36m[K^~~~~~~~[m[K
+[1.395s] [01m[K/usr/include/c++/9/bits/unordered_map.h:2093:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.395s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>[m[K’
+[1.395s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.395s]       |                [01;36m[K^[m[K
+[1.396s] In file included from [01m[K/usr/include/c++/9/unordered_map:47[m[K,
+[1.396s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:23[m[K,
+[1.396s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.396s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.396s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.396s] [01m[K/usr/include/c++/9/bits/unordered_map.h:2105:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Hash, class _Pred, class _Alloc> bool std::operator==(const std::unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>&, const std::unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>&)[m[K’
+[1.396s]  2105 |     [01;36m[Koperator[m[K==(const unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,
+[1.396s]       |     [01;36m[K^~~~~~~~[m[K
+[1.396s] [01m[K/usr/include/c++/9/bits/unordered_map.h:2105:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.396s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>[m[K’
+[1.396s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.396s]       |                [01;36m[K^[m[K
+[1.396s] In file included from [01m[K/usr/include/c++/9/bits/locale_facets.h:48[m[K,
+[1.396s]                  from [01m[K/usr/include/c++/9/bits/basic_ios.h:37[m[K,
+[1.396s]                  from [01m[K/usr/include/c++/9/ios:44[m[K,
+[1.396s]                  from [01m[K/usr/include/c++/9/ostream:38[m[K,
+[1.396s]                  from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[1.396s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[1.397s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.397s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.397s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.397s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.397s] [01m[K/usr/include/c++/9/bits/streambuf_iterator.h:208:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> bool std::operator==(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)[m[K’
+[1.397s]   208 |     [01;36m[Koperator[m[K==(const istreambuf_iterator<_CharT, _Traits>& __a,
+[1.397s]       |     [01;36m[K^~~~~~~~[m[K
+[1.397s] [01m[K/usr/include/c++/9/bits/streambuf_iterator.h:208:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.397s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::istreambuf_iterator<_CharT, _Traits>[m[K’
+[1.397s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.397s]       |                [01;36m[K^[m[K
+[1.397s] In file included from [01m[K/usr/include/c++/9/list:63[m[K,
+[1.397s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:23[m[K,
+[1.397s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.397s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.397s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.397s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.397s] [01m[K/usr/include/c++/9/bits/stl_list.h:1991:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::operator==(const std::__cxx11::list<_Tp, _Alloc>&, const std::__cxx11::list<_Tp, _Alloc>&)[m[K’
+[1.398s]  1991 |     [01;36m[Koperator[m[K==(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+[1.398s]       |     [01;36m[K^~~~~~~~[m[K
+[1.398s] [01m[K/usr/include/c++/9/bits/stl_list.h:1991:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.398s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::list<_Tp, _Alloc>[m[K’
+[1.398s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.398s]       |                [01;36m[K^[m[K
+[1.398s] In file included from [01m[K/usr/include/c++/9/vector:67[m[K,
+[1.398s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:27[m[K,
+[1.398s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.398s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.398s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.398s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.398s] [01m[K/usr/include/c++/9/bits/stl_vector.h:1888:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::operator==(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)[m[K’
+[1.398s]  1888 |     [01;36m[Koperator[m[K==(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+[1.398s]       |     [01;36m[K^~~~~~~~[m[K
+[1.398s] [01m[K/usr/include/c++/9/bits/stl_vector.h:1888:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.398s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::vector<_Tp, _Alloc>[m[K’
+[1.398s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.399s]       |                [01;36m[K^[m[K
+[1.399s] In file included from [01m[K/usr/include/c++/9/map:61[m[K,
+[1.399s]                  from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:20[m[K,
+[1.399s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[1.399s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.399s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.399s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.399s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.399s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.399s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.399s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.399s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.399s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.399s] [01m[K/usr/include/c++/9/bits/stl_map.h:1455:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator==(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)[m[K’
+[1.399s]  1455 |     [01;36m[Koperator[m[K==(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+[1.399s]       |     [01;36m[K^~~~~~~~[m[K
+[1.399s] [01m[K/usr/include/c++/9/bits/stl_map.h:1455:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.399s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::map<_Key, _Tp, _Compare, _Alloc>[m[K’
+[1.400s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.400s]       |                [01;36m[K^[m[K
+[1.400s] In file included from [01m[K/usr/include/c++/9/map:62[m[K,
+[1.400s]                  from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:20[m[K,
+[1.400s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[1.400s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.400s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.400s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.400s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.400s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.400s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.400s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.400s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.400s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.400s] [01m[K/usr/include/c++/9/bits/stl_multimap.h:1119:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator==(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)[m[K’
+[1.400s]  1119 |     [01;36m[Koperator[m[K==(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+[1.400s]       |     [01;36m[K^~~~~~~~[m[K
+[1.400s] [01m[K/usr/include/c++/9/bits/stl_multimap.h:1119:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.401s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::multimap<_Key, _Tp, _Compare, _Alloc>[m[K’
+[1.401s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.401s]       |                [01;36m[K^[m[K
+[1.401s] In file included from [01m[K/usr/include/c++/9/iterator:66[m[K,
+[1.401s]                  from [01m[K/opt/ros/foxy/include/rcpputils/join.hpp:23[m[K,
+[1.401s]                  from [01m[K/opt/ros/foxy/include/rclcpp/exceptions/exceptions.hpp:26[m[K,
+[1.401s]                  from [01m[K/opt/ros/foxy/include/rclcpp/exceptions.hpp:18[m[K,
+[1.401s]                  from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:31[m[K,
+[1.401s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[1.401s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.401s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.401s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.401s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.401s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.401s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.401s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.401s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.401s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.402s] [01m[K/usr/include/c++/9/bits/stream_iterator.h:134:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _CharT, class _Traits, class _Dist> bool std::operator==(const std::istream_iterator<_Tp, _CharT, _Traits, _Dist>&, const std::istream_iterator<_Tp, _CharT, _Traits, _Dist>&)[m[K’
+[1.402s]   134 |     [01;36m[Koperator[m[K==(const istream_iterator<_Tp, _CharT, _Traits, _Dist>& __x,
+[1.402s]       |     [01;36m[K^~~~~~~~[m[K
+[1.402s] [01m[K/usr/include/c++/9/bits/stream_iterator.h:134:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.402s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::istream_iterator<_Tp, _CharT, _Traits, _Dist>[m[K’
+[1.402s]    11 |      if(msg == [01;36m[K1[m[K)
+[1.402s]       |                [01;36m[K^[m[K
+[1.402s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kvoid callback_left(example_interfaces::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.402s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:12:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator==[m[K’ (operand types are ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} and ‘[01m[Kint[m[K’)
+[1.402s]    16 |     if([32m[Kmsg[m[K [01;31m[K==[m[K [34m[K1[m[K)
+[1.402s]       |        [32m[K~~~[m[K [01;31m[K^~[m[K [34m[K~[m[K
+[1.402s]       |        [32m[K|[m[K      [34m[K|[m[K
+[1.402s]       |        [32m[K|[m[K      [34m[Kint[m[K
+[1.402s]       |        [32m[Kconst SharedPtr {aka const std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >}[m[K
+[1.402s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Koperator==(int, int)[m[K’ <built-in>
+[1.402s]    16 |     if([01;36m[Kmsg == 1[m[K)
+[1.402s]       |        [01;36m[K~~~~^~~~[m[K
+[1.403s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:12:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} to ‘[01m[Kint[m[K’
+[1.403s] In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:64[m[K,
+[1.403s]                  from [01m[K/usr/include/c++/9/memory:62[m[K,
+[1.403s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.403s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.403s] [01m[K/usr/include/c++/9/bits/stl_pair.h:448:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _T1, class _T2> constexpr bool std::operator==(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)[m[K’
+[1.403s]   448 |     [01;36m[Koperator[m[K==(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+[1.403s]       |     [01;36m[K^~~~~~~~[m[K
+[1.403s] [01m[K/usr/include/c++/9/bits/stl_pair.h:448:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.403s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::pair<_T1, _T2>[m[K’
+[1.403s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.403s]       |               [01;36m[K^[m[K
+[1.403s] In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+[1.403s]                  from [01m[K/usr/include/c++/9/memory:62[m[K,
+[1.403s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.403s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.403s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:325:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> bool std::operator==(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)[m[K’
+[1.403s]   325 |     [01;36m[Koperator[m[K==(const reverse_iterator<_Iterator>& __x,
+[1.404s]       |     [01;36m[K^~~~~~~~[m[K
+[1.404s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:325:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.404s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+[1.404s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.404s]       |               [01;36m[K^[m[K
+[1.404s] In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+[1.404s]                  from [01m[K/usr/include/c++/9/memory:62[m[K,
+[1.404s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.404s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.404s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:363:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> bool std::operator==(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)[m[K’
+[1.404s]   363 |     [01;36m[Koperator[m[K==(const reverse_iterator<_IteratorL>& __x,
+[1.404s]       |     [01;36m[K^~~~~~~~[m[K
+[1.404s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:363:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.404s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+[1.404s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.404s]       |               [01;36m[K^[m[K
+[1.404s] In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+[1.404s]                  from [01m[K/usr/include/c++/9/memory:62[m[K,
+[1.405s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.405s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.405s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:1136:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> bool std::operator==(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)[m[K’
+[1.405s]  1136 |     [01;36m[Koperator[m[K==(const move_iterator<_IteratorL>& __x,
+[1.405s]       |     [01;36m[K^~~~~~~~[m[K
+[1.405s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:1136:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.405s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+[1.405s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.405s]       |               [01;36m[K^[m[K
+[1.405s] In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+[1.405s]                  from [01m[K/usr/include/c++/9/memory:62[m[K,
+[1.405s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.405s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.405s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:1142:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> bool std::operator==(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)[m[K’
+[1.405s]  1142 |     [01;36m[Koperator[m[K==(const move_iterator<_Iterator>& __x,
+[1.405s]       |     [01;36m[K^~~~~~~~[m[K
+[1.405s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:1142:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.405s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+[1.406s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.406s]       |               [01;36m[K^[m[K
+[1.406s] In file included from [01m[K/usr/include/c++/9/memory:63[m[K,
+[1.406s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.406s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.406s] [01m[K/usr/include/c++/9/bits/allocator.h:167:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _T1, class _T2> bool std::operator==(const std::allocator<_Tp1>&, const std::allocator<_T2>&)[m[K’
+[1.406s]   167 |     [01;36m[Koperator[m[K==(const allocator<_T1>&, const allocator<_T2>&)
+[1.406s]       |     [01;36m[K^~~~~~~~[m[K
+[1.406s] [01m[K/usr/include/c++/9/bits/allocator.h:167:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.406s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::allocator<_Tp1>[m[K’
+[1.406s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.406s]       |               [01;36m[K^[m[K
+[1.406s] In file included from [01m[K/usr/include/c++/9/iosfwd:40[m[K,
+[1.406s]                  from [01m[K/usr/include/c++/9/memory:72[m[K,
+[1.406s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.407s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.407s] [01m[K/usr/include/c++/9/bits/postypes.h:222:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _StateT> bool std::operator==(const std::fpos<_StateT>&, const std::fpos<_StateT>&)[m[K’
+[1.407s]   222 |     [01;36m[Koperator[m[K==(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+[1.407s]       |     [01;36m[K^~~~~~~~[m[K
+[1.407s] [01m[K/usr/include/c++/9/bits/postypes.h:222:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.407s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::fpos<_StateT>[m[K’
+[1.407s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.407s]       |               [01;36m[K^[m[K
+[1.407s] In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+[1.407s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[1.407s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[1.407s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.407s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.408s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.408s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.408s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.408s] [01m[K/usr/include/c++/9/bits/basic_string.h:6144:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator==(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)[m[K’
+[1.408s]  6144 |     [01;36m[Koperator[m[K==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[1.408s]       |     [01;36m[K^~~~~~~~[m[K
+[1.408s] [01m[K/usr/include/c++/9/bits/basic_string.h:6144:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.408s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+[1.408s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.408s]       |               [01;36m[K^[m[K
+[1.408s] In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+[1.408s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[1.408s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[1.408s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.408s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.408s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.408s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.408s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.409s] [01m[K/usr/include/c++/9/bits/basic_string.h:6152:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT> typename __gnu_cxx::__enable_if<std::__is_char<_Tp>::__value, bool>::__type std::operator==(const std::__cxx11::basic_string<_CharT>&, const std::__cxx11::basic_string<_CharT>&)[m[K’
+[1.409s]  6152 |     [01;36m[Koperator[m[K==(const basic_string<_CharT>& __lhs,
+[1.409s]       |     [01;36m[K^~~~~~~~[m[K
+[1.409s] [01m[K/usr/include/c++/9/bits/basic_string.h:6152:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.409s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT>[m[K’
+[1.409s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.409s]       |               [01;36m[K^[m[K
+[1.409s] In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+[1.409s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[1.409s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[1.409s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.409s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.409s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.409s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.409s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.409s] [01m[K/usr/include/c++/9/bits/basic_string.h:6166:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator==(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)[m[K’
+[1.409s]  6166 |     [01;36m[Koperator[m[K==(const _CharT* __lhs,
+[1.409s]       |     [01;36m[K^~~~~~~~[m[K
+[1.410s] [01m[K/usr/include/c++/9/bits/basic_string.h:6166:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.410s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[Kstd::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’
+[1.410s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.410s]       |               [01;36m[K^[m[K
+[1.410s] In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+[1.410s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[1.410s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[1.410s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.410s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.410s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.410s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.410s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.410s] [01m[K/usr/include/c++/9/bits/basic_string.h:6178:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator==(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)[m[K’
+[1.410s]  6178 |     [01;36m[Koperator[m[K==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[1.410s]       |     [01;36m[K^~~~~~~~[m[K
+[1.410s] [01m[K/usr/include/c++/9/bits/basic_string.h:6178:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.411s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+[1.411s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.411s]       |               [01;36m[K^[m[K
+[1.411s] In file included from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.411s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.411s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.411s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.411s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.411s] [01m[K/usr/include/c++/9/array:252:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, long unsigned int _Nm> bool std::operator==(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)[m[K’
+[1.411s]   252 |     [01;36m[Koperator[m[K==(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+[1.411s]       |     [01;36m[K^~~~~~~~[m[K
+[1.411s] [01m[K/usr/include/c++/9/array:252:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.411s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::array<_Tp, _Nm>[m[K’
+[1.411s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.411s]       |               [01;36m[K^[m[K
+[1.412s] In file included from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.412s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.412s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.412s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.412s] [01m[K/usr/include/c++/9/tuple:1419:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ... _TElements, class ... _UElements> constexpr bool std::operator==(const std::tuple<_Tps ...>&, const std::tuple<_Elements ...>&)[m[K’
+[1.412s]  1419 |     [01;36m[Koperator[m[K==(const tuple<_TElements...>& __t,
+[1.412s]       |     [01;36m[K^~~~~~~~[m[K
+[1.412s] [01m[K/usr/include/c++/9/tuple:1419:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.412s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::tuple<_Tps ...>[m[K’
+[1.412s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.412s]       |               [01;36m[K^[m[K
+[1.412s] In file included from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.412s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.412s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.412s] [01m[K/usr/include/c++/9/bits/unique_ptr.h:715:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator==(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)[m[K’
+[1.412s]   715 |     [01;36m[Koperator[m[K==(const unique_ptr<_Tp, _Dp>& __x,
+[1.412s]       |     [01;36m[K^~~~~~~~[m[K
+[1.413s] [01m[K/usr/include/c++/9/bits/unique_ptr.h:715:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.413s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+[1.413s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.413s]       |               [01;36m[K^[m[K
+[1.413s] In file included from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.413s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.413s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.413s] [01m[K/usr/include/c++/9/bits/unique_ptr.h:721:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp> bool std::operator==(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)[m[K’
+[1.413s]   721 |     [01;36m[Koperator[m[K==(const unique_ptr<_Tp, _Dp>& __x, nullptr_t) noexcept
+[1.413s]       |     [01;36m[K^~~~~~~~[m[K
+[1.413s] [01m[K/usr/include/c++/9/bits/unique_ptr.h:721:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.413s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+[1.413s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.413s]       |               [01;36m[K^[m[K
+[1.413s] In file included from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.413s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.413s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.413s] [01m[K/usr/include/c++/9/bits/unique_ptr.h:726:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp> bool std::operator==(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)[m[K’
+[1.414s]   726 |     [01;36m[Koperator[m[K==(nullptr_t, const unique_ptr<_Tp, _Dp>& __x) noexcept
+[1.414s]       |     [01;36m[K^~~~~~~~[m[K
+[1.414s] [01m[K/usr/include/c++/9/bits/unique_ptr.h:726:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.414s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’ and ‘[01m[Kint[m[K’
+[1.414s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.414s]       |               [01;36m[K^[m[K
+[1.414s] In file included from [01m[K/usr/include/c++/9/bits/shared_ptr.h:52[m[K,
+[1.414s]                  from [01m[K/usr/include/c++/9/memory:81[m[K,
+[1.414s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.414s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.414s] [01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1412:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp1, class _Tp2, __gnu_cxx::_Lock_policy _Lp> bool std::operator==(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)[m[K’
+[1.414s]  1412 |     [01;36m[Koperator[m[K==(const __shared_ptr<_Tp1, _Lp>& __a,
+[1.414s]       |     [01;36m[K^~~~~~~~[m[K
+[1.414s] [01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1412:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.414s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::__shared_ptr<_Tp2, _Lp>[m[K’ and ‘[01m[Kint[m[K’
+[1.414s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.414s]       |               [01;36m[K^[m[K
+[1.414s] In file included from [01m[K/usr/include/c++/9/bits/shared_ptr.h:52[m[K,
+[1.415s]                  from [01m[K/usr/include/c++/9/memory:81[m[K,
+[1.415s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.415s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.415s] [01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1418:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator==(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)[m[K’
+[1.415s]  1418 |     [01;36m[Koperator[m[K==(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+[1.415s]       |     [01;36m[K^~~~~~~~[m[K
+[1.415s] [01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1418:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.415s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K1[m[K’ (type ‘[01m[Kint[m[K’) to type ‘[01m[Kstd::nullptr_t[m[K’
+[1.415s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.415s]       |               [01;36m[K^[m[K
+[1.415s] In file included from [01m[K/usr/include/c++/9/bits/shared_ptr.h:52[m[K,
+[1.415s]                  from [01m[K/usr/include/c++/9/memory:81[m[K,
+[1.415s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.415s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.415s] [01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1423:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator==(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)[m[K’
+[1.415s]  1423 |     [01;36m[Koperator[m[K==(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+[1.415s]       |     [01;36m[K^~~~~~~~[m[K
+[1.415s] [01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1423:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.416s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::__shared_ptr<_Tp, _Lp>[m[K’ and ‘[01m[Kint[m[K’
+[1.416s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.416s]       |               [01;36m[K^[m[K
+[1.416s] In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+[1.416s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.416s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.416s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:383:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> bool std::operator==(const std::shared_ptr<_Tp>&, const std::shared_ptr<_Tp>&)[m[K’
+[1.416s]   383 |     [01;36m[Koperator[m[K==(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept
+[1.416s]       |     [01;36m[K^~~~~~~~[m[K
+[1.416s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:383:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.416s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[1.416s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.416s]       |               [01;36m[K^[m[K
+[1.416s] In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+[1.416s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.416s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.416s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:388:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool std::operator==(const std::shared_ptr<_Tp>&, std::nullptr_t)[m[K’
+[1.416s]   388 |     [01;36m[Koperator[m[K==(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+[1.417s]       |     [01;36m[K^~~~~~~~[m[K
+[1.417s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:388:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.417s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K1[m[K’ (type ‘[01m[Kint[m[K’) to type ‘[01m[Kstd::nullptr_t[m[K’
+[1.417s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.417s]       |               [01;36m[K^[m[K
+[1.417s] In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+[1.417s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.417s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.417s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:393:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool std::operator==(std::nullptr_t, const std::shared_ptr<_Tp>&)[m[K’
+[1.417s]   393 |     [01;36m[Koperator[m[K==(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+[1.417s]       |     [01;36m[K^~~~~~~~[m[K
+[1.417s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:393:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.417s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[1.417s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.417s]       |               [01;36m[K^[m[K
+[1.417s] In file included from [01m[K/usr/include/c++/9/mutex:42[m[K,
+[1.417s]                  from [01m[K/usr/include/c++/9/future:38[m[K,
+[1.417s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:18[m[K,
+[1.417s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.417s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.417s] [01m[K/usr/include/c++/9/system_error:292:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator==(const std::error_code&, const std::error_code&)[m[K’
+[1.417s]   292 |   [01;36m[Koperator[m[K==(const error_code& __lhs, const error_code& __rhs) noexcept
+[1.417s]       |   [01;36m[K^~~~~~~~[m[K
+[1.417s] [01m[K/usr/include/c++/9/system_error:292:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} to ‘[01m[Kconst std::error_code&[m[K’
+[1.418s]   292 |   operator==([01;36m[Kconst error_code& __lhs[m[K, const error_code& __rhs) noexcept
+[1.418s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[1.418s] [01m[K/usr/include/c++/9/system_error:297:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator==(const std::error_code&, const std::error_condition&)[m[K’
+[1.418s]   297 |   [01;36m[Koperator[m[K==(const error_code& __lhs, const error_condition& __rhs) noexcept
+[1.418s]       |   [01;36m[K^~~~~~~~[m[K
+[1.418s] [01m[K/usr/include/c++/9/system_error:297:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} to ‘[01m[Kconst std::error_code&[m[K’
+[1.418s]   297 |   operator==([01;36m[Kconst error_code& __lhs[m[K, const error_condition& __rhs) noexcept
+[1.418s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[1.418s] [01m[K/usr/include/c++/9/system_error:304:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator==(const std::error_condition&, const std::error_code&)[m[K’
+[1.418s]   304 |   [01;36m[Koperator[m[K==(const error_condition& __lhs, const error_code& __rhs) noexcept
+[1.418s]       |   [01;36m[K^~~~~~~~[m[K
+[1.418s] [01m[K/usr/include/c++/9/system_error:304:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} to ‘[01m[Kconst std::error_condition&[m[K’
+[1.418s]   304 |   operator==([01;36m[Kconst error_condition& __lhs[m[K, const error_code& __rhs) noexcept
+[1.418s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[1.418s] [01m[K/usr/include/c++/9/system_error:311:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator==(const std::error_condition&, const std::error_condition&)[m[K’
+[1.418s]   311 |   [01;36m[Koperator[m[K==(const error_condition& __lhs,
+[1.418s]       |   [01;36m[K^~~~~~~~[m[K
+[1.418s] [01m[K/usr/include/c++/9/system_error:311:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} to ‘[01m[Kconst std::error_condition&[m[K’
+[1.418s]   311 |   operator==([01;36m[Kconst error_condition& __lhs[m[K,
+[1.418s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[1.418s] In file included from [01m[K/usr/include/c++/9/future:39[m[K,
+[1.418s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:18[m[K,
+[1.418s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.418s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.419s] [01m[K/usr/include/c++/9/thread:276:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator==(std::thread::id, std::thread::id)[m[K’
+[1.419s]   276 |   [01;36m[Koperator[m[K==(thread::id __x, thread::id __y) noexcept
+[1.419s]       |   [01;36m[K^~~~~~~~[m[K
+[1.419s] [01m[K/usr/include/c++/9/thread:276:25:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} to ‘[01m[Kstd::thread::id[m[K’
+[1.419s]   276 |   operator==([01;36m[Kthread::id __x[m[K, thread::id __y) noexcept
+[1.419s]       |              [01;36m[K~~~~~~~~~~~^~~[m[K
+[1.419s] In file included from [01m[K/usr/include/c++/9/future:48[m[K,
+[1.419s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:18[m[K,
+[1.419s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.419s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.419s] [01m[K/usr/include/c++/9/bits/std_function.h:746:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Res, class ... _Args> bool std::operator==(const std::function<_Res(_ArgTypes ...)>&, std::nullptr_t)[m[K’
+[1.419s]   746 |     [01;36m[Koperator[m[K==(const function<_Res(_Args...)>& __f, nullptr_t) noexcept
+[1.419s]       |     [01;36m[K^~~~~~~~[m[K
+[1.419s] [01m[K/usr/include/c++/9/bits/std_function.h:746:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.419s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::function<_Res(_ArgTypes ...)>[m[K’
+[1.419s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.419s]       |               [01;36m[K^[m[K
+[1.419s] In file included from [01m[K/usr/include/c++/9/future:48[m[K,
+[1.419s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:18[m[K,
+[1.419s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.419s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.419s] [01m[K/usr/include/c++/9/bits/std_function.h:752:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Res, class ... _Args> bool std::operator==(std::nullptr_t, const std::function<_Res(_ArgTypes ...)>&)[m[K’
+[1.419s]   752 |     [01;36m[Koperator[m[K==(nullptr_t, const function<_Res(_Args...)>& __f) noexcept
+[1.420s]       |     [01;36m[K^~~~~~~~[m[K
+[1.420s] [01m[K/usr/include/c++/9/bits/std_function.h:752:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.420s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::function<_Res(_ArgTypes ...)>[m[K’ and ‘[01m[Kint[m[K’
+[1.420s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.420s]       |               [01;36m[K^[m[K
+[1.420s] In file included from [01m[K/usr/include/c++/9/set:61[m[K,
+[1.420s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:21[m[K,
+[1.420s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.420s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.420s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.420s] [01m[K/usr/include/c++/9/bits/stl_set.h:979:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::operator==(const std::set<_Key, _Compare, _Alloc>&, const std::set<_Key, _Compare, _Alloc>&)[m[K’
+[1.420s]   979 |     [01;36m[Koperator[m[K==(const set<_Key, _Compare, _Alloc>& __x,
+[1.420s]       |     [01;36m[K^~~~~~~~[m[K
+[1.420s] [01m[K/usr/include/c++/9/bits/stl_set.h:979:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.420s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::set<_Key, _Compare, _Alloc>[m[K’
+[1.420s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.420s]       |               [01;36m[K^[m[K
+[1.420s] In file included from [01m[K/usr/include/c++/9/set:62[m[K,
+[1.420s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:21[m[K,
+[1.420s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.420s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.420s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.420s] [01m[K/usr/include/c++/9/bits/stl_multiset.h:964:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::operator==(const std::multiset<_Key, _Compare, _Alloc>&, const std::multiset<_Key, _Compare, _Alloc>&)[m[K’
+[1.420s]   964 |     [01;36m[Koperator[m[K==(const multiset<_Key, _Compare, _Alloc>& __x,
+[1.420s]       |     [01;36m[K^~~~~~~~[m[K
+[1.421s] [01m[K/usr/include/c++/9/bits/stl_multiset.h:964:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.421s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::multiset<_Key, _Compare, _Alloc>[m[K’
+[1.421s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.421s]       |               [01;36m[K^[m[K
+[1.421s] In file included from [01m[K/usr/include/c++/9/unordered_map:47[m[K,
+[1.421s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:23[m[K,
+[1.421s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.421s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.421s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.421s] [01m[K/usr/include/c++/9/bits/unordered_map.h:2093:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Hash, class _Pred, class _Alloc> bool std::operator==(const std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>&, const std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>&)[m[K’
+[1.421s]  2093 |     [01;36m[Koperator[m[K==(const unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,
+[1.421s]       |     [01;36m[K^~~~~~~~[m[K
+[1.421s] [01m[K/usr/include/c++/9/bits/unordered_map.h:2093:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.421s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>[m[K’
+[1.421s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.421s]       |               [01;36m[K^[m[K
+[1.421s] In file included from [01m[K/usr/include/c++/9/unordered_map:47[m[K,
+[1.421s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:23[m[K,
+[1.421s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.421s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.421s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.421s] [01m[K/usr/include/c++/9/bits/unordered_map.h:2105:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Hash, class _Pred, class _Alloc> bool std::operator==(const std::unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>&, const std::unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>&)[m[K’
+[1.421s]  2105 |     [01;36m[Koperator[m[K==(const unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,
+[1.421s]       |     [01;36m[K^~~~~~~~[m[K
+[1.421s] [01m[K/usr/include/c++/9/bits/unordered_map.h:2105:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.422s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>[m[K’
+[1.422s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.422s]       |               [01;36m[K^[m[K
+[1.422s] In file included from [01m[K/usr/include/c++/9/bits/locale_facets.h:48[m[K,
+[1.422s]                  from [01m[K/usr/include/c++/9/bits/basic_ios.h:37[m[K,
+[1.422s]                  from [01m[K/usr/include/c++/9/ios:44[m[K,
+[1.422s]                  from [01m[K/usr/include/c++/9/ostream:38[m[K,
+[1.422s]                  from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[1.422s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[1.422s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.422s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.422s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.422s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.422s] [01m[K/usr/include/c++/9/bits/streambuf_iterator.h:208:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> bool std::operator==(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)[m[K’
+[1.422s]   208 |     [01;36m[Koperator[m[K==(const istreambuf_iterator<_CharT, _Traits>& __a,
+[1.422s]       |     [01;36m[K^~~~~~~~[m[K
+[1.422s] [01m[K/usr/include/c++/9/bits/streambuf_iterator.h:208:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.422s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::istreambuf_iterator<_CharT, _Traits>[m[K’
+[1.422s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.422s]       |               [01;36m[K^[m[K
+[1.422s] In file included from [01m[K/usr/include/c++/9/list:63[m[K,
+[1.422s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:23[m[K,
+[1.422s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.422s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.422s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.422s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.423s] [01m[K/usr/include/c++/9/bits/stl_list.h:1991:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::operator==(const std::__cxx11::list<_Tp, _Alloc>&, const std::__cxx11::list<_Tp, _Alloc>&)[m[K’
+[1.423s]  1991 |     [01;36m[Koperator[m[K==(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+[1.423s]       |     [01;36m[K^~~~~~~~[m[K
+[1.423s] [01m[K/usr/include/c++/9/bits/stl_list.h:1991:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.423s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::list<_Tp, _Alloc>[m[K’
+[1.423s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.423s]       |               [01;36m[K^[m[K
+[1.423s] In file included from [01m[K/usr/include/c++/9/vector:67[m[K,
+[1.423s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:27[m[K,
+[1.423s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.423s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.423s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.423s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.423s] [01m[K/usr/include/c++/9/bits/stl_vector.h:1888:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::operator==(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)[m[K’
+[1.423s]  1888 |     [01;36m[Koperator[m[K==(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+[1.423s]       |     [01;36m[K^~~~~~~~[m[K
+[1.423s] [01m[K/usr/include/c++/9/bits/stl_vector.h:1888:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.423s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::vector<_Tp, _Alloc>[m[K’
+[1.423s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.423s]       |               [01;36m[K^[m[K
+[1.423s] In file included from [01m[K/usr/include/c++/9/map:61[m[K,
+[1.423s]                  from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:20[m[K,
+[1.423s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[1.423s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.423s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.423s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.424s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.424s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.424s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.424s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.424s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.424s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.424s] [01m[K/usr/include/c++/9/bits/stl_map.h:1455:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator==(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)[m[K’
+[1.424s]  1455 |     [01;36m[Koperator[m[K==(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+[1.424s]       |     [01;36m[K^~~~~~~~[m[K
+[1.424s] [01m[K/usr/include/c++/9/bits/stl_map.h:1455:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.424s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::map<_Key, _Tp, _Compare, _Alloc>[m[K’
+[1.424s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.424s]       |               [01;36m[K^[m[K
+[1.424s] In file included from [01m[K/usr/include/c++/9/map:62[m[K,
+[1.424s]                  from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:20[m[K,
+[1.424s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[1.424s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.424s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.425s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.425s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.425s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.425s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.425s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.425s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.425s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.425s] [01m[K/usr/include/c++/9/bits/stl_multimap.h:1119:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator==(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)[m[K’
+[1.425s]  1119 |     [01;36m[Koperator[m[K==(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+[1.425s]       |     [01;36m[K^~~~~~~~[m[K
+[1.425s] [01m[K/usr/include/c++/9/bits/stl_multimap.h:1119:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.425s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::multimap<_Key, _Tp, _Compare, _Alloc>[m[K’
+[1.425s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.425s]       |               [01;36m[K^[m[K
+[1.425s] In file included from [01m[K/usr/include/c++/9/iterator:66[m[K,
+[1.425s]                  from [01m[K/opt/ros/foxy/include/rcpputils/join.hpp:23[m[K,
+[1.425s]                  from [01m[K/opt/ros/foxy/include/rclcpp/exceptions/exceptions.hpp:26[m[K,
+[1.425s]                  from [01m[K/opt/ros/foxy/include/rclcpp/exceptions.hpp:18[m[K,
+[1.426s]                  from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:31[m[K,
+[1.426s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[1.426s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.426s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.426s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.426s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.426s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.426s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.426s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.426s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.426s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.426s] [01m[K/usr/include/c++/9/bits/stream_iterator.h:134:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _CharT, class _Traits, class _Dist> bool std::operator==(const std::istream_iterator<_Tp, _CharT, _Traits, _Dist>&, const std::istream_iterator<_Tp, _CharT, _Traits, _Dist>&)[m[K’
+[1.426s]   134 |     [01;36m[Koperator[m[K==(const istream_iterator<_Tp, _CharT, _Traits, _Dist>& __x,
+[1.426s]       |     [01;36m[K^~~~~~~~[m[K
+[1.426s] [01m[K/usr/include/c++/9/bits/stream_iterator.h:134:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.426s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::istream_iterator<_Tp, _CharT, _Traits, _Dist>[m[K’
+[1.426s]    16 |     if(msg == [01;36m[K1[m[K)
+[1.426s]       |               [01;36m[K^[m[K
+[1.426s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kvoid callback_right(example_interfaces::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.427s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:12:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator==[m[K’ (operand types are ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} and ‘[01m[Kint[m[K’)
+[1.427s]    21 |     if([32m[Kmsg[m[K [01;31m[K==[m[K [34m[K1[m[K)
+[1.427s]       |        [32m[K~~~[m[K [01;31m[K^~[m[K [34m[K~[m[K
+[1.427s]       |        [32m[K|[m[K      [34m[K|[m[K
+[1.427s]       |        [32m[K|[m[K      [34m[Kint[m[K
+[1.427s]       |        [32m[Kconst SharedPtr {aka const std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >}[m[K
+[1.427s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Koperator==(int, int)[m[K’ <built-in>
+[1.427s]    21 |     if([01;36m[Kmsg == 1[m[K)
+[1.427s]       |        [01;36m[K~~~~^~~~[m[K
+[1.427s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:12:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} to ‘[01m[Kint[m[K’
+[1.427s] In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:64[m[K,
+[1.427s]                  from [01m[K/usr/include/c++/9/memory:62[m[K,
+[1.427s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.427s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.427s] [01m[K/usr/include/c++/9/bits/stl_pair.h:448:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _T1, class _T2> constexpr bool std::operator==(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)[m[K’
+[1.427s]   448 |     [01;36m[Koperator[m[K==(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+[1.427s]       |     [01;36m[K^~~~~~~~[m[K
+[1.427s] [01m[K/usr/include/c++/9/bits/stl_pair.h:448:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.427s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::pair<_T1, _T2>[m[K’
+[1.428s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.428s]       |               [01;36m[K^[m[K
+[1.428s] In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+[1.428s]                  from [01m[K/usr/include/c++/9/memory:62[m[K,
+[1.428s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.428s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.428s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:325:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> bool std::operator==(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)[m[K’
+[1.428s]   325 |     [01;36m[Koperator[m[K==(const reverse_iterator<_Iterator>& __x,
+[1.428s]       |     [01;36m[K^~~~~~~~[m[K
+[1.428s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:325:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.428s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+[1.428s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.428s]       |               [01;36m[K^[m[K
+[1.428s] In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+[1.428s]                  from [01m[K/usr/include/c++/9/memory:62[m[K,
+[1.428s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.428s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.428s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:363:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> bool std::operator==(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)[m[K’
+[1.429s]   363 |     [01;36m[Koperator[m[K==(const reverse_iterator<_IteratorL>& __x,
+[1.429s]       |     [01;36m[K^~~~~~~~[m[K
+[1.429s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:363:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.429s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+[1.429s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.429s]       |               [01;36m[K^[m[K
+[1.429s] In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+[1.429s]                  from [01m[K/usr/include/c++/9/memory:62[m[K,
+[1.429s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.429s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.429s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:1136:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> bool std::operator==(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)[m[K’
+[1.429s]  1136 |     [01;36m[Koperator[m[K==(const move_iterator<_IteratorL>& __x,
+[1.429s]       |     [01;36m[K^~~~~~~~[m[K
+[1.429s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:1136:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.429s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+[1.429s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.429s]       |               [01;36m[K^[m[K
+[1.429s] In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+[1.429s]                  from [01m[K/usr/include/c++/9/memory:62[m[K,
+[1.429s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.429s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.429s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:1142:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> bool std::operator==(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)[m[K’
+[1.430s]  1142 |     [01;36m[Koperator[m[K==(const move_iterator<_Iterator>& __x,
+[1.430s]       |     [01;36m[K^~~~~~~~[m[K
+[1.430s] [01m[K/usr/include/c++/9/bits/stl_iterator.h:1142:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.430s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+[1.430s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.430s]       |               [01;36m[K^[m[K
+[1.430s] In file included from [01m[K/usr/include/c++/9/memory:63[m[K,
+[1.430s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.430s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.430s] [01m[K/usr/include/c++/9/bits/allocator.h:167:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _T1, class _T2> bool std::operator==(const std::allocator<_Tp1>&, const std::allocator<_T2>&)[m[K’
+[1.430s]   167 |     [01;36m[Koperator[m[K==(const allocator<_T1>&, const allocator<_T2>&)
+[1.430s]       |     [01;36m[K^~~~~~~~[m[K
+[1.430s] [01m[K/usr/include/c++/9/bits/allocator.h:167:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.430s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::allocator<_Tp1>[m[K’
+[1.430s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.430s]       |               [01;36m[K^[m[K
+[1.430s] In file included from [01m[K/usr/include/c++/9/iosfwd:40[m[K,
+[1.430s]                  from [01m[K/usr/include/c++/9/memory:72[m[K,
+[1.430s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.430s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.430s] [01m[K/usr/include/c++/9/bits/postypes.h:222:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _StateT> bool std::operator==(const std::fpos<_StateT>&, const std::fpos<_StateT>&)[m[K’
+[1.430s]   222 |     [01;36m[Koperator[m[K==(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+[1.430s]       |     [01;36m[K^~~~~~~~[m[K
+[1.430s] [01m[K/usr/include/c++/9/bits/postypes.h:222:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.430s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::fpos<_StateT>[m[K’
+[1.430s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.430s]       |               [01;36m[K^[m[K
+[1.431s] In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+[1.431s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[1.431s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[1.431s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.431s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.431s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.431s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.431s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.431s] [01m[K/usr/include/c++/9/bits/basic_string.h:6144:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator==(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)[m[K’
+[1.431s]  6144 |     [01;36m[Koperator[m[K==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[1.431s]       |     [01;36m[K^~~~~~~~[m[K
+[1.431s] [01m[K/usr/include/c++/9/bits/basic_string.h:6144:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.431s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+[1.431s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.431s]       |               [01;36m[K^[m[K
+[1.431s] In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+[1.431s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[1.431s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[1.431s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.431s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.431s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.432s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.432s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.432s] [01m[K/usr/include/c++/9/bits/basic_string.h:6152:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT> typename __gnu_cxx::__enable_if<std::__is_char<_Tp>::__value, bool>::__type std::operator==(const std::__cxx11::basic_string<_CharT>&, const std::__cxx11::basic_string<_CharT>&)[m[K’
+[1.432s]  6152 |     [01;36m[Koperator[m[K==(const basic_string<_CharT>& __lhs,
+[1.432s]       |     [01;36m[K^~~~~~~~[m[K
+[1.432s] [01m[K/usr/include/c++/9/bits/basic_string.h:6152:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.432s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT>[m[K’
+[1.432s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.432s]       |               [01;36m[K^[m[K
+[1.432s] In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+[1.432s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[1.432s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[1.432s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.432s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.432s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.432s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.432s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.433s] [01m[K/usr/include/c++/9/bits/basic_string.h:6166:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator==(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)[m[K’
+[1.433s]  6166 |     [01;36m[Koperator[m[K==(const _CharT* __lhs,
+[1.433s]       |     [01;36m[K^~~~~~~~[m[K
+[1.433s] [01m[K/usr/include/c++/9/bits/basic_string.h:6166:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.433s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[Kstd::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’
+[1.433s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.433s]       |               [01;36m[K^[m[K
+[1.433s] In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+[1.433s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[1.433s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[1.433s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.433s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.433s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.433s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.433s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.433s] [01m[K/usr/include/c++/9/bits/basic_string.h:6178:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator==(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)[m[K’
+[1.433s]  6178 |     [01;36m[Koperator[m[K==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[1.433s]       |     [01;36m[K^~~~~~~~[m[K
+[1.433s] [01m[K/usr/include/c++/9/bits/basic_string.h:6178:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.434s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+[1.434s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.434s]       |               [01;36m[K^[m[K
+[1.434s] In file included from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.434s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.434s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.434s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.434s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.434s] [01m[K/usr/include/c++/9/array:252:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, long unsigned int _Nm> bool std::operator==(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)[m[K’
+[1.434s]   252 |     [01;36m[Koperator[m[K==(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+[1.434s]       |     [01;36m[K^~~~~~~~[m[K
+[1.434s] [01m[K/usr/include/c++/9/array:252:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.434s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::array<_Tp, _Nm>[m[K’
+[1.434s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.434s]       |               [01;36m[K^[m[K
+[1.434s] In file included from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.434s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.434s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.434s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.435s] [01m[K/usr/include/c++/9/tuple:1419:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ... _TElements, class ... _UElements> constexpr bool std::operator==(const std::tuple<_Tps ...>&, const std::tuple<_Elements ...>&)[m[K’
+[1.435s]  1419 |     [01;36m[Koperator[m[K==(const tuple<_TElements...>& __t,
+[1.435s]       |     [01;36m[K^~~~~~~~[m[K
+[1.435s] [01m[K/usr/include/c++/9/tuple:1419:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.435s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::tuple<_Tps ...>[m[K’
+[1.435s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.435s]       |               [01;36m[K^[m[K
+[1.435s] In file included from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.435s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.435s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.435s] [01m[K/usr/include/c++/9/bits/unique_ptr.h:715:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator==(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)[m[K’
+[1.435s]   715 |     [01;36m[Koperator[m[K==(const unique_ptr<_Tp, _Dp>& __x,
+[1.435s]       |     [01;36m[K^~~~~~~~[m[K
+[1.435s] [01m[K/usr/include/c++/9/bits/unique_ptr.h:715:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.435s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+[1.435s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.435s]       |               [01;36m[K^[m[K
+[1.435s] In file included from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.435s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.436s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.436s] [01m[K/usr/include/c++/9/bits/unique_ptr.h:721:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp> bool std::operator==(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)[m[K’
+[1.436s]   721 |     [01;36m[Koperator[m[K==(const unique_ptr<_Tp, _Dp>& __x, nullptr_t) noexcept
+[1.436s]       |     [01;36m[K^~~~~~~~[m[K
+[1.436s] [01m[K/usr/include/c++/9/bits/unique_ptr.h:721:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.436s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+[1.436s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.436s]       |               [01;36m[K^[m[K
+[1.436s] In file included from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.436s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.436s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.436s] [01m[K/usr/include/c++/9/bits/unique_ptr.h:726:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp> bool std::operator==(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)[m[K’
+[1.436s]   726 |     [01;36m[Koperator[m[K==(nullptr_t, const unique_ptr<_Tp, _Dp>& __x) noexcept
+[1.436s]       |     [01;36m[K^~~~~~~~[m[K
+[1.436s] [01m[K/usr/include/c++/9/bits/unique_ptr.h:726:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.436s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’ and ‘[01m[Kint[m[K’
+[1.436s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.436s]       |               [01;36m[K^[m[K
+[1.436s] In file included from [01m[K/usr/include/c++/9/bits/shared_ptr.h:52[m[K,
+[1.437s]                  from [01m[K/usr/include/c++/9/memory:81[m[K,
+[1.437s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.437s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.437s] [01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1412:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp1, class _Tp2, __gnu_cxx::_Lock_policy _Lp> bool std::operator==(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)[m[K’
+[1.437s]  1412 |     [01;36m[Koperator[m[K==(const __shared_ptr<_Tp1, _Lp>& __a,
+[1.437s]       |     [01;36m[K^~~~~~~~[m[K
+[1.437s] [01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1412:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.437s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::__shared_ptr<_Tp2, _Lp>[m[K’ and ‘[01m[Kint[m[K’
+[1.437s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.437s]       |               [01;36m[K^[m[K
+[1.437s] In file included from [01m[K/usr/include/c++/9/bits/shared_ptr.h:52[m[K,
+[1.437s]                  from [01m[K/usr/include/c++/9/memory:81[m[K,
+[1.437s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.437s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.437s] [01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1418:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator==(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)[m[K’
+[1.437s]  1418 |     [01;36m[Koperator[m[K==(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+[1.437s]       |     [01;36m[K^~~~~~~~[m[K
+[1.437s] [01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1418:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.438s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K1[m[K’ (type ‘[01m[Kint[m[K’) to type ‘[01m[Kstd::nullptr_t[m[K’
+[1.438s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.438s]       |               [01;36m[K^[m[K
+[1.438s] In file included from [01m[K/usr/include/c++/9/bits/shared_ptr.h:52[m[K,
+[1.438s]                  from [01m[K/usr/include/c++/9/memory:81[m[K,
+[1.438s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.438s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.438s] [01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1423:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator==(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)[m[K’
+[1.438s]  1423 |     [01;36m[Koperator[m[K==(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+[1.438s]       |     [01;36m[K^~~~~~~~[m[K
+[1.438s] [01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1423:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.438s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::__shared_ptr<_Tp, _Lp>[m[K’ and ‘[01m[Kint[m[K’
+[1.438s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.438s]       |               [01;36m[K^[m[K
+[1.438s] In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+[1.438s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.438s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.438s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:383:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> bool std::operator==(const std::shared_ptr<_Tp>&, const std::shared_ptr<_Tp>&)[m[K’
+[1.438s]   383 |     [01;36m[Koperator[m[K==(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept
+[1.439s]       |     [01;36m[K^~~~~~~~[m[K
+[1.439s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:383:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.439s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[1.439s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.439s]       |               [01;36m[K^[m[K
+[1.439s] In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+[1.439s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.439s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.439s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:388:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool std::operator==(const std::shared_ptr<_Tp>&, std::nullptr_t)[m[K’
+[1.439s]   388 |     [01;36m[Koperator[m[K==(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+[1.439s]       |     [01;36m[K^~~~~~~~[m[K
+[1.439s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:388:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.439s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K1[m[K’ (type ‘[01m[Kint[m[K’) to type ‘[01m[Kstd::nullptr_t[m[K’
+[1.439s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.439s]       |               [01;36m[K^[m[K
+[1.439s] In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+[1.439s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.439s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.439s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:393:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool std::operator==(std::nullptr_t, const std::shared_ptr<_Tp>&)[m[K’
+[1.440s]   393 |     [01;36m[Koperator[m[K==(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+[1.440s]       |     [01;36m[K^~~~~~~~[m[K
+[1.440s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:393:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.440s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[1.440s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.440s]       |               [01;36m[K^[m[K
+[1.440s] In file included from [01m[K/usr/include/c++/9/mutex:42[m[K,
+[1.440s]                  from [01m[K/usr/include/c++/9/future:38[m[K,
+[1.440s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:18[m[K,
+[1.440s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.440s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.440s] [01m[K/usr/include/c++/9/system_error:292:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator==(const std::error_code&, const std::error_code&)[m[K’
+[1.440s]   292 |   [01;36m[Koperator[m[K==(const error_code& __lhs, const error_code& __rhs) noexcept
+[1.440s]       |   [01;36m[K^~~~~~~~[m[K
+[1.440s] [01m[K/usr/include/c++/9/system_error:292:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} to ‘[01m[Kconst std::error_code&[m[K’
+[1.440s]   292 |   operator==([01;36m[Kconst error_code& __lhs[m[K, const error_code& __rhs) noexcept
+[1.440s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[1.440s] [01m[K/usr/include/c++/9/system_error:297:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator==(const std::error_code&, const std::error_condition&)[m[K’
+[1.440s]   297 |   [01;36m[Koperator[m[K==(const error_code& __lhs, const error_condition& __rhs) noexcept
+[1.441s]       |   [01;36m[K^~~~~~~~[m[K
+[1.441s] [01m[K/usr/include/c++/9/system_error:297:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} to ‘[01m[Kconst std::error_code&[m[K’
+[1.441s]   297 |   operator==([01;36m[Kconst error_code& __lhs[m[K, const error_condition& __rhs) noexcept
+[1.441s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[1.441s] [01m[K/usr/include/c++/9/system_error:304:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator==(const std::error_condition&, const std::error_code&)[m[K’
+[1.441s]   304 |   [01;36m[Koperator[m[K==(const error_condition& __lhs, const error_code& __rhs) noexcept
+[1.441s]       |   [01;36m[K^~~~~~~~[m[K
+[1.441s] [01m[K/usr/include/c++/9/system_error:304:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} to ‘[01m[Kconst std::error_condition&[m[K’
+[1.441s]   304 |   operator==([01;36m[Kconst error_condition& __lhs[m[K, const error_code& __rhs) noexcept
+[1.441s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[1.441s] [01m[K/usr/include/c++/9/system_error:311:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator==(const std::error_condition&, const std::error_condition&)[m[K’
+[1.441s]   311 |   [01;36m[Koperator[m[K==(const error_condition& __lhs,
+[1.441s]       |   [01;36m[K^~~~~~~~[m[K
+[1.441s] [01m[K/usr/include/c++/9/system_error:311:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} to ‘[01m[Kconst std::error_condition&[m[K’
+[1.441s]   311 |   operator==([01;36m[Kconst error_condition& __lhs[m[K,
+[1.441s]       |              [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[1.441s] In file included from [01m[K/usr/include/c++/9/future:39[m[K,
+[1.441s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:18[m[K,
+[1.442s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.442s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.442s] [01m[K/usr/include/c++/9/thread:276:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator==(std::thread::id, std::thread::id)[m[K’
+[1.442s]   276 |   [01;36m[Koperator[m[K==(thread::id __x, thread::id __y) noexcept
+[1.442s]       |   [01;36m[K^~~~~~~~[m[K
+[1.442s] [01m[K/usr/include/c++/9/thread:276:25:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} to ‘[01m[Kstd::thread::id[m[K’
+[1.442s]   276 |   operator==([01;36m[Kthread::id __x[m[K, thread::id __y) noexcept
+[1.442s]       |              [01;36m[K~~~~~~~~~~~^~~[m[K
+[1.442s] In file included from [01m[K/usr/include/c++/9/future:48[m[K,
+[1.442s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:18[m[K,
+[1.442s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.442s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.442s] [01m[K/usr/include/c++/9/bits/std_function.h:746:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Res, class ... _Args> bool std::operator==(const std::function<_Res(_ArgTypes ...)>&, std::nullptr_t)[m[K’
+[1.442s]   746 |     [01;36m[Koperator[m[K==(const function<_Res(_Args...)>& __f, nullptr_t) noexcept
+[1.442s]       |     [01;36m[K^~~~~~~~[m[K
+[1.442s] [01m[K/usr/include/c++/9/bits/std_function.h:746:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.442s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::function<_Res(_ArgTypes ...)>[m[K’
+[1.442s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.443s]       |               [01;36m[K^[m[K
+[1.443s] In file included from [01m[K/usr/include/c++/9/future:48[m[K,
+[1.443s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:18[m[K,
+[1.443s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.443s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.443s] [01m[K/usr/include/c++/9/bits/std_function.h:752:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Res, class ... _Args> bool std::operator==(std::nullptr_t, const std::function<_Res(_ArgTypes ...)>&)[m[K’
+[1.443s]   752 |     [01;36m[Koperator[m[K==(nullptr_t, const function<_Res(_Args...)>& __f) noexcept
+[1.443s]       |     [01;36m[K^~~~~~~~[m[K
+[1.443s] [01m[K/usr/include/c++/9/bits/std_function.h:752:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.443s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::function<_Res(_ArgTypes ...)>[m[K’ and ‘[01m[Kint[m[K’
+[1.443s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.443s]       |               [01;36m[K^[m[K
+[1.443s] In file included from [01m[K/usr/include/c++/9/set:61[m[K,
+[1.443s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:21[m[K,
+[1.443s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.443s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.443s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.443s] [01m[K/usr/include/c++/9/bits/stl_set.h:979:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::operator==(const std::set<_Key, _Compare, _Alloc>&, const std::set<_Key, _Compare, _Alloc>&)[m[K’
+[1.443s]   979 |     [01;36m[Koperator[m[K==(const set<_Key, _Compare, _Alloc>& __x,
+[1.444s]       |     [01;36m[K^~~~~~~~[m[K
+[1.444s] [01m[K/usr/include/c++/9/bits/stl_set.h:979:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.444s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::set<_Key, _Compare, _Alloc>[m[K’
+[1.444s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.444s]       |               [01;36m[K^[m[K
+[1.444s] In file included from [01m[K/usr/include/c++/9/set:62[m[K,
+[1.444s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:21[m[K,
+[1.444s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.444s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.444s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.444s] [01m[K/usr/include/c++/9/bits/stl_multiset.h:964:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::operator==(const std::multiset<_Key, _Compare, _Alloc>&, const std::multiset<_Key, _Compare, _Alloc>&)[m[K’
+[1.444s]   964 |     [01;36m[Koperator[m[K==(const multiset<_Key, _Compare, _Alloc>& __x,
+[1.444s]       |     [01;36m[K^~~~~~~~[m[K
+[1.444s] [01m[K/usr/include/c++/9/bits/stl_multiset.h:964:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.444s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::multiset<_Key, _Compare, _Alloc>[m[K’
+[1.444s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.444s]       |               [01;36m[K^[m[K
+[1.444s] In file included from [01m[K/usr/include/c++/9/unordered_map:47[m[K,
+[1.445s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:23[m[K,
+[1.445s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.445s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.445s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.445s] [01m[K/usr/include/c++/9/bits/unordered_map.h:2093:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Hash, class _Pred, class _Alloc> bool std::operator==(const std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>&, const std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>&)[m[K’
+[1.445s]  2093 |     [01;36m[Koperator[m[K==(const unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,
+[1.445s]       |     [01;36m[K^~~~~~~~[m[K
+[1.445s] [01m[K/usr/include/c++/9/bits/unordered_map.h:2093:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.445s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>[m[K’
+[1.445s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.445s]       |               [01;36m[K^[m[K
+[1.445s] In file included from [01m[K/usr/include/c++/9/unordered_map:47[m[K,
+[1.445s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:23[m[K,
+[1.445s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.445s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.445s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.445s] [01m[K/usr/include/c++/9/bits/unordered_map.h:2105:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Hash, class _Pred, class _Alloc> bool std::operator==(const std::unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>&, const std::unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>&)[m[K’
+[1.445s]  2105 |     [01;36m[Koperator[m[K==(const unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>& __x,
+[1.446s]       |     [01;36m[K^~~~~~~~[m[K
+[1.446s] [01m[K/usr/include/c++/9/bits/unordered_map.h:2105:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.446s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>[m[K’
+[1.446s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.446s]       |               [01;36m[K^[m[K
+[1.446s] In file included from [01m[K/usr/include/c++/9/bits/locale_facets.h:48[m[K,
+[1.446s]                  from [01m[K/usr/include/c++/9/bits/basic_ios.h:37[m[K,
+[1.446s]                  from [01m[K/usr/include/c++/9/ios:44[m[K,
+[1.446s]                  from [01m[K/usr/include/c++/9/ostream:38[m[K,
+[1.446s]                  from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[1.446s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[1.446s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.446s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.446s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.446s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.446s] [01m[K/usr/include/c++/9/bits/streambuf_iterator.h:208:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> bool std::operator==(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)[m[K’
+[1.446s]   208 |     [01;36m[Koperator[m[K==(const istreambuf_iterator<_CharT, _Traits>& __a,
+[1.446s]       |     [01;36m[K^~~~~~~~[m[K
+[1.447s] [01m[K/usr/include/c++/9/bits/streambuf_iterator.h:208:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.447s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::istreambuf_iterator<_CharT, _Traits>[m[K’
+[1.447s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.447s]       |               [01;36m[K^[m[K
+[1.447s] In file included from [01m[K/usr/include/c++/9/list:63[m[K,
+[1.447s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:23[m[K,
+[1.447s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.447s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.447s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.447s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.447s] [01m[K/usr/include/c++/9/bits/stl_list.h:1991:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::operator==(const std::__cxx11::list<_Tp, _Alloc>&, const std::__cxx11::list<_Tp, _Alloc>&)[m[K’
+[1.447s]  1991 |     [01;36m[Koperator[m[K==(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+[1.447s]       |     [01;36m[K^~~~~~~~[m[K
+[1.447s] [01m[K/usr/include/c++/9/bits/stl_list.h:1991:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.447s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::__cxx11::list<_Tp, _Alloc>[m[K’
+[1.447s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.447s]       |               [01;36m[K^[m[K
+[1.447s] In file included from [01m[K/usr/include/c++/9/vector:67[m[K,
+[1.447s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:27[m[K,
+[1.448s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.448s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.448s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.448s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.448s] [01m[K/usr/include/c++/9/bits/stl_vector.h:1888:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::operator==(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)[m[K’
+[1.448s]  1888 |     [01;36m[Koperator[m[K==(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+[1.448s]       |     [01;36m[K^~~~~~~~[m[K
+[1.448s] [01m[K/usr/include/c++/9/bits/stl_vector.h:1888:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.448s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::vector<_Tp, _Alloc>[m[K’
+[1.448s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.448s]       |               [01;36m[K^[m[K
+[1.448s] In file included from [01m[K/usr/include/c++/9/map:61[m[K,
+[1.448s]                  from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:20[m[K,
+[1.448s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[1.448s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.448s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.448s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.448s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.449s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.449s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.449s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.449s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.449s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.449s] [01m[K/usr/include/c++/9/bits/stl_map.h:1455:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator==(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)[m[K’
+[1.449s]  1455 |     [01;36m[Koperator[m[K==(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+[1.449s]       |     [01;36m[K^~~~~~~~[m[K
+[1.449s] [01m[K/usr/include/c++/9/bits/stl_map.h:1455:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.449s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::map<_Key, _Tp, _Compare, _Alloc>[m[K’
+[1.449s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.449s]       |               [01;36m[K^[m[K
+[1.449s] In file included from [01m[K/usr/include/c++/9/map:62[m[K,
+[1.449s]                  from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:20[m[K,
+[1.449s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[1.449s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.449s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.449s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.449s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.450s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.450s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.450s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.450s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.450s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.450s] [01m[K/usr/include/c++/9/bits/stl_multimap.h:1119:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator==(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)[m[K’
+[1.450s]  1119 |     [01;36m[Koperator[m[K==(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+[1.450s]       |     [01;36m[K^~~~~~~~[m[K
+[1.450s] [01m[K/usr/include/c++/9/bits/stl_multimap.h:1119:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.450s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::multimap<_Key, _Tp, _Compare, _Alloc>[m[K’
+[1.450s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.450s]       |               [01;36m[K^[m[K
+[1.450s] In file included from [01m[K/usr/include/c++/9/iterator:66[m[K,
+[1.450s]                  from [01m[K/opt/ros/foxy/include/rcpputils/join.hpp:23[m[K,
+[1.450s]                  from [01m[K/opt/ros/foxy/include/rclcpp/exceptions/exceptions.hpp:26[m[K,
+[1.450s]                  from [01m[K/opt/ros/foxy/include/rclcpp/exceptions.hpp:18[m[K,
+[1.450s]                  from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:31[m[K,
+[1.450s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[1.451s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.451s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.451s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.451s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.451s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.451s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.451s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.451s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.451s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:1[m[K:
+[1.451s] [01m[K/usr/include/c++/9/bits/stream_iterator.h:134:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _CharT, class _Traits, class _Dist> bool std::operator==(const std::istream_iterator<_Tp, _CharT, _Traits, _Dist>&, const std::istream_iterator<_Tp, _CharT, _Traits, _Dist>&)[m[K’
+[1.451s]   134 |     [01;36m[Koperator[m[K==(const istream_iterator<_Tp, _CharT, _Traits, _Dist>& __x,
+[1.451s]       |     [01;36m[K^~~~~~~~[m[K
+[1.451s] [01m[K/usr/include/c++/9/bits/stream_iterator.h:134:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.451s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:15:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<example_interfaces::msg::Bool_<std::allocator<void> > >[m[K’} is not derived from ‘[01m[Kconst std::istream_iterator<_Tp, _CharT, _Traits, _Dist>[m[K’
+[1.451s]    21 |     if(msg == [01;36m[K1[m[K)
+[1.451s]       |               [01;36m[K^[m[K
+[2.933s] make[2]: *** [CMakeFiles/avoidance.dir/build.make:63: CMakeFiles/avoidance.dir/src/avoidance.cpp.o] Error 1
+[2.934s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/avoidance.dir/all] Error 2
+[2.934s] make: *** [Makefile:141: all] Error 2
+[2.936s] Invoked command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles -- -j20 -l20

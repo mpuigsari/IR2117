@@ -1,0 +1,21 @@
+[35m[1mScanning dependencies of target avoidance[0m
+[ 50%] Built target detector
+[ 75%] [32mBuilding CXX object CMakeFiles/avoidance.dir/src/avoidance.cpp.o[0m
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kvoid callback_front(example_interfaces::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:11:12:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kis[m[K’
+   11 |      if[34m[K([m[Kmsg[01;31m[K [m[K[32m[Kis[m[K true)
+      |        [34m[K~[m[K   [01;31m[K^[m[K[32m[K~~[m[K
+      |            [32m[K)[m[K
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kvoid callback_left(example_interfaces::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:16:11:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kis[m[K’
+   16 |     if[34m[K([m[Kmsg[01;31m[K [m[K[32m[Kis[m[K true)
+      |       [34m[K~[m[K   [01;31m[K^[m[K[32m[K~~[m[K
+      |           [32m[K)[m[K
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:[m[K In function ‘[01m[Kvoid callback_right(example_interfaces::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/obstacles/src/avoidance.cpp:21:11:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kis[m[K’
+   21 |     if[34m[K([m[Kmsg[01;31m[K [m[K[32m[Kis[m[K true)
+      |       [34m[K~[m[K   [01;31m[K^[m[K[32m[K~~[m[K
+      |           [32m[K)[m[K
+make[2]: *** [CMakeFiles/avoidance.dir/build.make:63: CMakeFiles/avoidance.dir/src/avoidance.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/avoidance.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

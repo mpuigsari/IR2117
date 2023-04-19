@@ -1,0 +1,4 @@
+Invoking command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles -- -j20 -l20
+Invoked command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles -- -j20 -l20
+Invoking command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles
+Invoked command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/max/Documents/GitHub/IR2117/tb3_ws/build/obstacles
