@@ -30,5 +30,5 @@ def generate_launch_description():
                 {"obs_angle_min": 0.1989},
                 {"obs_angle_max": 0.2785},
                 {"obs_threshold": 0.4}]
-            )
+            ),Node(package='obstacles',executable='avoidance')
         ])
