@@ -1,0 +1,19 @@
+[0.007s] Invoking command in '/home/max/Documents/GitHub/IR2117/ros2_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/max/Documents/GitHub/IR2117/ros2_ws/src/cpp_srvcli -DCMAKE_INSTALL_PREFIX=/home/max/Documents/GitHub/IR2117/ros2_ws/install/cpp_srvcli
+[0.015s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.027s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.109s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.128s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.130s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.192s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.218s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.218s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.296s] -- Found example_interfaces: 0.9.1 (/opt/ros/foxy/share/example_interfaces/cmake)
+[0.361s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.405s] CMake Error at CMakeLists.txt:35 (ament_target_dependecies):
+[0.405s]   Unknown CMake command "ament_target_dependecies".
+[0.406s] 
+[0.406s] 
+[0.406s] -- Configuring incomplete, errors occurred!
+[0.406s] See also "/home/max/Documents/GitHub/IR2117/ros2_ws/build/cpp_srvcli/CMakeFiles/CMakeOutput.log".
+[0.406s] See also "/home/max/Documents/GitHub/IR2117/ros2_ws/build/cpp_srvcli/CMakeFiles/CMakeError.log".
+[0.410s] Invoked command in '/home/max/Documents/GitHub/IR2117/ros2_ws/build/cpp_srvcli' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/max/Documents/GitHub/IR2117/ros2_ws/src/cpp_srvcli -DCMAKE_INSTALL_PREFIX=/home/max/Documents/GitHub/IR2117/ros2_ws/install/cpp_srvcli

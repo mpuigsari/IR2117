@@ -1,0 +1,57 @@
+[0.007s] Invoking command in '/home/max/Documents/GitHub/IR2117/ros2_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/max/Documents/GitHub/IR2117/ros2_ws/src/cpp_srvcli -DCMAKE_INSTALL_PREFIX=/home/max/Documents/GitHub/IR2117/ros2_ws/install/cpp_srvcli
+[0.015s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.028s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.111s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.128s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.130s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.192s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.217s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.218s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.293s] -- Found example_interfaces: 0.9.1 (/opt/ros/foxy/share/example_interfaces/cmake)
+[0.352s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.387s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.388s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.388s] -- Configured cppcheck include dirs: 
+[0.388s] -- Configured cppcheck exclude dirs and/or files: 
+[0.388s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.388s] -- Configured cpplint exclude dirs and/or files: 
+[0.389s] -- Added test 'lint_cmake' to check CMake code style
+[0.390s] -- Added test 'uncrustify' to check C / C++ code style
+[0.390s] -- Configured uncrustify additional arguments: 
+[0.390s] -- Added test 'xmllint' to check XML markup files
+[0.392s] -- Configuring done
+[0.398s] -- Generating done
+[0.399s] -- Build files have been written to: /home/max/Documents/GitHub/IR2117/ros2_ws/build/cpp_srvcli
+[0.402s] Invoked command in '/home/max/Documents/GitHub/IR2117/ros2_ws/build/cpp_srvcli' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/max/Documents/GitHub/IR2117/ros2_ws/src/cpp_srvcli -DCMAKE_INSTALL_PREFIX=/home/max/Documents/GitHub/IR2117/ros2_ws/install/cpp_srvcli
+[0.404s] Invoking command in '/home/max/Documents/GitHub/IR2117/ros2_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/ros2_ws/build/cpp_srvcli -- -j20 -l20
+[0.425s] [35m[1mScanning dependencies of target client[0m
+[0.425s] [35m[1mScanning dependencies of target server[0m
+[0.489s] [ 25%] [32mBuilding CXX object CMakeFiles/client.dir/src/add_two_ints_client.cpp.o[0m
+[0.490s] [ 50%] [32mBuilding CXX object CMakeFiles/server.dir/src/add_two_ints_server.cpp.o[0m
+[1.482s] [ 75%] [32m[1mLinking CXX executable server[0m
+[1.569s] [ 75%] Built target server
+[1.610s] [100%] [32m[1mLinking CXX executable client[0m
+[1.680s] [100%] Built target client
+[1.687s] Invoked command in '/home/max/Documents/GitHub/IR2117/ros2_ws/build/cpp_srvcli' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/ros2_ws/build/cpp_srvcli -- -j20 -l20
+[1.711s] Invoking command in '/home/max/Documents/GitHub/IR2117/ros2_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/max/Documents/GitHub/IR2117/ros2_ws/build/cpp_srvcli
+[1.718s] -- Install configuration: ""
+[1.719s] -- Installing: /home/max/Documents/GitHub/IR2117/ros2_ws/install/cpp_srvcli/lib/cpp_srvcli/server
+[1.719s] -- Set runtime path of "/home/max/Documents/GitHub/IR2117/ros2_ws/install/cpp_srvcli/lib/cpp_srvcli/server" to ""
+[1.719s] -- Installing: /home/max/Documents/GitHub/IR2117/ros2_ws/install/cpp_srvcli/lib/cpp_srvcli/client
+[1.720s] -- Set runtime path of "/home/max/Documents/GitHub/IR2117/ros2_ws/install/cpp_srvcli/lib/cpp_srvcli/client" to ""
+[1.720s] -- Installing: /home/max/Documents/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/ament_index/resource_index/package_run_dependencies/cpp_srvcli
+[1.720s] -- Installing: /home/max/Documents/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/ament_index/resource_index/parent_prefix_path/cpp_srvcli
+[1.720s] -- Installing: /home/max/Documents/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/environment/ament_prefix_path.sh
+[1.720s] -- Installing: /home/max/Documents/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/environment/ament_prefix_path.dsv
+[1.721s] -- Installing: /home/max/Documents/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/environment/path.sh
+[1.721s] -- Installing: /home/max/Documents/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/environment/path.dsv
+[1.721s] -- Installing: /home/max/Documents/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/local_setup.bash
+[1.721s] -- Installing: /home/max/Documents/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/local_setup.sh
+[1.721s] -- Installing: /home/max/Documents/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/local_setup.zsh
+[1.721s] -- Installing: /home/max/Documents/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/local_setup.dsv
+[1.721s] -- Installing: /home/max/Documents/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/package.dsv
+[1.721s] -- Installing: /home/max/Documents/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/ament_index/resource_index/packages/cpp_srvcli
+[1.721s] -- Installing: /home/max/Documents/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/cmake/cpp_srvcliConfig.cmake
+[1.721s] -- Installing: /home/max/Documents/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/cmake/cpp_srvcliConfig-version.cmake
+[1.721s] -- Installing: /home/max/Documents/GitHub/IR2117/ros2_ws/install/cpp_srvcli/share/cpp_srvcli/package.xml
+[1.724s] Invoked command in '/home/max/Documents/GitHub/IR2117/ros2_ws/build/cpp_srvcli' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/max/Documents/GitHub/IR2117/ros2_ws/build/cpp_srvcli
