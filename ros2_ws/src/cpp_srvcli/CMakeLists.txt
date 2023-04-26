@@ -23,6 +23,9 @@ find_package(example_interfaces REQUIRED)
 add_executable(server src/add_two_ints_server.cpp)
 
 ament_target_dependecies(server rclcpp example_interfaces)
+add_executable(client src/add_two_ints_client.cpp)
+
+ament_target_dependecies(client rclcpp example_interfaces)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -36,5 +39,6 @@ if(BUILD_TESTING)
 endif()
 install(TARGETS
     server
+    client
     DESTINATION lib/${PROJECT_NAME})
 ament_package()
