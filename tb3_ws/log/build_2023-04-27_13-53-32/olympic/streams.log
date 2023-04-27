@@ -1,0 +1,74 @@
+[0.010s] Invoking command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/max/Documents/GitHub/IR2117/tb3_ws/olympic -DCMAKE_INSTALL_PREFIX=/home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic
+[0.161s] -- The C compiler identification is GNU 9.4.0
+[0.353s] -- The CXX compiler identification is GNU 9.4.0
+[0.357s] -- Check for working C compiler: /usr/bin/cc
+[0.441s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.443s] -- Detecting C compiler ABI info
+[0.505s] -- Detecting C compiler ABI info - done
+[0.521s] -- Detecting C compile features
+[0.522s] -- Detecting C compile features - done
+[0.525s] -- Check for working CXX compiler: /usr/bin/c++
+[0.612s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.613s] -- Detecting CXX compiler ABI info
+[0.676s] -- Detecting CXX compiler ABI info - done
+[0.686s] -- Detecting CXX compile features
+[0.687s] -- Detecting CXX compile features - done
+[0.690s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.710s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.710s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.822s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.854s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.859s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.910s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.930s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.977s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.014s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.015s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.016s] -- Looking for pthread.h
+[1.073s] -- Looking for pthread.h - found
+[1.073s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.131s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.131s] -- Looking for pthread_create in pthreads
+[1.179s] -- Looking for pthread_create in pthreads - not found
+[1.179s] -- Looking for pthread_create in pthread
+[1.257s] -- Looking for pthread_create in pthread - found
+[1.258s] -- Found Threads: TRUE  
+[1.360s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[1.382s] -- Found turtlesim: 1.2.6 (/opt/ros/foxy/share/turtlesim/cmake)
+[1.447s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.492s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.492s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.493s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/include>
+[1.493s] -- Configured cppcheck exclude dirs and/or files: 
+[1.493s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.493s] -- Configured cpplint exclude dirs and/or files: 
+[1.494s] -- Added test 'lint_cmake' to check CMake code style
+[1.494s] -- Added test 'uncrustify' to check C / C++ code style
+[1.494s] -- Configured uncrustify additional arguments: 
+[1.494s] -- Added test 'xmllint' to check XML markup files
+[1.496s] -- Configuring done
+[1.501s] -- Generating done
+[1.501s] -- Build files have been written to: /home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic
+[1.508s] Invoked command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/max/Documents/GitHub/IR2117/tb3_ws/olympic -DCMAKE_INSTALL_PREFIX=/home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic
+[1.508s] Invoking command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic -- -j20 -l20
+[1.533s] [35m[1mScanning dependencies of target rings[0m
+[1.608s] [ 50%] [32mBuilding CXX object CMakeFiles/rings.dir/src/rings.cpp.o[0m
+[2.242s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.242s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:19:91:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::create_subscription<turtlesim::msg::Pose>(const char [14], void (&)(turtlesim::msg::Pose_<std::allocator<void> >::SharedPtr), int)[m[K’
+[2.242s]    19 |  auto pose = node->create_subscription<turtlesim::msg::Pose>("/turtle1/pose", upd_pose ,10[01;31m[K)[m[K;
+[2.242s]       |                                                                                           [01;31m[K^[m[K
+[2.242s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.242s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[2.242s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.242s]                  from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:2[m[K:
+[2.242s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:213:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class CallbackMessageT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<SubscriptionT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[2.242s]   213 |   [01;36m[Kcreate_subscription[m[K(
+[2.242s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.242s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:213:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.242s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:204:5:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+[2.242s]   204 |     [01;31m[Ktypename[m[K CallbackMessageT =
+[2.242s]       |     [01;31m[K^~~~~~~~[m[K
+[2.642s] make[2]: *** [CMakeFiles/rings.dir/build.make:63: CMakeFiles/rings.dir/src/rings.cpp.o] Error 1
+[2.642s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/rings.dir/all] Error 2
+[2.642s] make: *** [Makefile:141: all] Error 2
+[2.645s] Invoked command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic -- -j20 -l20
