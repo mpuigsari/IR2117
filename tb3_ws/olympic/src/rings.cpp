@@ -5,13 +5,13 @@
 #include "rclcpp/rclcpp.hpp"
 #include "geometry_msgs/msg/twist.hpp"
 #include "turtlesim/srv/set_pen.hpp"
-#include "turtlesim/srv/teleport_relative.hpp"
+#include "turtlesim/srv/teleport_absolute.hpp"
 
 using namespace std::chrono_literals;
 using turtlesim::srv::SetPen;
-using turtlesim::srv::TeleportRelative;
+using turtlesim::srv::TeleportAbsolute;
 
-int service_pen(std::shared_ptr<rclcpp::Node> node , int red, int green, int blue, int w){
+int service_pen(std::shared_ptr<rclcpp::Node> node , int red, int green, int blue, int w, float o){
  rclcpp::Client<SetPen>::SharedPtr client = node->create_client<SetPen>("/turtle1/set_pen");
     
  auto request = std::make_shared<SetPen::Request>();
@@ -19,6 +19,7 @@ int service_pen(std::shared_ptr<rclcpp::Node> node , int red, int green, int blu
  request->g = green;
  request->b = blue;
  request->width = w;
+ request->off = o;
  while (!client->wait_for_service(500ms)) {
     if (!rclcpp::ok()) {
       RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), 
@@ -45,12 +46,13 @@ int service_pen(std::shared_ptr<rclcpp::Node> node , int red, int green, int blu
     
 }
 
-int service_tp(std::shared_ptr<rclcpp::Node> node , float l, float a){
- rclcpp::Client<TeleportRelative>::SharedPtr client = node->create_client<TeleportRelative>("/turtle1/teleport_relative");
+int service_tp(std::shared_ptr<rclcpp::Node> node , float x, float y, float t){
+ rclcpp::Client<TeleportAbsolute>::SharedPtr client = node->create_client<TeleportAbsolute>("/turtle1/teleport_absolute");
     
- auto request = std::make_shared<TeleportRelative::Request>();
- request->linear = l;
- request->angular = a;
+ auto request = std::make_shared<TeleportAbsolute::Request>();
+ request->x = x;
+ request->y = y;
+ request->theta = t;
 
  while (!client->wait_for_service(500ms)) {
     if (!rclcpp::ok()) {
@@ -86,12 +88,12 @@ int main(int argc, char * argv[])
  node->declare_parameter("radius", 1.0);
  geometry_msgs::msg::Twist vel;
  rclcpp::WallRate loop_rate(20ms);
- int pen,tp;
-
- 
  double radius = node->get_parameter("radius").get_parameter_value().get<double>();
+ int pen = service_pen(node,0,0,0,0,255),
+ tp = service_tp(node,5.5 - radius*2.16, 5.5 - radius, 0.0);
+
  while (rclcpp::ok()) {
-     pen = service_pen(node,255,255,0,5);
+     pen = service_pen(node,0,0,255,5,0);
      for(int i = 0; i < 50 ; i++){
         vel.angular.z = 2* M_PI;
         vel.linear.x = 2* M_PI*radius;
@@ -104,7 +106,8 @@ int main(int argc, char * argv[])
     publisher->publish(vel);
     rclcpp::spin_some(node);
     loop_rate.sleep();
-    tp = service_tp(node,radius*1.08,0);
+    pen = service_pen(node,0,0,0,0,255);
+    tp = service_tp(node, 5.5, 5.5-radius,0.0);
     if(tp == 1 or pen == 1){
         rclcpp::shutdown();
         return 1;}

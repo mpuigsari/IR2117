@@ -286,9 +286,9 @@ CMakeFiles/rings.dir/src/rings.cpp.o: /opt/ros/foxy/include/tracetools/visibilit
 CMakeFiles/rings.dir/src/rings.cpp.o: /opt/ros/foxy/include/turtlesim/srv/detail/set_pen__builder.hpp
 CMakeFiles/rings.dir/src/rings.cpp.o: /opt/ros/foxy/include/turtlesim/srv/detail/set_pen__struct.hpp
 CMakeFiles/rings.dir/src/rings.cpp.o: /opt/ros/foxy/include/turtlesim/srv/detail/set_pen__traits.hpp
-CMakeFiles/rings.dir/src/rings.cpp.o: /opt/ros/foxy/include/turtlesim/srv/detail/teleport_relative__builder.hpp
-CMakeFiles/rings.dir/src/rings.cpp.o: /opt/ros/foxy/include/turtlesim/srv/detail/teleport_relative__struct.hpp
-CMakeFiles/rings.dir/src/rings.cpp.o: /opt/ros/foxy/include/turtlesim/srv/detail/teleport_relative__traits.hpp
+CMakeFiles/rings.dir/src/rings.cpp.o: /opt/ros/foxy/include/turtlesim/srv/detail/teleport_absolute__builder.hpp
+CMakeFiles/rings.dir/src/rings.cpp.o: /opt/ros/foxy/include/turtlesim/srv/detail/teleport_absolute__struct.hpp
+CMakeFiles/rings.dir/src/rings.cpp.o: /opt/ros/foxy/include/turtlesim/srv/detail/teleport_absolute__traits.hpp
 CMakeFiles/rings.dir/src/rings.cpp.o: /opt/ros/foxy/include/turtlesim/srv/set_pen.hpp
-CMakeFiles/rings.dir/src/rings.cpp.o: /opt/ros/foxy/include/turtlesim/srv/teleport_relative.hpp
+CMakeFiles/rings.dir/src/rings.cpp.o: /opt/ros/foxy/include/turtlesim/srv/teleport_absolute.hpp
 
