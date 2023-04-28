@@ -12,13 +12,12 @@ int main(int argc, char * argv[])
  auto node = rclcpp::Node::make_shared("rings");
  auto publisher = node->create_publisher<geometry_msgs::msg::Twist>("/turtle1/cmd_vel", 10);
  geometry_msgs::msg::Twist vel;
- rclcpp::WallRate loop_rate(10ms);
- double radius = 0.03;
- int iter = (2* M_PI * radius)/(0.01*0.1); /* iter = 2piR / v*t */
+ rclcpp::WallRate loop_rate(20ms);
+ double radius = 2;
  while (rclcpp::ok()) {
-    for(int i = 0; i < iter ; i++){
-        vel.angular.z = 3.33;
-        vel.linear.x = 0.1;
+    for(int i = 0; i < 50 ; i++){
+        vel.angular.z = 2* M_PI;
+        vel.linear.x = 2* M_PI*radius;
         publisher->publish(vel);
         rclcpp::spin_some(node);
         loop_rate.sleep();}
