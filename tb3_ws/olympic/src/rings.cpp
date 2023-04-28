@@ -111,6 +111,25 @@ int main(int argc, char * argv[])
     if(tp == 1 or pen == 1){
         rclcpp::shutdown();
         return 1;}
+    
+    pen = service_pen(node,0,0,0,5,0);
+     for(int i = 0; i < 50 ; i++){
+        vel.angular.z = 2* M_PI;
+        vel.linear.x = 2* M_PI*radius;
+        publisher->publish(vel);
+        rclcpp::spin_some(node);
+        loop_rate.sleep();}
+        
+    vel.angular.z = 0.0;
+    vel.linear.x = 0.0;
+    publisher->publish(vel);
+    rclcpp::spin_some(node);
+    loop_rate.sleep();
+    pen = service_pen(node,0,0,0,0,255);
+    tp = service_tp(node, 5.5 + radius*2.16, 5.5-radius,0.0);
+    if(tp == 1 or pen == 1){
+        rclcpp::shutdown();
+        return 1;}
     break;
 }
  rclcpp::shutdown();

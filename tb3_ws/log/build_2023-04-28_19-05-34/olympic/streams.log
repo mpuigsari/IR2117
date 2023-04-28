@@ -1,0 +1,26 @@
+[0.009s] Invoking command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic -- -j20 -l20
+[0.032s] [35m[1mScanning dependencies of target rings[0m
+[0.045s] [ 50%] [32mBuilding CXX object CMakeFiles/rings.dir/src/rings.cpp.o[0m
+[1.908s] [100%] [32m[1mLinking CXX executable rings[0m
+[2.007s] [100%] Built target rings
+[2.014s] Invoked command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic -- -j20 -l20
+[2.034s] Invoking command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic
+[2.040s] -- Install configuration: ""
+[2.040s] -- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/rings
+[2.041s] -- Set runtime path of "/home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/rings" to ""
+[2.041s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/ament_index/resource_index/package_run_dependencies/olympic
+[2.041s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/ament_index/resource_index/parent_prefix_path/olympic
+[2.041s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/environment/ament_prefix_path.sh
+[2.041s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/environment/ament_prefix_path.dsv
+[2.041s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/environment/path.sh
+[2.041s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/environment/path.dsv
+[2.041s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/local_setup.bash
+[2.041s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/local_setup.sh
+[2.041s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/local_setup.zsh
+[2.041s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/local_setup.dsv
+[2.041s] -- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/package.dsv
+[2.041s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/ament_index/resource_index/packages/olympic
+[2.041s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/cmake/olympicConfig.cmake
+[2.041s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/cmake/olympicConfig-version.cmake
+[2.041s] -- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/package.xml
+[2.043s] Invoked command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic
