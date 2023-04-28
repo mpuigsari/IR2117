@@ -1,0 +1,37 @@
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:[m[K In function ‘[01m[Kint service_pen(rclcpp::Node, int, int, int, int)[m[K’:
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:13:49:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Krclcpp::Node[m[K’
+   13 |  rclcpp::Client<SetPen>::SharedPtr client = node[01;31m[K->[m[Kcreate_client<SetPen>("/turtle1/set_pen");
+      |                                                 [01;31m[K^~[m[K
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:13:71:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   13 |  rclcpp::Client<SetPen>::SharedPtr client = node->create_client<SetPen[01;31m[K>[m[K("/turtle1/set_pen");
+      |                                                                       [01;31m[K^[m[K
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:32:14:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kspin_until_future_complete(rclcpp::Node&, std::shared_future<std::shared_ptr<turtlesim::srv::SetPen_Response_<std::allocator<void> > > >&)[m[K’
+   32 |        result[01;31m[K)[m[K == rclcpp::FutureReturnCode::SUCCESS)
+      |              [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:5[m[K:
+[01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:105:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class FutureT, class TimeRepT, class TimeT> rclcpp::FutureReturnCode rclcpp::spin_until_future_complete(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, const std::shared_future<_Res>&, std::chrono::duration<_Rep, _Period>)[m[K’
+  105 | [01;36m[Kspin_until_future_complete[m[K(
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:105:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:31:42:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Knode[m[K’ (type ‘[01m[Krclcpp::Node[m[K’) to type ‘[01m[Krclcpp::node_interfaces::NodeBaseInterface::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::node_interfaces::NodeBaseInterface>[m[K’}
+   31 |   if (rclcpp::spin_until_future_complete([01;36m[Knode[m[K,
+      |                                          [01;36m[K^~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:5[m[K:
+[01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:117:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class NodeT, class FutureT, class TimeRepT, class TimeT> rclcpp::FutureReturnCode rclcpp::spin_until_future_complete(std::shared_ptr<_Tp>, const std::shared_future<ResponseT>&, std::chrono::duration<_Rep2, _Period2>)[m[K’
+  117 | [01;36m[Kspin_until_future_complete[m[K(
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:117:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:32:14:[m[K [01;36m[Knote: [m[K  ‘[01m[Krclcpp::Node[m[K’ is not derived from ‘[01m[Kstd::shared_ptr<_Tp>[m[K’
+   32 |        result[01;36m[K)[m[K == rclcpp::FutureReturnCode::SUCCESS)
+      |              [01;36m[K^[m[K
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:55:23:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Knode[m[K’ from ‘[01m[Kstd::shared_ptr<rclcpp::Node>[m[K’ to ‘[01m[Krclcpp::Node[m[K’
+   55 | int pen = service_pen([01;31m[Knode[m[K,255,0,0,5);
+      |                       [01;31m[K^~~~[m[K
+      |                       [01;31m[K|[m[K
+      |                       [01;31m[Kstd::shared_ptr<rclcpp::Node>[m[K
+make[2]: *** [CMakeFiles/rings.dir/build.make:63: CMakeFiles/rings.dir/src/rings.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/rings.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

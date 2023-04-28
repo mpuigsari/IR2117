@@ -1,0 +1,13 @@
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:21:50:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kclient[m[K’
+   21 |  rclcpp::Client<turtlesim::srv::SetPen>SharedPtr [01;31m[Kclient[m[K = node->create_client<turtlesim::srv::SetPen>("set_pen");
+      |                                                  [01;31m[K^~~~~~[m[K
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:28:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient[m[K’ was not declared in this scope
+   28 |     while (![01;31m[Kclient[m[K->wait_for_service(1s)) {
+      |             [01;31m[K^~~~~~[m[K
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:36:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient[m[K’ was not declared in this scope
+   36 |     auto result = [01;31m[Kclient[m[K->async_send_request(request);
+      |                   [01;31m[K^~~~~~[m[K
+make[2]: *** [CMakeFiles/rings.dir/build.make:63: CMakeFiles/rings.dir/src/rings.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/rings.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

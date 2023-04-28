@@ -1,0 +1,13 @@
+[35m[1mScanning dependencies of target rings[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/rings.dir/src/rings.cpp.o[0m
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:17:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Parameter[m[K’ has no member named ‘[01m[Kget_paremeter_value[m[K’; did you mean ‘[01m[Kget_parameter_value[m[K’?
+   17 |  double radius = node->get_parameter("radius").[01;31m[Kget_paremeter_value[m[K().get<double>();
+      |                                                [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |                                                [32m[Kget_parameter_value[m[K
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:17:74:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdouble[m[K’
+   17 |  double radius = node->get_parameter("radius").get_paremeter_value().get<[01;31m[Kdouble[m[K>();
+      |                                                                          [01;31m[K^~~~~~[m[K
+make[2]: *** [CMakeFiles/rings.dir/build.make:63: CMakeFiles/rings.dir/src/rings.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/rings.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

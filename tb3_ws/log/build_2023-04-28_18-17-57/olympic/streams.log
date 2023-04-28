@@ -1,0 +1,31 @@
+[0.007s] Invoking command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic -- -j20 -l20
+[0.033s] [35m[1mScanning dependencies of target rings[0m
+[0.048s] [ 50%] [32mBuilding CXX object CMakeFiles/rings.dir/src/rings.cpp.o[0m
+[0.622s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[0.622s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:20:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kservice_pen[m[K’ was not declared in this scope
+[0.622s]    20 | int pen = [01;31m[Kservice_pen[m[K(node,255,0,0,5);
+[0.622s]       |           [01;31m[K^~~~~~~~~~~[m[K
+[0.628s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:[m[K At global scope:
+[0.628s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:46:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope
+[0.628s]    46 | int service_pen([01;31m[Knode[m[K , red, green, blue, w){
+[0.628s]       |                 [01;31m[K^~~~[m[K
+[0.629s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:46:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kred[m[K’ was not declared in this scope; did you mean ‘[01m[Kfread[m[K’?
+[0.629s]    46 | int service_pen(node , [01;31m[Kred[m[K, green, blue, w){
+[0.629s]       |                        [01;31m[K^~~[m[K
+[0.629s]       |                        [32m[Kfread[m[K
+[0.629s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:46:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kgreen[m[K’ was not declared in this scope
+[0.629s]    46 | int service_pen(node , red, [01;31m[Kgreen[m[K, blue, w){
+[0.629s]       |                             [01;31m[K^~~~~[m[K
+[0.630s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:46:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kblue[m[K’ was not declared in this scope
+[0.630s]    46 | int service_pen(node , red, green, [01;31m[Kblue[m[K, w){
+[0.630s]       |                                    [01;31m[K^~~~[m[K
+[0.630s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:46:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kw[m[K’ was not declared in this scope
+[0.630s]    46 | int service_pen(node , red, green, blue, [01;31m[Kw[m[K){
+[0.630s]       |                                          [01;31m[K^[m[K
+[0.630s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:46:43:[m[K [01;31m[Kerror: [m[Kexpression list treated as compound expression in initializer [[01;31m[K-fpermissive[m[K]
+[0.630s]    46 | int service_pen(node , red, green, blue, w[01;31m[K)[m[K{
+[0.630s]       |                                           [01;31m[K^[m[K
+[1.008s] make[2]: *** [CMakeFiles/rings.dir/build.make:63: CMakeFiles/rings.dir/src/rings.cpp.o] Error 1
+[1.008s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/rings.dir/all] Error 2
+[1.008s] make: *** [Makefile:141: all] Error 2
+[1.009s] Invoked command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic -- -j20 -l20

@@ -1,0 +1,21 @@
+[0.008s] Invoking command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic -- -j20 -l20
+[0.032s] [35m[1mScanning dependencies of target client[0m
+[0.044s] [ 50%] Built target rings
+[0.049s] [ 75%] [32mBuilding CXX object CMakeFiles/client.dir/src/ring_server.cpp.o[0m
+[0.602s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/ring_server.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[0.602s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/ring_server.cpp:16:54:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kclient[m[K’
+[0.603s]    16 |     rclcpp::Service<turtlesim::srv::SetPen>SharedPtr [01;31m[Kclient[m[K = node->create_client<turtlesim::srv::SetPen>("set_pen");
+[0.603s]       |                                                      [01;31m[K^~~~~~[m[K
+[0.605s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/ring_server.cpp:23:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient[m[K’ was not declared in this scope
+[0.605s]    23 |     while (![01;31m[Kclient[m[K->wait_for_service(1s)) {
+[0.605s]       |             [01;31m[K^~~~~~[m[K
+[0.605s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/ring_server.cpp:23:38:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""s[m[K’
+[0.605s]    23 |     while (!client->wait_for_service([01;31m[K1s[m[K)) {
+[0.605s]       |                                      [01;31m[K^~[m[K
+[0.606s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/ring_server.cpp:32:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient[m[K’ was not declared in this scope
+[0.606s]    32 |     auto result = [01;31m[Kclient[m[K->async_send_request(request);
+[0.606s]       |                   [01;31m[K^~~~~~[m[K
+[0.768s] make[2]: *** [CMakeFiles/client.dir/build.make:63: CMakeFiles/client.dir/src/ring_server.cpp.o] Error 1
+[0.768s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/client.dir/all] Error 2
+[0.768s] make: *** [Makefile:141: all] Error 2
+[0.770s] Invoked command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic -- -j20 -l20

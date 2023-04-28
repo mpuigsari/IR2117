@@ -283,8 +283,8 @@ CMakeFiles/rings.dir/src/rings.cpp.o: /opt/ros/foxy/include/tracetools/config.h
 CMakeFiles/rings.dir/src/rings.cpp.o: /opt/ros/foxy/include/tracetools/tracetools.h
 CMakeFiles/rings.dir/src/rings.cpp.o: /opt/ros/foxy/include/tracetools/utils.hpp
 CMakeFiles/rings.dir/src/rings.cpp.o: /opt/ros/foxy/include/tracetools/visibility_control.hpp
-CMakeFiles/rings.dir/src/rings.cpp.o: /opt/ros/foxy/include/turtlesim/msg/detail/pose__builder.hpp
-CMakeFiles/rings.dir/src/rings.cpp.o: /opt/ros/foxy/include/turtlesim/msg/detail/pose__struct.hpp
-CMakeFiles/rings.dir/src/rings.cpp.o: /opt/ros/foxy/include/turtlesim/msg/detail/pose__traits.hpp
-CMakeFiles/rings.dir/src/rings.cpp.o: /opt/ros/foxy/include/turtlesim/msg/pose.hpp
+CMakeFiles/rings.dir/src/rings.cpp.o: /opt/ros/foxy/include/turtlesim/srv/detail/set_pen__builder.hpp
+CMakeFiles/rings.dir/src/rings.cpp.o: /opt/ros/foxy/include/turtlesim/srv/detail/set_pen__struct.hpp
+CMakeFiles/rings.dir/src/rings.cpp.o: /opt/ros/foxy/include/turtlesim/srv/detail/set_pen__traits.hpp
+CMakeFiles/rings.dir/src/rings.cpp.o: /opt/ros/foxy/include/turtlesim/srv/set_pen.hpp
 

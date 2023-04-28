@@ -1,0 +1,41 @@
+[0.009s] Invoking command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic -- -j20 -l20
+[0.024s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.037s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.119s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.137s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.139s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.208s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.236s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.237s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.316s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.334s] -- Found turtlesim: 1.2.6 (/opt/ros/foxy/share/turtlesim/cmake)
+[0.388s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.421s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.422s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.422s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/include>
+[0.422s] -- Configured cppcheck exclude dirs and/or files: 
+[0.422s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.422s] -- Configured cpplint exclude dirs and/or files: 
+[0.423s] -- Added test 'lint_cmake' to check CMake code style
+[0.423s] -- Added test 'uncrustify' to check C / C++ code style
+[0.423s] -- Configured uncrustify additional arguments: 
+[0.423s] -- Added test 'xmllint' to check XML markup files
+[0.424s] -- Configuring done
+[0.429s] -- Generating done
+[0.430s] -- Build files have been written to: /home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic
+[0.445s] [35m[1mScanning dependencies of target rings[0m
+[0.457s] [ 50%] [32mBuilding CXX object CMakeFiles/rings.dir/src/rings.cpp.o[0m
+[1.040s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.041s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:20:50:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kclient[m[K’
+[1.041s]    20 |  rclcpp::Client<turtlesim::srv::SetPen>SharedPtr [01;31m[Kclient[m[K = node->create_client<turtlesim::srv::SetPen>("set_pen");
+[1.041s]       |                                                  [01;31m[K^~~~~~[m[K
+[1.042s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:27:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient[m[K’ was not declared in this scope
+[1.043s]    27 |     while (![01;31m[Kclient[m[K->wait_for_service(1s)) {
+[1.043s]       |             [01;31m[K^~~~~~[m[K
+[1.043s] [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:35:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient[m[K’ was not declared in this scope
+[1.044s]    35 |     auto result = [01;31m[Kclient[m[K->async_send_request(request);
+[1.044s]       |                   [01;31m[K^~~~~~[m[K
+[1.432s] make[2]: *** [CMakeFiles/rings.dir/build.make:63: CMakeFiles/rings.dir/src/rings.cpp.o] Error 1
+[1.432s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/rings.dir/all] Error 2
+[1.433s] make: *** [Makefile:141: all] Error 2
+[1.435s] Invoked command in '/home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic -- -j20 -l20

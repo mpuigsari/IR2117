@@ -1,0 +1,55 @@
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+-- Found turtlesim: 1.2.6 (/opt/ros/foxy/share/turtlesim/cmake)
+-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/max/Documents/GitHub/IR2117/tb3_ws/build/olympic
+[35m[1mScanning dependencies of target client[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/client.dir/src/ring_server.cpp.o[0m
+[ 75%] Built target rings
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/ring_server.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/ring_server.cpp:16:21:[m[K [01;31m[Kerror: [m[K‘[01m[KSetPen[m[K’ was not declared in this scope; did you mean ‘[01m[Kturtlesim::srv::SetPen[m[K’?
+   16 |     rclcpp::Service<[01;31m[KSetPen[m[K>SharedPtr client = node->create_client<turtlesim::srv::SetPen>("set_pen");
+      |                     [01;31m[K^~~~~~[m[K
+      |                     [32m[Kturtlesim::srv::SetPen[m[K
+In file included from [01m[K/opt/ros/foxy/include/turtlesim/srv/set_pen.hpp:7[m[K,
+                 from [01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/ring_server.cpp:2[m[K:
+[01m[K/opt/ros/foxy/include/turtlesim/srv/detail/set_pen__struct.hpp:299:8:[m[K [01;36m[Knote: [m[K‘[01m[Kturtlesim::srv::SetPen[m[K’ declared here
+  299 | struct [01;36m[KSetPen[m[K
+      |        [01;36m[K^~~~~~[m[K
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/ring_server.cpp:16:27:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   16 |     rclcpp::Service<SetPen[01;31m[K>[m[KSharedPtr client = node->create_client<turtlesim::srv::SetPen>("set_pen");
+      |                           [01;31m[K^[m[K
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/ring_server.cpp:16:38:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kclient[m[K’
+   16 |     rclcpp::Service<SetPen>SharedPtr [01;31m[Kclient[m[K = node->create_client<turtlesim::srv::SetPen>("set_pen");
+      |                                      [01;31m[K^~~~~~[m[K
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/ring_server.cpp:23:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient[m[K’ was not declared in this scope
+   23 |     while (![01;31m[Kclient[m[K->wait_for_service(1s)) {
+      |             [01;31m[K^~~~~~[m[K
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/ring_server.cpp:23:38:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""s[m[K’
+   23 |     while (!client->wait_for_service([01;31m[K1s[m[K)) {
+      |                                      [01;31m[K^~[m[K
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/ring_server.cpp:32:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient[m[K’ was not declared in this scope
+   32 |     auto result = [01;31m[Kclient[m[K->async_send_request(request);
+      |                   [01;31m[K^~~~~~[m[K
+make[2]: *** [CMakeFiles/client.dir/build.make:63: CMakeFiles/client.dir/src/ring_server.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/client.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
