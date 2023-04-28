@@ -1,0 +1,17 @@
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:[m[K In function ‘[01m[Kint service_tp(std::shared_ptr<rclcpp::Node>, float, float)[m[K’:
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:50:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct turtlesim::srv::SetPen_Request_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct turtlesim::srv::SetPen_Request_<std::allocator<void> >[m[K’} has no member named ‘[01m[Klinear[m[K’
+   50 |  request->[01;31m[Klinear[m[K = l;
+      |           [01;31m[K^~~~~~[m[K
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:51:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct turtlesim::srv::SetPen_Request_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct turtlesim::srv::SetPen_Request_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kangular[m[K’
+   51 |  request->[01;31m[Kangular[m[K = a;
+      |           [01;31m[K^~~~~~~[m[K
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:105:40:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kint service_pen(std::shared_ptr<rclcpp::Node>, int, int, int, int)[m[K’
+  105 |     tp = service_pen(node,radius*1.08,0[01;31m[K)[m[K;
+      |                                        [01;31m[K^[m[K
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/rings.cpp:12:5:[m[K [01;36m[Knote: [m[Kdeclared here
+   12 | int [01;36m[Kservice_pen[m[K(std::shared_ptr<rclcpp::Node> node , int red, int green, int blue, int w){
+      |     [01;36m[K^~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/rings.dir/build.make:63: CMakeFiles/rings.dir/src/rings.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/rings.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
