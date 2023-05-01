@@ -89,10 +89,54 @@ int main(int argc, char * argv[])
  geometry_msgs::msg::Twist vel;
  rclcpp::WallRate loop_rate(20ms);
  double radius = node->get_parameter("radius").get_parameter_value().get<double>();
- int pen = service_pen(node,0,0,0,0,255),
- tp = service_tp(node,5.5 - radius*2.16, 5.5 - radius, 0.0), iter = 100 * M_PI;
+ int rd,gr,bl,pen,tp, iter = 100 * M_PI;
+ float p_x,p_y;
 
  while (rclcpp::ok()) {
+     
+     for(int r = 0; r < 5; r++){
+         switch(r){
+             case 0:
+                 rd = 0,gr = 0,bl = 255, p_x = 5.5 - radius*2.16,p_y = 5.5 - radius;
+                 break;
+            case 1:
+                rd = 0,gr = 0,bl = 0, p_x = 5.5 ,p_y = 5.5 - radius;
+                 break;
+            case 2:
+                rd = 255,gr = 0,bl = 0, p_x = 5.5 + radius*2.16,p_y = 5.5 - radius;
+                 break;
+                 
+            case 3:
+                rd = 255,gr = 255,bl = 0, p_x = 5.5 - radius*1.08,p_y = 5.5 - radius*2;
+                 break;
+            case 4:
+                rd = 0,gr = 255,bl = 0, p_x = 5.5 + radius*1.08,p_y = 5.5 - radius*2;
+                 break;
+        
+        }
+        pen = service_pen(node,0,0,0,0,255);
+        tp = service_tp(node, p_x, p_y,0.0);
+        if(tp == 1 or pen == 1){
+            rclcpp::shutdown();
+        return 1;}
+        pen = service_pen(node,rd,gr,bl,5,0);
+        for(int i = 0; i < iter ; i++){
+            vel.angular.z = 1;
+            vel.linear.x = radius;
+            publisher->publish(vel);
+            rclcpp::spin_some(node);
+            loop_rate.sleep();}
+        
+        vel.angular.z = 0.0;
+        vel.linear.x = 0.0;
+        publisher->publish(vel);
+        rclcpp::spin_some(node);
+        loop_rate.sleep();
+        
+    }
+    rclcpp::shutdown();
+    return 0;
+     /* 
      pen = service_pen(node,0,0,255,5,0);
      for(int i = 0; i < iter ; i++){
         vel.angular.z = 1;
@@ -178,8 +222,8 @@ int main(int argc, char * argv[])
     vel.linear.x = 0.0;
     publisher->publish(vel);
     rclcpp::spin_some(node);
-    loop_rate.sleep();
-    break;
+    loop_rate.sleep();*/
+    
 }
  rclcpp::shutdown();
  return 0;
