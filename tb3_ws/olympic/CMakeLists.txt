@@ -34,9 +34,22 @@ ament_target_dependencies(
   "geometry_msgs"
   "turtlesim"
 )
+add_executable(parallel src/parallel_rings.cpp)
+
+target_include_directories(parallel PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>)
+ament_target_dependencies(
+  parallel
+  "rclcpp"
+  "std_msgs"
+  "geometry_msgs"
+  "turtlesim"
+)
 
 install(TARGETS 
   rings
+  parallel
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
