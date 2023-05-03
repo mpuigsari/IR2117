@@ -5,14 +5,17 @@
 #include "rclcpp/rclcpp.hpp"
 #include "geometry_msgs/msg/twist.hpp"
 #include "turtlesim/srv/set_pen.hpp"
-#include "turtlesim/srv/teleport_absolute.hpp"
+#include "turtlesim/srv/spawn.hpp"
+#include "turtlesim/srv/kill.hpp"
 
 using namespace std::chrono_literals;
 using turtlesim::srv::SetPen;
-using turtlesim::srv::TeleportAbsolute;
+using turtlesim::srv::Spawn;
+using turtlesim::srv::Kill;
 
-int service_pen(std::shared_ptr<rclcpp::Node> node , int red, int green, int blue, int w, float o){
- rclcpp::Client<SetPen>::SharedPtr client = node->create_client<SetPen>("/turtle1/set_pen");
+
+int service_pen(std::shared_ptr<rclcpp::Node> node , int turt,int red, int green, int blue, int w, float o){
+ rclcpp::Client<SetPen>::SharedPtr client = node->create_client<SetPen>("/turtle"+std::to_string(turt)+"/set_pen");
     
  auto request = std::make_shared<SetPen::Request>();
  request->r = red;
@@ -46,10 +49,10 @@ int service_pen(std::shared_ptr<rclcpp::Node> node , int red, int green, int blu
     
 }
 
-int service_tp(std::shared_ptr<rclcpp::Node> node , float x, float y, float t){
- rclcpp::Client<TeleportAbsolute>::SharedPtr client = node->create_client<TeleportAbsolute>("/turtle1/teleport_absolute");
+int service_sp(std::shared_ptr<rclcpp::Node> node , float x, float y, float t){
+ rclcpp::Client<Spawn>::SharedPtr client = node->create_client<Spawn>("/spawn");
     
- auto request = std::make_shared<TeleportAbsolute::Request>();
+ auto request = std::make_shared<Spawn::Request>();
  request->x = x;
  request->y = y;
  request->theta = t;
@@ -69,11 +72,43 @@ int service_tp(std::shared_ptr<rclcpp::Node> node , float x, float y, float t){
        result) ==	rclcpp::FutureReturnCode::SUCCESS)
   {
     RCLCPP_INFO(rclcpp::get_logger("rclcpp"), 
-     "Success teleport_relative");
+     "Success spawn");
     
   } else {
     RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), 
-     "Failed to call service teleport_relative");
+     "Failed to call service spawn");
+    return 1;
+  }
+ return 0;
+    
+}
+
+int kill(std::shared_ptr<rclcpp::Node> node , std::string name){
+ rclcpp::Client<Kill>::SharedPtr client = node->create_client<Kill>("/kill");
+    
+ auto request = std::make_shared<Kill::Request>();
+ request->name = name;
+
+ while (!client->wait_for_service(500ms)) {
+    if (!rclcpp::ok()) {
+      RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), 
+       "Interrupted while waiting for the service.");
+      return 1;
+	 }
+	 RCLCPP_INFO(rclcpp::get_logger("rclcpp"), 
+     "service not available, waiting again...");
+  }
+    auto result = client->async_send_request(request);
+
+  if (rclcpp::spin_until_future_complete(node, 
+       result) ==	rclcpp::FutureReturnCode::SUCCESS)
+  {
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), 
+     "Success kill");
+    
+  } else {
+    RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), 
+     "Failed to call service kill");
     return 1;
   }
  return 0;
@@ -89,37 +124,42 @@ int main(int argc, char * argv[])
  geometry_msgs::msg::Twist vel;
  rclcpp::WallRate loop_rate(20ms);
  double radius = node->get_parameter("radius").get_parameter_value().get<double>();
- int rd,gr,bl,pen,tp, iter = 100 * M_PI;
+ int rd,gr,bl,pen,tp, iter = 100 * M_PI,
+ k = kill(node, "turtle1");
  float p_x,p_y;
+ if(k == 1 ){
+    rclcpp::shutdown();
+    return 1;}
 
  while (rclcpp::ok()) {
      
-     for(int r = 0; r < 5; r++){
+     for(int r = 2; r < 7; r++){
          switch(r){
-             case 0:
+             case 2:
                  rd = 0,gr = 0,bl = 255, p_x = 5.5 - radius*2.16,p_y = 5.5 - radius;
                  break;
-            case 1:
+            case 3:
                 rd = 0,gr = 0,bl = 0, p_x = 5.5 ,p_y = 5.5 - radius;
                  break;
-            case 2:
+            case 4:
                 rd = 255,gr = 0,bl = 0, p_x = 5.5 + radius*2.16,p_y = 5.5 - radius;
                  break;
                  
-            case 3:
+            case 5:
                 rd = 255,gr = 255,bl = 0, p_x = 5.5 - radius*1.08,p_y = 5.5 - radius*2;
                  break;
-            case 4:
+            case 6:
                 rd = 0,gr = 255,bl = 0, p_x = 5.5 + radius*1.08,p_y = 5.5 - radius*2;
                  break;
+         }
+        publisher = node->create_publisher<geometry_msgs::msg::Twist>("/turtle"+std::to_string(r)+"/cmd_vel", 10);
         
-        }
-        pen = service_pen(node,0,0,0,0,255);
-        tp = service_tp(node, p_x, p_y,0.0);
+        tp = service_sp(node, p_x, p_y,0.0);
+        pen = service_pen(node,r,rd,gr,bl,5,0);
         if(tp == 1 or pen == 1){
             rclcpp::shutdown();
         return 1;}
-        pen = service_pen(node,rd,gr,bl,5,0);
+        
         for(int i = 0; i < iter ; i++){
             vel.angular.z = 1;
             vel.linear.x = radius;
@@ -136,93 +176,7 @@ int main(int argc, char * argv[])
     }
     rclcpp::shutdown();
     return 0;
-     /* 
-     pen = service_pen(node,0,0,255,5,0);
-     for(int i = 0; i < iter ; i++){
-        vel.angular.z = 1;
-        vel.linear.x = radius;
-        publisher->publish(vel);
-        rclcpp::spin_some(node);
-        loop_rate.sleep();}
-        
-    vel.angular.z = 0.0;
-    vel.linear.x = 0.0;
-    publisher->publish(vel);
-    rclcpp::spin_some(node);
-    loop_rate.sleep();
-    pen = service_pen(node,0,0,0,0,255);
-    tp = service_tp(node, 5.5, 5.5-radius,0.0);
-    if(tp == 1 or pen == 1){
-        rclcpp::shutdown();
-        return 1;}
-    
-    pen = service_pen(node,0,0,0,5,0);
-     for(int i = 0; i < iter ; i++){
-        vel.angular.z = 1;
-        vel.linear.x = radius;
-        publisher->publish(vel);
-        rclcpp::spin_some(node);
-        loop_rate.sleep();}
-        
-    vel.angular.z = 0.0;
-    vel.linear.x = 0.0;
-    publisher->publish(vel);
-    rclcpp::spin_some(node);
-    loop_rate.sleep();
-    pen = service_pen(node,0,0,0,0,255);
-    tp = service_tp(node, 5.5 + radius*2.16, 5.5-radius,0.0);
-    if(tp == 1 or pen == 1){
-        rclcpp::shutdown();
-        return 1;}
-    pen = service_pen(node,255,0,0,5,0);
-     for(int i = 0; i < iter ; i++){
-        vel.angular.z = 1;
-        vel.linear.x = radius;
-        publisher->publish(vel);
-        rclcpp::spin_some(node);
-        loop_rate.sleep();}
-        
-    vel.angular.z = 0.0;
-    vel.linear.x = 0.0;
-    publisher->publish(vel);
-    rclcpp::spin_some(node);
-    loop_rate.sleep();
-    pen = service_pen(node,0,0,0,0,255);
-    tp = service_tp(node, 5.5 - radius*1.08, 5.5-radius*2,0.0);
-    if(tp == 1 or pen == 1){
-        rclcpp::shutdown();
-        return 1;}
-    pen = service_pen(node,255,255,0,5,0);
-     for(int i = 0; i < iter ; i++){
-        vel.angular.z = 1;
-        vel.linear.x = radius;
-        publisher->publish(vel);
-        rclcpp::spin_some(node);
-        loop_rate.sleep();}
-        
-    vel.angular.z = 0.0;
-    vel.linear.x = 0.0;
-    publisher->publish(vel);
-    rclcpp::spin_some(node);
-    loop_rate.sleep();
-    pen = service_pen(node,0,0,0,0,255);
-    tp = service_tp(node, 5.5 + radius*1.08, 5.5-radius*2,0.0);
-    if(tp == 1 or pen == 1){
-        rclcpp::shutdown();
-        return 1;}
-    pen = service_pen(node,0,255,0,5,0);
-     for(int i = 0; i < iter ; i++){
-        vel.angular.z = 1;
-        vel.linear.x = radius;
-        publisher->publish(vel);
-        rclcpp::spin_some(node);
-        loop_rate.sleep();}
-        
-    vel.angular.z = 0.0;
-    vel.linear.x = 0.0;
-    publisher->publish(vel);
-    rclcpp::spin_some(node);
-    loop_rate.sleep();*/
+     
     
 }
  rclcpp::shutdown();

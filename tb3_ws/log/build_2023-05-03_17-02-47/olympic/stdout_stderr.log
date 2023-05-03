@@ -1,0 +1,13 @@
+[35m[1mScanning dependencies of target parallel[0m
+[ 50%] Built target rings
+[ 75%] [32mBuilding CXX object CMakeFiles/parallel.dir/src/parallel_rings.cpp.o[0m
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/parallel_rings.cpp:[m[K In function ‘[01m[Kint service_pen(std::shared_ptr<rclcpp::Node>, int, int, int, int, int, float)[m[K’:
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/parallel_rings.cpp:15:98:[m[K [01;31m[Kerror: [m[K‘[01m[Kr[m[K’ was not declared in this scope
+   15 |  rclcpp::Client<SetPen>::SharedPtr client = node->create_client<SetPen>("/turtle"+std::to_string([01;31m[Kr[m[K)+"/set_pen");
+      |                                                                                                  [01;31m[K^[m[K
+[01m[K/home/max/Documents/GitHub/IR2117/tb3_ws/olympic/src/parallel_rings.cpp:14:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kturt[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   14 | int service_pen(std::shared_ptr<rclcpp::Node> node , [01;35m[Kint turt[m[K,int red, int green, int blue, int w, float o){
+      |                                                      [01;35m[K~~~~^~~~[m[K
+make[2]: *** [CMakeFiles/parallel.dir/build.make:63: CMakeFiles/parallel.dir/src/parallel_rings.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/parallel.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

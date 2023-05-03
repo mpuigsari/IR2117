@@ -1,4 +1,5 @@
 /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/rings
+/home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/parallel
 /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/ament_index/resource_index/package_run_dependencies/olympic
 /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/ament_index/resource_index/parent_prefix_path/olympic
 /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/environment/ament_prefix_path.sh

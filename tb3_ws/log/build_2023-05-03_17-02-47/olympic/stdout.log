@@ -1,0 +1,3 @@
+[35m[1mScanning dependencies of target parallel[0m
+[ 50%] Built target rings
+[ 75%] [32mBuilding CXX object CMakeFiles/parallel.dir/src/parallel_rings.cpp.o[0m

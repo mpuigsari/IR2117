@@ -1,0 +1,24 @@
+[35m[1mScanning dependencies of target parallel[0m
+[ 50%] Built target rings
+[ 75%] [32mBuilding CXX object CMakeFiles/parallel.dir/src/parallel_rings.cpp.o[0m
+[100%] [32m[1mLinking CXX executable parallel[0m
+[100%] Built target parallel
+-- Install configuration: ""
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/rings
+-- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/parallel
+-- Set runtime path of "/home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/lib/olympic/parallel" to ""
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/ament_index/resource_index/package_run_dependencies/olympic
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/ament_index/resource_index/parent_prefix_path/olympic
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/environment/ament_prefix_path.sh
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/environment/path.sh
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/environment/path.dsv
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/local_setup.bash
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/local_setup.sh
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/local_setup.zsh
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/local_setup.dsv
+-- Installing: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/package.dsv
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/ament_index/resource_index/packages/olympic
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/cmake/olympicConfig.cmake
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/cmake/olympicConfig-version.cmake
+-- Up-to-date: /home/max/Documents/GitHub/IR2117/tb3_ws/install/olympic/share/olympic/package.xml

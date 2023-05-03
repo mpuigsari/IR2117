@@ -168,6 +168,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named parallel
+
+# Build rule for target.
+parallel: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 parallel
+.PHONY : parallel
+
+# fast build rule for target.
+parallel/fast:
+	$(MAKE) -f CMakeFiles/parallel.dir/build.make CMakeFiles/parallel.dir/build
+.PHONY : parallel/fast
+
+#=============================================================================
 # Target rules for targets named rings
 
 # Build rule for target.
@@ -205,6 +218,33 @@ uninstall: cmake_check_build_system
 uninstall/fast:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
+
+src/parallel_rings.o: src/parallel_rings.cpp.o
+
+.PHONY : src/parallel_rings.o
+
+# target to build an object file
+src/parallel_rings.cpp.o:
+	$(MAKE) -f CMakeFiles/parallel.dir/build.make CMakeFiles/parallel.dir/src/parallel_rings.cpp.o
+.PHONY : src/parallel_rings.cpp.o
+
+src/parallel_rings.i: src/parallel_rings.cpp.i
+
+.PHONY : src/parallel_rings.i
+
+# target to preprocess a source file
+src/parallel_rings.cpp.i:
+	$(MAKE) -f CMakeFiles/parallel.dir/build.make CMakeFiles/parallel.dir/src/parallel_rings.cpp.i
+.PHONY : src/parallel_rings.cpp.i
+
+src/parallel_rings.s: src/parallel_rings.cpp.s
+
+.PHONY : src/parallel_rings.s
+
+# target to generate assembly for a file
+src/parallel_rings.cpp.s:
+	$(MAKE) -f CMakeFiles/parallel.dir/build.make CMakeFiles/parallel.dir/src/parallel_rings.cpp.s
+.PHONY : src/parallel_rings.cpp.s
 
 src/rings.o: src/rings.cpp.o
 
@@ -246,9 +286,13 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... parallel"
 	@echo "... rings"
 	@echo "... olympic_uninstall"
 	@echo "... uninstall"
+	@echo "... src/parallel_rings.o"
+	@echo "... src/parallel_rings.i"
+	@echo "... src/parallel_rings.s"
 	@echo "... src/rings.o"
 	@echo "... src/rings.i"
 	@echo "... src/rings.s"
