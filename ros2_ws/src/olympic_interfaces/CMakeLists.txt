@@ -20,7 +20,21 @@ find_package(ament_cmake REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
+add_executable(rings_server src/rings_action_server.cpp)
+ament_target_dependencies(rings_server
+    rclcpp
+    rclcpp_action
+    olympic_interfaces)
 
+add_executable(rings_client src/rings_action_client.cpp)
+ament_target_dependencies(rings_client
+    rclcpp
+    rclcpp_action
+    olympic_interfaces)
+install(TARGETS
+    rings_server
+    rings_client
+    DESTINATION lib/${PROJECT_NAME})
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
