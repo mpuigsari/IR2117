@@ -34,7 +34,7 @@ int main(int argc, char ** argv)
     return 1;
   }
   auto goal_msg = Rings::Goal();
-  goal_msg.order = 10;
+  goal_msg.radius = 1.5;
 
 
   RCLCPP_INFO(g_node->get_logger(), 
