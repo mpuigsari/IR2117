@@ -1,49 +1,51 @@
 #include <inttypes.h>
 #include <memory>
-#include "olympic_interfaces/action/rings.hpp"
+#include "action_tutorials_interfaces/action/fibonacci.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp_action/rclcpp_action.hpp"
 
-using Rings = olympic_interfaces::action::Rings;
+using Fibonacci = 
+  action_tutorials_interfaces::action::Fibonacci;
 
-using GoalHandleRings = rclcpp_action::ServerGoalHandle<Rings>;
+using GoalHandleFibonacci =
+  rclcpp_action::ClientGoalHandle<Fibonacci>;
 
 using namespace std::chrono_literals;
 
 rclcpp::Node::SharedPtr g_node = nullptr;
 
-void feedback_callback(GoalHandleRings::SharedPtr,
-  const std::shared_ptr<const Rings::Feedback> feedback)
+void feedback_callback(GoalHandleFibonacci::SharedPtr,
+  const std::shared_ptr<const Fibonacci::Feedback> feedback)
 {
   RCLCPP_INFO(
     g_node->get_logger(),
-    "Next ring received: %" PRId32,
-    feedback->drawing_ring.back());
+    "Next number in sequence received: %" PRId32,
+    feedback->partial_sequence.back());
 }
 
 int main(int argc, char ** argv)
 {
   rclcpp::init(argc, argv);
-  g_node = rclcpp::Node::make_shared("rings_client");
-  auto rings_client = rclcpp_action::create_client<Rings>(
-    g_node, "rings");
+  g_node = rclcpp::Node::make_shared("action_client");
+  auto action_client = rclcpp_action::create_client<Fibonacci>(
+    g_node, "fibonacci");
 
-  if (!rings_client->wait_for_action_server(20s)) {
+  if (!action_client->wait_for_action_server(20s)) {
     RCLCPP_ERROR(g_node->get_logger(), 
       "Action server not available after waiting");
     return 1;
   }
-  auto goal_msg = Rings::Goal();
+  auto goal_msg = Fibonacci::Goal();
   goal_msg.order = 10;
 
 
   RCLCPP_INFO(g_node->get_logger(), 
     "Sending goal");
   auto send_goal_options = 
-    rclcpp_action::Client<Rings>::SendGoalOptions();
+    rclcpp_action::Client<Fibonacci>::SendGoalOptions();
   send_goal_options.feedback_callback = feedback_callback;
   auto goal_handle_future = 
-    rings_client->async_send_goal(goal_msg, send_goal_options);
+    action_client->async_send_goal(goal_msg, send_goal_options);
 
   auto return_code = rclcpp::spin_until_future_complete(g_node,
     goal_handle_future);
@@ -54,7 +56,7 @@ int main(int argc, char ** argv)
     return 1;
   }
 
-  GoalHandleRings::SharedPtr goal_handle = 
+  GoalHandleFibonacci::SharedPtr goal_handle = 
     goal_handle_future.get();
   if (!goal_handle) {
     RCLCPP_ERROR(g_node->get_logger(), 
@@ -63,7 +65,7 @@ int main(int argc, char ** argv)
   }
   
   auto result_future = 
-    rings_client->async_get_result(goal_handle);
+    action_client->async_get_result(goal_handle);
 
   RCLCPP_INFO(g_node->get_logger(), "Waiting for result");
 
@@ -76,7 +78,7 @@ int main(int argc, char ** argv)
       "get result call failed :(");
     return 1;
   }
-  GoalHandleRings::WrappedResult wrapped_result = result_future.get();
+  GoalHandleFibonacci::WrappedResult wrapped_result = result_future.get();
 
   switch (wrapped_result.code) {
     case rclcpp_action::ResultCode::SUCCEEDED:
@@ -92,13 +94,13 @@ int main(int argc, char ** argv)
       return 1;
   }
   RCLCPP_INFO(g_node->get_logger(), "result received");
-  for (auto number : wrapped_result.result->drawing_ring) {
+  for (auto number : wrapped_result.result->sequence) {
     RCLCPP_INFO(g_node->get_logger(), "%" PRId32, number);
   }
 
-  rings_client.reset();
+  action_client.reset();
   g_node.reset();
   rclcpp::shutdown();
   return 0;
 }
-
+ 
