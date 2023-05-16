@@ -1,0 +1,2 @@
+Invoking command in '/home/max/Documents/GitHub/IR2117/ros2_ws/src/build/olympic_interfaces': /usr/bin/cmake /home/max/Documents/GitHub/IR2117/ros2_ws/src/olympic_interfaces -DCMAKE_INSTALL_PREFIX=/home/max/Documents/GitHub/IR2117/ros2_ws/src/install/olympic_interfaces
+Invoked command in '/home/max/Documents/GitHub/IR2117/ros2_ws/src/build/olympic_interfaces' returned '1': /usr/bin/cmake /home/max/Documents/GitHub/IR2117/ros2_ws/src/olympic_interfaces -DCMAKE_INSTALL_PREFIX=/home/max/Documents/GitHub/IR2117/ros2_ws/src/install/olympic_interfaces

@@ -1,0 +1,31 @@
+[0.008s] Invoking command in '/home/max/Documents/GitHub/IR2117/ros2_ws/src/build/olympic_interfaces': /usr/bin/cmake /home/max/Documents/GitHub/IR2117/ros2_ws/src/olympic_interfaces -DCMAKE_INSTALL_PREFIX=/home/max/Documents/GitHub/IR2117/ros2_ws/src/install/olympic_interfaces
+[0.016s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.031s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.111s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.129s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.131s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.192s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.218s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.218s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.297s] -- Found rclcpp_action: 2.4.2 (/opt/ros/foxy/share/rclcpp_action/cmake)
+[0.342s] CMake Error at CMakeLists.txt:22 (find_package):
+[0.342s]   By not providing "Findolympic_interfaces.cmake" in CMAKE_MODULE_PATH this
+[0.342s]   project has asked CMake to find a package configuration file provided by
+[0.342s]   "olympic_interfaces", but CMake did not find one.
+[0.342s] 
+[0.342s]   Could not find a package configuration file provided by
+[0.342s]   "olympic_interfaces" with any of the following names:
+[0.342s] 
+[0.342s]     olympic_interfacesConfig.cmake
+[0.342s]     olympic_interfaces-config.cmake
+[0.342s] 
+[0.342s]   Add the installation prefix of "olympic_interfaces" to CMAKE_PREFIX_PATH or
+[0.343s]   set "olympic_interfaces_DIR" to a directory containing one of the above
+[0.343s]   files.  If "olympic_interfaces" provides a separate development package or
+[0.343s]   SDK, be sure it has been installed.
+[0.343s] 
+[0.343s] 
+[0.343s] -- Configuring incomplete, errors occurred!
+[0.343s] See also "/home/max/Documents/GitHub/IR2117/ros2_ws/src/build/olympic_interfaces/CMakeFiles/CMakeOutput.log".
+[0.343s] See also "/home/max/Documents/GitHub/IR2117/ros2_ws/src/build/olympic_interfaces/CMakeFiles/CMakeError.log".
+[0.347s] Invoked command in '/home/max/Documents/GitHub/IR2117/ros2_ws/src/build/olympic_interfaces' returned '1': /usr/bin/cmake /home/max/Documents/GitHub/IR2117/ros2_ws/src/olympic_interfaces -DCMAKE_INSTALL_PREFIX=/home/max/Documents/GitHub/IR2117/ros2_ws/src/install/olympic_interfaces

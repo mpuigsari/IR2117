@@ -1,0 +1,28 @@
+[0.008s] Invoking command in '/home/max/Documents/GitHub/IR2117/ros2_ws/src/build/olympic_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/max/Documents/GitHub/IR2117/ros2_ws/src/olympic_interfaces -DCMAKE_INSTALL_PREFIX=/home/max/Documents/GitHub/IR2117/ros2_ws/src/install/olympic_interfaces
+[0.174s] -- The C compiler identification is GNU 9.4.0
+[0.351s] -- The CXX compiler identification is GNU 9.4.0
+[0.356s] -- Check for working C compiler: /usr/bin/cc
+[0.428s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.429s] -- Detecting C compiler ABI info
+[0.511s] -- Detecting C compiler ABI info - done
+[0.518s] -- Detecting C compile features
+[0.518s] -- Detecting C compile features - done
+[0.520s] -- Check for working CXX compiler: /usr/bin/c++
+[0.579s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.580s] -- Detecting CXX compiler ABI info
+[0.646s] -- Detecting CXX compiler ABI info - done
+[0.652s] -- Detecting CXX compile features
+[0.652s] -- Detecting CXX compile features - done
+[0.654s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.668s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.668s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.763s] CMake Error at /opt/ros/foxy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):
+[0.763s]   ament_target_dependencies() the passed package name 'rclcpp' was not found
+[0.764s]   before
+[0.764s] Call Stack (most recent call first):
+[0.764s]   CMakeLists.txt:24 (ament_target_dependencies)
+[0.764s] 
+[0.764s] 
+[0.764s] -- Configuring incomplete, errors occurred!
+[0.764s] See also "/home/max/Documents/GitHub/IR2117/ros2_ws/src/build/olympic_interfaces/CMakeFiles/CMakeOutput.log".
+[0.767s] Invoked command in '/home/max/Documents/GitHub/IR2117/ros2_ws/src/build/olympic_interfaces' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/max/Documents/GitHub/IR2117/ros2_ws/src/olympic_interfaces -DCMAKE_INSTALL_PREFIX=/home/max/Documents/GitHub/IR2117/ros2_ws/src/install/olympic_interfaces
