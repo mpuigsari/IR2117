@@ -3,6 +3,8 @@
 #include "olympic_interfaces/action/rings.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp_action/rclcpp_action.hpp"
+#include <iomanip>
+#include <sstream>
 
 using Rings = olympic_interfaces::action::Rings;
 
@@ -15,16 +17,19 @@ rclcpp::Node::SharedPtr g_node = nullptr;
 void feedback_callback(GoalHandleRings::SharedPtr,
   const std::shared_ptr<const Rings::Feedback> feedback)
 {
-  RCLCPP_INFO(
+  std::stringstream ss;
+    ss<<std::setprecision(3)<<"Circle n."<<feedback->drawing_ring<<" at " << feedback-ring_angle<< "ª";
+    RCLCPP_INFO(
     g_node->get_logger(),
-    "Next ring received: %" PRId32,
-    feedback->drawing_ring.back());
+    ss.str().c_str());
 }
 
 int main(int argc, char ** argv)
 {
   rclcpp::init(argc, argv);
   g_node = rclcpp::Node::make_shared("rings_client");
+  g_node->declare_parameter("radius",1.0);
+  double radius = g_node->get_parameter("radius").get_parameter_value().get<double>();
   auto rings_client = rclcpp_action::create_client<Rings>(
     g_node, "rings");
 
@@ -34,7 +39,7 @@ int main(int argc, char ** argv)
     return 1;
   }
   auto goal_msg = Rings::Goal();
-  goal_msg.radius = 1.5;
+  goal_msg.radius = radius;
 
 
   RCLCPP_INFO(g_node->get_logger(), 
@@ -92,9 +97,7 @@ int main(int argc, char ** argv)
       return 1;
   }
   RCLCPP_INFO(g_node->get_logger(), "result received");
-  for (auto number : wrapped_result.result->drawing_ring) {
-    RCLCPP_INFO(g_node->get_logger(), "%" PRId32, number);
-  }
+  
 
   rings_client.reset();
   g_node.reset();

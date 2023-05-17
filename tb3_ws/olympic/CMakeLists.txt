@@ -21,6 +21,9 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(turtlesim REQUIRED)
+find_package(rclcpp_action REQUIRED)
+find_package(rclcpp_components REQUIRED)
+find_package(olynpic_interfaces REQUIRED)
 
 add_executable(rings src/rings.cpp)
 
@@ -29,11 +32,34 @@ target_include_directories(rings PUBLIC
   $<INSTALL_INTERFACE:include>)
 ament_target_dependencies(
   rings
-  "rclcpp"
-  "std_msgs"
-  "geometry_msgs"
-  "turtlesim"
+  rclcpp
+  std_msgs
+  geometry_msgs
+  turtlesim
 )
+
+add_executable(rings_server src/rings_action_server.cpp)
+target_include_directories(rings PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>)
+ament_target_dependencies(
+  rclcpp
+  rclcpp_action
+  geometry_msgs
+  olynpic_interfaces
+  turtlesim
+)
+
+add_executable(rings_client src/rings_action_client.cpp)
+target_include_directories(rings PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>)
+ament_target_dependencies(
+  rclcpp
+  rclcpp_action
+  olynpic_interfaces
+)
+
 add_executable(parallel src/parallel_rings.cpp)
 
 target_include_directories(parallel PUBLIC
@@ -49,6 +75,8 @@ ament_target_dependencies(
 
 install(TARGETS 
   rings
+  rings_server
+  rings_client
   parallel
   DESTINATION lib/${PROJECT_NAME})
 
